@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "cilento.eu — Dove i Greci hanno costruito in pietra, il mare ha risposto in grotte",
+    "description": "cilento.eu — 100 km di costa tra Poseidonia e Palinuro: templi dorici, grotte via mare, borghi, Parco Nazionale e Dieta Mediterranea."
+  },
+  "nav": {
+    "destinazioni": "Destinazioni",
+    "itinerari": "Itinerari",
+    "territori": "Territori",
+    "esperienze": "Esperienze",
+    "sapori": "Sapori",
+    "arrivare": "Come arrivare"
+  },
+  "hero": {
+    "kicker": "Parco Nazionale · UNESCO 1998 · 100 km di costa",
+    "title": "Dove i Greci hanno costruito in pietra,",
+    "titleEm": "il mare ha risposto in grotte.",
+    "lede": "Templi dorici che Atene non ha più, baie che si aprono solo dal mare, borghi dove Ancel Keys ha capito perché qui si vive più a lungo. Dimmi che viaggiatore sei — ti dico quale Cilento è il tuo.",
+    "cta1": "Scegli la tua costa",
+    "cta2": "3 itinerari onesti",
+    "facts": [
+      {"dt": "181.048 ha", "dd": "2° Parco Nazionale d'Italia — Legge 394/91"},
+      {"dt": "UNESCO 1998", "dd": "Paestum, Velia, Certosa di Padula — whc 842"},
+      {"dt": "Pioppi 1962 →", "dd": "Ancel Keys, Dieta Mediterranea UNESCO 2010"}
+    ],
+    "routesLine": "Dall'estero: Londra · Parigi · Amsterdam · Barcellona · Madrid → Salerno QSR, 40′ da Paestum.",
+    "routesLink": "Vedi le rotte ↓",
+    "scrollCue": "scorri verso il mare",
+    "tide": "Mar Tirreno"
+  },
+  "destinazioni": {
+    "kicker": "8 luoghi, 8 caratteri — non 8 spiagge uguali",
+    "title": "Destinazioni",
+    "sub": "Ognuna con il suo mare, la sua pietra, il suo ritmo. Filtra per voglia, non per stelle.",
+    "filters": {"all": "Tutte", "mare": "Mare selvaggio", "storia": "Magna Grecia", "borgo": "Borghi", "parco": "Parco interno"},
+    "items": [
+      {"tag": "Magna Grecia · Capaccio-Paestum", "title": "Paestum — Poseidonia", "desc": "Alle 7 del mattino, tra papaveri e travertino biondo, i tre templi del VI–V sec. a.C. ronzano solo di cicale — Atene, così intatta, non ce l'ha più.", "meta": "40.4239°N 15.0053°E · 1h da Salerno · mezza giornata + bufala DOP", "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Capaccio_Paestum_-_Tempio_di_Nettuno.jpg/1280px-Capaccio_Paestum_-_Tempio_di_Nettuno.jpg", "alt": "Tempio di Nettuno a Paestum"},
+      {"tag": "Mare selvaggio · Centola", "title": "Palinuro, il nocchiero di Enea", "desc": "Arco Naturale a prua, poi tuffo al Buondormire dove la sabbia scricchiola bianca e la falesia odora di resina calda.", "meta": "Barca ore 9, Grotta Azzurra prima delle 10", "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Palinuro-arco-naturale-02.JPG/1280px-Palinuro-arco-naturale-02.JPG", "alt": "Arco Naturale di Palinuro"},
+      {"tag": "Cala dopo cala · Camerota", "title": "Marina di Camerota", "desc": "Da Lentiscelle a Cala Bianca conti le torri saracene a nuoto, con l'olio degli ulivi centenari ancora sulle mani dal pranzo.", "meta": "Solo a piedi o in canoa · Area Marina Protetta", "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Spiaggia_Mingardo_%28Marina_di_Camerota%29_e_Capo_Palinuro_%28panoramio%29.jpg/1280px-Spiaggia_Mingardo_%28Marina_di_Camerota%29_e_Capo_Palinuro_%28panoramio%29.jpg", "alt": "Spiaggia del Mingardo a Marina di Camerota"},
+      {"tag": "Borgo lento · Pollica", "title": "Acciaroli + Pioppi", "desc": "La sera il porto spegne i motori e resta il rumore dei bicchieri — qui Hemingway ascoltava i pescatori e Keys misurava la longevità a colpi di olio EVO.", "meta": "Museo Vivente Dieta Mediterranea · 5 Vele", "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/2007_Porto_Acciaroli.jpg/1280px-2007_Porto_Acciaroli.jpg", "alt": "Porto di Acciaroli"},
+      {"tag": "Borgo sul mare · UNESCO", "title": "Castellabate", "desc": "Dal castello normanno scendi verso Punta Licosa tra mirto pestato dai passi, e il Tirreno sotto è verde-bottiglia contro calcare bianco.", "meta": "Area Marina Protetta · Belvedere al tramonto", "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Panorama_of_Santa_Maria_di_Castellabate.jpg/1280px-Panorama_of_Santa_Maria_di_Castellabate.jpg", "alt": "Santa Maria di Castellabate vista dal borgo"},
+      {"tag": "Filosofia · Ascea", "title": "Velia — Elea", "desc": "Cammini sulla Porta Rosa, il primo arco a tutto sesto greco, dove Parmenide pensava l'essere — sotto, a dieci minuti, Ascea Marina ti rimette i piedi in acqua.", "meta": "UNESCO · ideale con Paestum in un giorno", "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Elea-velia-via-porta-rosa-01.JPG/1280px-Elea-velia-via-porta-rosa-01.JPG", "alt": "Via di Porta Rosa a Velia"},
+      {"tag": "Porta del Cilento · Agropoli", "title": "Agropoli", "desc": "Scaloni in pietra ripida, castello aragonese controvento, e a Trentova l'acqua sa di sale vero dopo il treno da Napoli — questa è la porta, non la tappa.", "meta": "Stazione FS · base senza auto a noleggio", "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Agropoli-castello-aragonese-01.JPG/1280px-Agropoli-castello-aragonese-01.JPG", "alt": "Castello aragonese di Agropoli"},
+      {"tag": "Parco interno · Vallo di Diano", "title": "Teggiano + Certosa di Padula", "desc": "A Pertosa entri in barca nel buio che odora di fiume freddo, a Padula esci in 51.500 m² di barocco — pietra, acqua di grotta e pane cotto a legna.", "meta": "Pertosa 16° fissi · serve auto, torcia, felpa", "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Teggiano_belvedere.JPG/1280px-Teggiano_belvedere.JPG", "alt": "Belvedere di Teggiano sulla valle"}
+    ]
+  },
+  "esperienze": {
+    "kicker": "Cosa si fa davvero qui",
+    "title": "Quattro verbi cilentani",
+    "items": [
+      {"num": "01", "title": "Nuotare nelle grotte", "desc": "Palinuro e Camerota: escursioni in barca all'alba, Grotta Azzurra, Grotta del Sangue, bagno al Buondormire. Porta scarpette da scoglio.", "li": ["Durata: 2–3 h", "Quando: maggio–ottobre, ore 8–11"]},
+      {"num": "02", "title": "Camminare tra i Greci", "desc": "Paestum + Velia in un giorno con audioguida e museo. A Paestum il 18–19 agosto le colonne si allineano al tramonto.", "li": ["Biglietto unico Paestum+Velia", "Guida archeologica consigliata"]},
+      {"num": "03", "title": "Salire nel Parco", "desc": "Monte Cervati (1.898 m), Gole del Calore, Cascata Capelli di Venere, Grotte di Castelcivita e Pertosa. A piedi o in e-bike.", "li": ["CAI + Geoparco UNESCO", "Torcia e felpa anche ad agosto"]},
+      {"num": "04", "title": "Mangiare lento", "desc": "Mozzarella nella stessa mattina, alici di Menaica, fusillo di Felitto, fico bianco DOP, olio EVO.", "li": ["Presìdi Slow Food", "Agriturismi del Parco"]}
+    ]
+  },
+  "stagioni": {
+    "kicker": "Il Cilento non chiude a settembre",
+    "title": "Stagioni",
+    "tabs": {"primavera": "Primavera", "estate": "Estate", "autunno": "Autunno", "inverno": "Inverno"},
+    "items": {
+      "primavera": {"title": "Primavera — scavi vuoti e ginestre", "text": "Aprile-maggio: 18–22°, papaveri tra i templi, sentieri del Monte Stella senza caldo. Paestum e Velia quasi deserte al mattino. Sagre del carciofo e della fragola.", "meta": "Mare: 17–19° · Ideale per: archeologia, trekking, bici", "img": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1400&auto=format&fit=crop"},
+      "estate": {"title": "Estate — alba in barca, siesta all'ombra", "text": "Giugno-agosto: Baia del Buondormire e Cala Bianca prima delle 10, borghi dopo le 21. Punta Licosa a piedi al tramonto, non alle 13.", "meta": "Mare: 24–27° · Ideale per: grotte, canoe, sagre del pesce", "img": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1400&auto=format&fit=crop"},
+      "autunno": {"title": "Autunno — olio nuovo e luce bassa", "text": "Settembre-ottobre: il mese migliore. Acqua ancora a 23–25°, spiagge svuotate, vendemmia e frantoi aperti. Teggiano e Padula con nebbie del mattino bellissime.", "meta": "Mare: 21–25° · Ideale per: cibo, trekking, foto ai templi", "img": "https://images.unsplash.com/photo-1507372723803-4b93b4ccb7a4?q=80&w=1400&auto=format&fit=crop"},
+      "inverno": {"title": "Inverno — camini e Certosa", "text": "Novembre-marzo: borghi veri, nessuna fila. Certosa di Padula, Grotte di Pertosa (sempre 16° dentro), zuppa di ceci e lagane. Cervati a volte innevato.", "meta": "Mare: 14–16° · Ideale per: interni, speleologia, cucina", "img": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1400&auto=format&fit=crop"}
+    }
+  },
+  "itinerari": {
+    "kicker": "Copia, incolla, parti",
+    "title": "Tre itinerari onesti",
+    "sub": "Tempi di guida reali, niente 'tutto in un giorno'.",
+    "items": [
+      {"days": "3 giorni", "title": "Magna Grecia essenziale", "badge": "consigliato —", "steps": ["Napoli → Paestum (museo + templi al tramonto), notte ad Agropoli. Bufala a Capaccio.", "Velia al mattino + Ascea Marina al pomeriggio. Sera ad Acciaroli.", "Pioppi (Dieta Mediterranea) + Castellabate, rientro da Agropoli FS."], "meta": "Auto o treno+bus · 180 km totali"},
+      {"days": "5 giorni", "title": "Costa selvaggia in barca", "badge": "consigliato —", "steps": ["Base a Palinuro: grotte in barca, Buondormire, Primula al tramonto.", "Marina di Camerota: Infreschi in canoa, Cala Bianca. Scario + Grotta Azzurra."], "meta": "Prenota barca il giorno prima · scarpe da scoglio"},
+      {"days": "7 giorni", "title": "Parco completo", "badge": "consigliato —", "steps": ["Come 'Costa selvaggia' + Pertosa (barca in grotta) + Teggiano + Certosa di Padula + Capelli di Venere + Cervati o Gole del Calore."], "meta": "Serve auto · strade interne lente, e bellissime"}
+    ]
+  },
+  "sapori": {
+    "kicker": "DOP, presìdi, osterie vere",
+    "title": "Sapori che spiegano il luogo",
+    "items": [
+      {"title": "Mozzarella di Bufala DOP", "desc": "Caseifici di Capaccio-Paestum — mangiala entro 6 ore, ancora tiepida."},
+      {"title": "Alici di Menaica", "desc": "Pisciotta — pescate con la rete che seleziona, presìdio Slow Food."},
+      {"title": "Fusillo di Felitto", "desc": "Pasta tirata al ferretto, sughi di carne dei monti."},
+      {"title": "Fico bianco DOP", "desc": "Ottobre: frantoi aperti, pane cotto a legna."}
+    ]
+  },
+  "pratico": {
+    "kicker": "Leggere prima di partire",
+    "title": "Prima di partire",
+    "routes": {
+      "title": "In aereo: Salerno QSR",
+      "desc": "L'aeroporto Costa d'Amalfi e del Cilento è a Pontecagnano, 40′ da Paestum. Voli diretti dall'estero (fonte: aeroportosalerno.it, ott 2026 — le stagionali cambiano, verifica sul sito della compagnia):",
+      "list": [
+        {"route": "Londra STN · Ryanair", "status": "stagionale"},
+        {"route": "Parigi ORY · Vueling, Transavia", "status": "attivo"},
+        {"route": "Amsterdam · Transavia", "status": "attivo"},
+        {"route": "Barcellona · Vueling", "status": "attivo"},
+        {"route": "Madrid · Iberia", "status": "attivo"},
+        {"route": "Vienna · Ryanair", "status": "stagionale"},
+        {"route": "Bruxelles CRL · Ryanair", "status": "stagionale"},
+        {"route": "Lione · Nantes · Volotea", "status": "attivo"},
+        {"route": "Düsseldorf · Stoccarda · Eurowings", "status": "attivo"},
+        {"route": "Dubai · flydubai", "status": "attivo"}
+      ],
+      "meta": "Da QSR: bus Airlink → stazione Salerno 30–40′ ~5 €, poi Regionale per Agropoli–Ascea–Sapri. Alternativa: Napoli-Capodichino + Alibus."
+    },
+    "treno": {
+      "title": "In treno",
+      "desc": "Linea Tirrenica Napoli–Reggio Calabria. Il Regionale Napoli C.–Sapri (~2h45) ferma a Paestum, Agropoli-Castellabate, Ascea, Pisciotta, Centola-Palinuro-Marina di Camerota, Policastro, Sapri — Napoli→Agropoli ~1h35 (fonte: monitor live RFI).",
+      "list": [
+        {"route": "AV fino a Salerno · Frecciarossa/Italo", "status": "poi Regionale"},
+        {"route": "Italo diretto ad Agropoli · da Napoli ~1h, da Roma ~2h04", "status": "attivo"},
+        {"route": "InterCity Notte da Milano · arriva ad Agropoli all'alba", "status": "attivo"},
+        {"route": "Vallo di Diano · niente treno dal 1987", "status": "solo bus + auto"}
+      ],
+      "meta": "Orari live: monitor RFI e trenitalia.com — la Sicignano-Lagonegro non ha mai riaperto."
+    },
+    "auto": {
+      "title": "In auto + quando",
+      "desc": "A2 uscite Battipaglia–Eboli per Paestum e Agropoli; Atena Lucana–Sala Consilina–Padula-Buonabitacolo per Teggiano, Padula e Pertosa; superstrada per Policastro e Sapri. SS18 costiera: Agropoli→Palinuro ~55 km in ~1h20, lenta e bellissima — in estate i parcheggi sono pieni prima delle 10. In loco: bus estivi Cilento Blu tra i borghi, barca condivisa a Palinuro/Camerota da €25.",
+      "meta": "Non prenotiamo niente: orari e prezzi cambiano, verifica in porto, al museo, in stazione."
+    }
+  },
+  "footer": {
+    "tagline": "cilento.eu — guida indipendente al Cilento.",
+    "credits": "Foto: Wikimedia Commons (Paestum, Velia, Palinuro, Camerota, Acciaroli, Castellabate, Agropoli, Teggiano) · video hero: Mixkit (tramonto generico, non Cilento). Logo originale cilento.eu.",
+    "copyright": "© 2026 cilento.eu — fatto con testardaggine mediterranea.",
+    "unesco": "Parco Nazionale del Cilento, Vallo di Diano e Alburni · UNESCO 1998 · Dieta Mediterranea UNESCO 2010"
+  }
+}

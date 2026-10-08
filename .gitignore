@@ -1,0 +1,16 @@
+# Windows / progettazione
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+*.tmp
+*.bak

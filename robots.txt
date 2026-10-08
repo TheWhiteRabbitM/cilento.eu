@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cilento.eu/sitemap.xml
