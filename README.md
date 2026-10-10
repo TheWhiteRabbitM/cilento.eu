@@ -16,7 +16,7 @@ HTML + CSS + JS vanilla, nessuna build, nessun framework.
 ```text
 gocilento.it/
 ├── index.html          # redirect alla lingua (x-default)
-├── it/ · en/ · de/     # le tre pagine reali, una per lingua
+├── it/ · en/ · de/     # le tre pagine reali, una per lingua (+ impressum.html, trade.html)
 ├── api/it.json · api/en.json · api/de.json  # contenuti integrali per le AI
 ├── llms.txt            # indice per LLM (pagine + API + destinazioni)
 ├── 404.html            # pagina non trovata trilingue

@@ -61,4 +61,34 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://gocilento.it/it/trade.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gocilento.it/it/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/it/trade.html"/>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gocilento.it/en/trade.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gocilento.it/it/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/it/trade.html"/>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gocilento.it/de/trade.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gocilento.it/it/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/trade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/it/trade.html"/>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
