@@ -1,6 +1,6 @@
-# cilento.eu
+# GoCilento
 
-![cilento.eu](assets/logo.png)
+![GoCilento](assets/logo.png)
 
 **Guida indipendente al Cilento. Niente prenotazioni, niente commissioni, niente newsletter.**
 
@@ -14,7 +14,7 @@ HTML + CSS + JS vanilla, nessuna build, nessun framework.
 ## Struttura
 
 ```text
-cilento.eu/
+gocilento.it/
 ├── index.html          # redirect alla lingua (x-default)
 ├── it/ · en/ · de/     # le tre pagine reali, una per lingua
 ├── styles.css          # design system unico

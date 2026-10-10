@@ -1,4 +1,4 @@
-# ARCHITECTURE — cilento.eu v3 (multilingua + SEO)
+# ARCHITECTURE — gocilento.it v3 (multilingua + SEO)
 
 ## 1. Requirements summary
 
@@ -49,7 +49,7 @@ Contesto: nessuna foto propria. Scelta: Wikimedia Commons (foto vere del Cilento
 Contesto: il brief ha imposto la grammatica di interazione Halden. Scelta: meccanica adottata come idea funzionale, espressione interamente riscritta. Conseguenze: il file prototipo clone esatto è stato eliminato; resta solo l'implementazione cilentana.
 
 ### ADR-005: multilingua path-based (IT/EN/DE)
-Contesto: il sito deve essere SEO-friendly in 3 lingue. Scelta: path-based (`/it/`, `/en/`, `/de/`) con `hreflang` e `x-default`. Alternative: sottodomini (`en.cilento.eu`) — scartato (costi DNS, certificati, duplicazione). Query string (`?lang=en`) — scartato (SEO debole, non indicizzabile separatamente). Conseguenze: +SEO ottimale, +condivisione URL, −routing server-side richiesto (risolto con rewrite rules o hosting statico con fallback).
+Contesto: il sito deve essere SEO-friendly in 3 lingue. Scelta: path-based (`/it/`, `/en/`, `/de/`) con `hreflang` e `x-default`. Alternative: sottodomini (`en.gocilento.it`) — scartato (costi DNS, certificati, duplicazione). Query string (`?lang=en`) — scartato (SEO debole, non indicizzabile separatamente). Conseguenze: +SEO ottimale, +condivisione URL, −routing server-side richiesto (risolto con rewrite rules o hosting statico con fallback).
 
 ### ADR-006: contenuti in JSON esterni
 Contesto: 3 lingue × 8 destinazioni + sezioni = molte stringhe. Scelta: file `i18n/{it,en,de}.json` caricati dinamicamente. Alternative: duplicare l'HTML per lingua — scartato (manutenibilità disastrosa, 3× bug). Conseguenze: +manutenibile, +scalabile, −richiede JS per il rendering (mitigato con fallback server-side o build-time).
@@ -60,7 +60,7 @@ Contesto: il dominio potrebbe cambiare (.com, .it, ecc.). Scelta: wordmark `cile
 ## 4. Struttura multilingua (vincolante)
 
 ```
-cilento.eu/
+gocilento.it/
   index.html              — template unico, legge ?lang= o path
   styles.css              — design system
   app.js                  — rendering + routing + i18n
@@ -83,16 +83,16 @@ cilento.eu/
 
 ### hreflang (in `<head>` di index.html)
 ```html
-<link rel="alternate" hreflang="it" href="https://cilento.eu/it/" />
-<link rel="alternate" hreflang="en" href="https://cilento.eu/en/" />
-<link rel="alternate" hreflang="de" href="https://cilento.eu/de/" />
-<link rel="alternate" hreflang="x-default" href="https://cilento.eu/" />
+<link rel="alternate" hreflang="it" href="https://gocilento.it/it/" />
+<link rel="alternate" hreflang="en" href="https://gocilento.it/en/" />
+<link rel="alternate" hreflang="de" href="https://gocilento.it/de/" />
+<link rel="alternate" hreflang="x-default" href="https://gocilento.it/" />
 ```
 
 ### Meta tags dinamici
 ```html
 <html lang="it">  <!-- o en, de -->
-<title>cilento.eu — ...</title>
+<title>GoCilento — ...</title>
 <meta name="description" content="...">
 ```
 
@@ -101,11 +101,11 @@ cilento.eu/
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cilento.eu/it/</loc>
-    <xhtml:link rel="alternate" hreflang="it" href="https://cilento.eu/it/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cilento.eu/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://cilento.eu/de/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cilento.eu/"/>
+    <loc>https://gocilento.it/it/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gocilento.it/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/"/>
   </url>
   <!-- ... -->
 </urlset>

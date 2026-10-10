@@ -1,4 +1,4 @@
-# DESIGN.md — sistema cilento.eu v2 (gate no-ai-design-slop)
+# DESIGN.md — sistema gocilento.it v2 (gate no-ai-design-slop)
 
 ## Tesi visiva (una sola)
 "Epigrafe greca + mare di Palinuro". Il nome è il logo: `cilent` in Fraunces di pagina + `o` come SVG inline (anello-Arco con onda) + `.eu` funzionale in mare. Niente testo dentro SVG-come-immagine (i font pagina lì non esistono e il fallback sgrana tutto). Favicon ed emblemi solo vettore puro.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cilento.eu/sitemap.xml
+Sitemap: https://gocilento.it/sitemap.xml

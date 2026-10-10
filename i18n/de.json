@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "cilento.eu — Wo die Griechen in Stein bauten, antwortete das Meer in Höhlen",
-    "description": "cilento.eu — 100 km Küste zwischen Poseidonia und Palinuro: dorische Tempel, Meereshöhlen, Dörfer, Nationalpark und mediterrane Diät."
+    "title": "GoCilento — Wo die Griechen in Stein bauten, antwortete das Meer in Höhlen",
+    "description": "GoCilento — 100 km Küste zwischen Poseidonia und Palinuro: dorische Tempel, Meereshöhlen, Dörfer, Nationalpark und mediterrane Diät."
   },
   "nav": {
     "destinazioni": "Reiseziele",
@@ -124,9 +124,9 @@
     }
   },
   "footer": {
-    "tagline": "cilento.eu — unabhängiger Reiseführer für Cilento.",
-    "credits": "Fotos: Wikimedia Commons (Paestum, Velia, Palinuro, Camerota, Acciaroli, Castellabate, Agropoli, Teggiano) · Hero-Video: Mixkit (generischer Sonnenuntergang, nicht Cilento). Original cilento.eu Logo.",
-    "copyright": "© 2026 cilento.eu — gemacht mit mediterraner Sturheit.",
+    "tagline": "GoCilento — unabhängiger Reiseführer für Cilento.",
+    "credits": "Fotos: Wikimedia Commons (Paestum, Velia, Palinuro, Camerota, Acciaroli, Castellabate, Agropoli, Teggiano) · Hero-Video: Mixkit (generischer Sonnenuntergang, nicht Cilento). Original GoCilento Logo.",
+    "copyright": "© 2026 GoCilento — gemacht mit mediterraner Sturheit.",
     "unesco": "Nationalpark Cilento, Vallo di Diano und Alburni · UNESCO 1998 · Mediterrane Diät UNESCO 2010"
   }
 }

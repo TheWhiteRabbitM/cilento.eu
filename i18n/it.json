@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "cilento.eu — Dove i Greci hanno costruito in pietra, il mare ha risposto in grotte",
-    "description": "cilento.eu — 100 km di costa tra Poseidonia e Palinuro: templi dorici, grotte via mare, borghi, Parco Nazionale e Dieta Mediterranea."
+    "title": "GoCilento — Dove i Greci hanno costruito in pietra, il mare ha risposto in grotte",
+    "description": "GoCilento — 100 km di costa tra Poseidonia e Palinuro: templi dorici, grotte via mare, borghi, Parco Nazionale e Dieta Mediterranea."
   },
   "nav": {
     "destinazioni": "Destinazioni",
@@ -123,9 +123,9 @@
     }
   },
   "footer": {
-    "tagline": "cilento.eu — guida indipendente al Cilento.",
-    "credits": "Foto: Wikimedia Commons (Paestum, Velia, Palinuro, Camerota, Acciaroli, Castellabate, Agropoli, Teggiano) · video hero: Mixkit (tramonto generico, non Cilento). Logo originale cilento.eu.",
-    "copyright": "© 2026 cilento.eu — fatto con testardaggine mediterranea.",
+    "tagline": "GoCilento — guida indipendente al Cilento.",
+    "credits": "Foto: Wikimedia Commons (Paestum, Velia, Palinuro, Camerota, Acciaroli, Castellabate, Agropoli, Teggiano) · video hero: Mixkit (tramonto generico, non Cilento). Logo originale GoCilento.",
+    "copyright": "© 2026 GoCilento — fatto con testardaggine mediterranea.",
     "unesco": "Parco Nazionale del Cilento, Vallo di Diano e Alburni · UNESCO 1998 · Dieta Mediterranea UNESCO 2010"
   }
 }

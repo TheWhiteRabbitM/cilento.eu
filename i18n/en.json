@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "cilento.eu — Where the Greeks built in stone, the sea answered in caves",
-    "description": "cilento.eu — 100 km of coastline between Poseidonia and Palinuro: Doric temples, sea caves, villages, National Park and Mediterranean Diet."
+    "title": "GoCilento — Where the Greeks built in stone, the sea answered in caves",
+    "description": "GoCilento — 100 km of coastline between Poseidonia and Palinuro: Doric temples, sea caves, villages, National Park and Mediterranean Diet."
   },
   "nav": {
     "destinazioni": "Destinations",
@@ -124,9 +124,9 @@
     }
   },
   "footer": {
-    "tagline": "cilento.eu — independent guide to Cilento.",
-    "credits": "Photos: Wikimedia Commons (Paestum, Velia, Palinuro, Camerota, Acciaroli, Castellabate, Agropoli, Teggiano) · hero video: Mixkit (generic sunset, not Cilento). Original cilento.eu logo.",
-    "copyright": "© 2026 cilento.eu — made with Mediterranean stubbornness.",
+    "tagline": "GoCilento — independent guide to Cilento.",
+    "credits": "Photos: Wikimedia Commons (Paestum, Velia, Palinuro, Camerota, Acciaroli, Castellabate, Agropoli, Teggiano) · hero video: Mixkit (generic sunset, not Cilento). Original GoCilento logo.",
+    "copyright": "© 2026 GoCilento — made with Mediterranean stubbornness.",
     "unesco": "Cilento, Vallo di Diano and Alburni National Park · UNESCO 1998 · Mediterranean Diet UNESCO 2010"
   }
 }

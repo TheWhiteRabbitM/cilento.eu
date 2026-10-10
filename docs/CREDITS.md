@@ -1,4 +1,4 @@
-# CREDITS — cilento.eu
+# CREDITS — GoCilento
 
 Tutte le immagini sono locali in `assets/img/` e provengono da Wikimedia Commons.
 Licenze verificate via API il 2026-10-08. Nessuna foto generica da stock:

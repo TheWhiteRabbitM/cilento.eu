@@ -1,4 +1,4 @@
-// cilento.eu — comportamento del template.
+// GoCilento — comportamento del template.
 // Nessun contenuto qui: il testo vive nell'HTML di ogni lingua.
 // Se questo file non parte, la pagina resta comunque completa e leggibile.
 
