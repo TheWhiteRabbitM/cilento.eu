@@ -538,6 +538,23 @@ section{padding-block:clamp(56px,8vw,104px)}
 .row--media .row-media p{margin-bottom:0}
 @media(max-width:760px){.row--media .row-media{grid-template-columns:1fr}.row--media .row-media img{aspect-ratio:16/10}}
 
+/* ───────────── TORNA IN CIMA ───────────── */
+.to-top{
+  position:fixed;right:max(20px,env(safe-area-inset-right));
+  bottom:max(20px,env(safe-area-inset-bottom));z-index:50;
+  width:48px;height:48px;border-radius:50%;
+  background:var(--mare-950);color:#fff;
+  display:grid;place-items:center;cursor:pointer;
+  border:1px solid rgba(255,255,255,.2);
+  box-shadow:0 8px 24px rgba(11,39,38,.25);
+  opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s,background .2s;
+}
+.to-top.is-visible{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--terracotta)}
+.to-top:focus-visible{outline:3px solid var(--terracotta);outline-offset:3px}
+.to-top svg{width:22px;height:22px}
+
 /* il filetto tricolore: l'unico gradiente del sito */
 .verbi{background:var(--mare-950);color:#fff}
 .verbi .row{border-color:rgba(255,255,255,.16)}

@@ -69,6 +69,33 @@
     });
   }
 
+  /* ───────────── torna in cima ───────────── */
+
+  var toTop = document.getElementById('toTop');
+  if (toTop) {
+    // Niente rAF qui di proposito: nei tab in background non scatta mai e
+    // il pulsante resterebbe morto. Il toggle è solo classi, costa niente.
+    function onScrollTop() {
+      if (window.scrollY > 600) {
+        if (toTop.hasAttribute('hidden')) {
+          toTop.removeAttribute('hidden');
+          void toTop.offsetWidth;
+          toTop.classList.add('is-visible');
+        }
+      } else if (toTop.classList.contains('is-visible')) {
+        toTop.classList.remove('is-visible');
+        window.setTimeout(function () {
+          if (!toTop.classList.contains('is-visible')) toTop.setAttribute('hidden', '');
+        }, 320);
+      }
+    }
+    window.addEventListener('scroll', onScrollTop, { passive: true });
+    onScrollTop();
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  }
+
   /* ───────────── filtri destinazioni ───────────── */
 
   var chips = document.querySelectorAll('.chip[data-filter]');
