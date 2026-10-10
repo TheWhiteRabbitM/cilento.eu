@@ -295,8 +295,8 @@
 
 <!-- ══════════ HERO ══════════ -->
 <section class="hero" id="top">
-  <!-- PRIMA nel DOM: così .hero__left non forma stacking context e il
-       burger (z:70) resta sopra il foglio nav (z:60) senza z-index -->
+  <!-- DOM FIRST: .hero__left must not create a stacking context, so the
+       burger (z:70) stays above the nav sheet (z:60) without z-index -->
   <div class="hero__media anim" style="--d:0">
     <img class="hero-fallback" src="../assets/img/tramonto-palinuro.jpg"
          width="1319" height="989" decoding="async" fetchpriority="high"
@@ -338,8 +338,8 @@
         <span class="hero__line anim" style="--d:10">antwortete das Meer in Höhlen.</span>
       </h1>
       <p class="hero__text anim" style="--d:11">
-        Templi dorici che Atene non ha più, baie che si aprono solo dal mare,
-        borghi dove Ancel Keys ha capito perché qui si vive più a lungo.
+        Dorische Tempel, die Athen nicht mehr hat, Buchten, die nur vom Meer aus
+        erreichbar sind, Dörfer, in denen Ancel Keys verstand, warum man hier länger lebt.
         Sag mir, was für ein Reisender du bist. Ich sage dir, welches Cilento deins ist.
       </p>
       <a class="cta" href="#destinazioni">
@@ -405,7 +405,7 @@
       <article class="dest rv" id="paestum" data-territorio="storia">
         <div class="dest-img">
           <img src="../assets/img/paestum.jpg" width="1280" height="960" loading="lazy" decoding="async"
-               alt="Le colonne del Tempio di Nettuno a Paestum tra i papaveri">
+               alt="Säulen des Neptuntempels in Paestum zwischen Mohnblumen">
         </div>
         <div class="dest-body">
           <p class="dest-tag">Magna Graecia · Capaccio-Paestum</p>
@@ -421,7 +421,7 @@
       <article class="dest rv" id="palinuro" data-territorio="mare">
         <div class="dest-img">
           <img src="../assets/img/palinuro.jpg" width="1280" height="960" loading="lazy" decoding="async"
-               alt="L'Arco Naturale di Palinuro sporgente sul mare azzurro">
+               alt="Der natürliche Bogen von Palinuro über dem blauen Meer">
         </div>
         <div class="dest-body">
           <p class="dest-tag">Wildes Meer · Centola</p>
@@ -437,10 +437,10 @@
       <article class="dest rv" id="camerota" data-territorio="mare">
         <div class="dest-img">
           <img src="../assets/img/camerota.jpg" width="1280" height="960" loading="lazy" decoding="async"
-               alt="Spiaggia del Mingardo a Marina di Camerota vista da Capo Palinuro">
+               alt="Mingardo-Strand in Marina di Camerota, Blick vom Capo Palinuro">
         </div>
         <div class="dest-body">
-          <p class="dest-tag">Cala dopo cala · Camerota</p>
+          <p class="dest-tag">Bucht um Bucht · Camerota</p>
           <h3>Marina di Camerota</h3>
           <p class="dest-desc">
             Von Lentiscelle bis Cala Bianca zählst du die Sarazentürme beim Schwimmen, mit dem Öl
@@ -453,10 +453,10 @@
       <article class="dest rv" id="acciaroli" data-territorio="borgo">
         <div class="dest-img">
           <img src="../assets/img/acciaroli.jpg" width="1280" height="960" loading="lazy" decoding="async"
-               alt="Il porto di Acciaroli la sera">
+               alt="Der Hafen von Acciaroli am Abend">
         </div>
         <div class="dest-body">
-          <p class="dest-tag">Borgo lento · Pollica</p>
+          <p class="dest-tag">Langsames Dorf · Pollica</p>
           <h3>Acciaroli + Pioppi</h3>
           <p class="dest-desc">
             Abends stellt den Hafen die Motoren ab und es bleibt nur das Klirren der Gläser. Hier
@@ -469,10 +469,10 @@
       <article class="dest rv" id="castellabate" data-territorio="borgo">
         <div class="dest-img">
           <img src="../assets/img/castellabate.jpg" width="1280" height="960" loading="lazy" decoding="async"
-               alt="Panorama di Santa Maria di Castellabate dal borgo">
+               alt="Santa Maria di Castellabate, Blick vom Dorf">
         </div>
         <div class="dest-body">
-          <p class="dest-tag">Borgo sul mare · UNESCO</p>
+          <p class="dest-tag">Dorf am Meer · UNESCO</p>
           <h3>Castellabate</h3>
           <p class="dest-desc">
             Vom normannischen Schloss steigst du Richtung Punta Licosa hinab zwischen gequetschtem
@@ -485,10 +485,10 @@
       <article class="dest rv" id="velia" data-territorio="storia">
         <div class="dest-img">
           <img src="../assets/img/velia.jpg" width="1280" height="960" loading="lazy" decoding="async"
-               alt="La via di Porta Rosa a Velia">
+               alt="Porta-Rosa-Straße in Velia">
         </div>
         <div class="dest-body">
-          <p class="dest-tag">Filosofia · Ascea</p>
+          <p class="dest-tag">Philosophie · Ascea</p>
           <h3>Velia, Elea</h3>
           <p class="dest-desc">
             Geh die Porta Rosa entlang, den ersten griechischen Rundbogen, wo
@@ -502,7 +502,7 @@
       <article class="dest rv" id="agropoli" data-territorio="borgo">
         <div class="dest-img">
           <img src="../assets/img/agropoli.jpg" width="1280" height="960" loading="lazy" decoding="async"
-               alt="Il castello aragonese di Agropoli visto dal basso">
+               alt="Das aragonesische Schloss von Agropoli von unten">
         </div>
         <div class="dest-body">
           <p class="dest-tag">Tor zum Cilento · Agropoli</p>
@@ -518,7 +518,7 @@
       <article class="dest rv" id="teggiano" data-territorio="parco">
         <div class="dest-img">
           <img src="../assets/img/teggiano.jpg" width="1280" height="960" loading="lazy" decoding="async"
-               alt="Belvedere di Teggiano sulla valle del Vallo di Diano">
+               alt="Teggiano-Belvedere über dem Vallo di Diano">
         </div>
         <div class="dest-body">
           <p class="dest-tag">Binnenpark · Vallo di Diano</p>
@@ -750,7 +750,7 @@
       </div>
       <div class="panel-img">
         <img src="../assets/img/st-primavera.jpg" width="1280" height="800" loading="lazy" decoding="async"
-             alt="Vista aerea del Cilento nel verde">
+             alt="Cilento von oben im Grünen">
       </div>
     </div>
 
@@ -765,7 +765,7 @@
       </div>
       <div class="panel-img">
         <img src="../assets/img/st-estate.jpg" width="1280" height="800" loading="lazy" decoding="async"
-             alt="Una cala nascosta fra gli scogli a Camerota">
+             alt="Versteckte Bucht zwischen den Felsen bei Camerota">
       </div>
     </div>
 
@@ -780,7 +780,7 @@
       </div>
       <div class="panel-img">
         <img src="../assets/img/st-autunno.jpg" width="1280" height="800" loading="lazy" decoding="async"
-             alt="Un uliveto in fila, 1962, Touring Club Italiano">
+             alt="Olivenhain in Reihen, 1962, Touring Club Italiano">
       </div>
     </div>
 
@@ -791,11 +791,11 @@
           November–März: echte Dörfer, keine Warteschlangen. Certosa di Padula, Pertosa-Höhlen
           (immer 16° darin), Kichererbsensuppe und Lagane. Cervati manchmal verschneit.
         </p>
-        <p class="panel-meta">Meer 14–16° · Binnenraum, Höhlenforschung, Küche</p>
+        <p class="panel-meta">Meer 14–16° · Inland, Höhlenforschung, Küche</p>
       </div>
       <div class="panel-img">
         <img src="../assets/img/st-inverno.jpg" width="1280" height="800" loading="lazy" decoding="async"
-             alt="Pietrapertosa, paese nelle Dolomiti lucane">
+             alt="Pietrapertosa, Dorf in den lukanischen Dolomiten">
       </div>
     </div>
   </div>
@@ -883,7 +883,7 @@
         <div class="row-top">
           <span class="row-num">01</span>
           <h3>Essenzielle Magna Graecia</h3>
-          <span class="row-days">3 giorni</span>
+          <span class="row-days">3 Tage</span>
         </div>
         <ol class="steps">
           <li>Neapel → Paestum (Museum + Tempel bei Sonnenuntergang), Nacht in Agropoli. Büffel in Capaccio.</li>
@@ -897,7 +897,7 @@
         <div class="row-top">
           <span class="row-num">02</span>
           <h3>Wilde Küste mit dem Boot</h3>
-          <span class="row-days">5 giorni</span>
+          <span class="row-days">5 Tage</span>
         </div>
         <ol class="steps">
           <li>Basis in Palinuro: Höhlen mit dem Boot, Buondormire, Primula bei Sonnenuntergang.</li>
@@ -911,7 +911,7 @@
         <div class="row-top">
           <span class="row-num">03</span>
           <h3>Kompletter Park</h3>
-          <span class="row-days">7 giorni</span>
+          <span class="row-days">7 Tage</span>
         </div>
         <ol class="steps">
           <li>Wie „Wilde Küste“.</li>
@@ -982,15 +982,15 @@
             <tr><th scope="col">Route</th><th scope="col">Status</th></tr>
           </thead>
           <tbody>
-            <tr><td>Londra STN · Ryanair</td><td class="status-off">saisonal</td></tr>
-            <tr><td>Parigi ORY · Vueling, Transavia</td><td>aktiv</td></tr>
+            <tr><td>London STN · Ryanair</td><td class="status-off">saisonal</td></tr>
+            <tr><td>Paris ORY · Vueling, Transavia</td><td>aktiv</td></tr>
             <tr><td>Amsterdam · Transavia</td><td>aktiv</td></tr>
-            <tr><td>Barcellona · Vueling</td><td>aktiv</td></tr>
+            <tr><td>Barcelona · Vueling</td><td>aktiv</td></tr>
             <tr><td>Madrid · Iberia</td><td>aktiv</td></tr>
-            <tr><td>Vienna · Ryanair</td><td class="status-off">saisonal</td></tr>
-            <tr><td>Bruxelles CRL · Ryanair</td><td class="status-off">saisonal</td></tr>
-            <tr><td>Lione · Nantes · Volotea</td><td>aktiv</td></tr>
-            <tr><td>Düsseldorf · Stoccarda · Eurowings</td><td>aktiv</td></tr>
+            <tr><td>Wien · Ryanair</td><td class="status-off">saisonal</td></tr>
+            <tr><td>Brüssel CRL · Ryanair</td><td class="status-off">saisonal</td></tr>
+            <tr><td>Lyon · Nantes · Volotea</td><td>aktiv</td></tr>
+            <tr><td>Düsseldorf · Stuttgart · Eurowings</td><td>aktiv</td></tr>
             <tr><td>Dubai · flydubai</td><td>aktiv</td></tr>
           </tbody>
         </table>
@@ -1011,9 +1011,9 @@
             <tr><th scope="col">Route</th><th scope="col">Status</th></tr>
           </thead>
           <tbody>
-            <tr><td>AV fino a Salerno · Frecciarossa / Italo</td><td>dann Regional</td></tr>
-            <tr><td>Italo diretto ad Agropoli · da Napoli ~1h, da Roma ~2h04</td><td>aktiv</td></tr>
-            <tr><td>InterCity Notte da Milano · arriva all'alba</td><td>aktiv</td></tr>
+            <tr><td>HS bis Salerno · Frecciarossa / Italo</td><td>dann Regional</td></tr>
+            <tr><td>Italo direkt nach Agropoli · ab Neapel ~1h, ab Rom ~2h04</td><td>aktiv</td></tr>
+            <tr><td>InterCity-Nacht aus Mailand · Ankunft im Morgengrauen</td><td>aktiv</td></tr>
             <tr><td>Vallo di Diano · kein Zug seit 1987</td><td class="status-off">nur Bus + Auto</td></tr>
           </tbody>
         </table>
@@ -1080,7 +1080,7 @@
       Mediterrane Diät UNESCO 2010.<br>
       © 2026 GoCilento, gemacht mit mediterraner Sturheit.
       Originales Logo. Kein Inhalt von anderen Seiten kopiert.<br>
-      <a href="impressum.html">Impressum</a>. · <a href="trade.html">Trade</a>
+      <a href="impressum.html">Impressum</a> · <a href="trade.html">Trade</a>
     </p>
   </div>
 </footer>

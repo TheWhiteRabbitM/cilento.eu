@@ -17,7 +17,7 @@
   "hero": {
     "kicker": "National Park, UNESCO 1998, 100 km of coast",
     "title": "Where the Greeks built in stone, the sea answered in caves.",
-    "lede": "Templi dorici che Atene non ha più, baie che si aprono solo dal mare, borghi dove Ancel Keys ha capito perché qui si vive più a lungo. Tell me what kind of traveler you are. I will tell you which Cilento is yours.",
+    "lede": "Doric temples Athens no longer has, bays that open only from the sea, villages where Ancel Keys understood why people live longer here. Tell me what kind of traveler you are. I will tell you which Cilento is yours.",
     "cta": "Choose your coast",
     "arrival_note": ""
   },
@@ -45,7 +45,7 @@
       "description": "At 7am, among poppies and blond travertine, the three temples of the 6th–5th century BC buzz only with cicadas. Athens, this intact, no longer has them.",
       "practical": "40.4239°N 15.0053°E · half day + buffalo DOP",
       "image": "https://gocilento.it/assets/img/paestum.jpg",
-      "image_alt": "Le colonne del Tempio di Nettuno a Paestum tra i papaveri",
+      "image_alt": "Columns of the Temple of Neptune at Paestum among poppies",
       "photo_available": true
     },
     {
@@ -57,55 +57,55 @@
       "description": "Natural Arch at the bow, then a dip at Buondormire where the sand crackles white and the cliff smells of warm resin.",
       "practical": "Boat at 9, Blue Cave before 10",
       "image": "https://gocilento.it/assets/img/palinuro.jpg",
-      "image_alt": "L'Arco Naturale di Palinuro sporgente sul mare azzurro",
+      "image_alt": "The Natural Arch of Palinuro over the blue sea",
       "photo_available": true
     },
     {
       "id": "camerota",
       "url": "https://gocilento.it/en/#camerota",
       "territory": "mare",
-      "tag": "Cala dopo cala · Camerota",
+      "tag": "Cove after cove · Camerota",
       "title": "Marina di Camerota",
       "description": "From Lentiscelle to Cala Bianca you count the Saracen towers by swimming, with the oil of century-old olive trees still on your hands from lunch.",
       "practical": "Only on foot or by canoe · Marine Protected Area",
       "image": "https://gocilento.it/assets/img/camerota.jpg",
-      "image_alt": "Spiaggia del Mingardo a Marina di Camerota vista da Capo Palinuro",
+      "image_alt": "Mingardo beach at Marina di Camerota seen from Capo Palinuro",
       "photo_available": true
     },
     {
       "id": "acciaroli",
       "url": "https://gocilento.it/en/#acciaroli",
       "territory": "borgo",
-      "tag": "Borgo lento · Pollica",
+      "tag": "Slow village · Pollica",
       "title": "Acciaroli + Pioppi",
       "description": "In the evening the harbor turns off its engines and only the clink of glasses remains. Here Hemingway listened to fishermen and Keys measured longevity with EVO oil.",
       "practical": "Living Museum of the Mediterranean Diet · 5 Sails",
       "image": "https://gocilento.it/assets/img/acciaroli.jpg",
-      "image_alt": "Il porto di Acciaroli la sera",
+      "image_alt": "Acciaroli harbour in the evening",
       "photo_available": true
     },
     {
       "id": "castellabate",
       "url": "https://gocilento.it/en/#castellabate",
       "territory": "borgo",
-      "tag": "Borgo sul mare · UNESCO",
+      "tag": "Village by the sea · UNESCO",
       "title": "Castellabate",
       "description": "From the Norman castle descend toward Punta Licosa among crushed myrtle, and the Tyrrhenian below is bottle-green against white limestone.",
       "practical": "Marine Protected Area · belvedere at sunset",
       "image": "https://gocilento.it/assets/img/castellabate.jpg",
-      "image_alt": "Panorama di Santa Maria di Castellabate dal borgo",
+      "image_alt": "Santa Maria di Castellabate seen from the village",
       "photo_available": true
     },
     {
       "id": "velia",
       "url": "https://gocilento.it/en/#velia",
       "territory": "storia",
-      "tag": "Filosofia · Ascea",
+      "tag": "Philosophy · Ascea",
       "title": "Velia, Elea",
       "description": "Walk the Porta Rosa, the first full-span Greek arch, where Parmenide thought of being. Below, ten minutes away, Ascea Marina puts your feet back in water.",
       "practical": "UNESCO · ideal with Paestum in one day",
       "image": "https://gocilento.it/assets/img/velia.jpg",
-      "image_alt": "La via di Porta Rosa a Velia",
+      "image_alt": "Porta Rosa street in Velia",
       "photo_available": true
     },
     {
@@ -117,7 +117,7 @@
       "description": "Steep stone steps, Aragonese castle against the wind, and at Trentova the water tastes of real salt after the train from Naples. This is the gateway, not a stopover.",
       "practical": "Train station · base without a rental car",
       "image": "https://gocilento.it/assets/img/agropoli.jpg",
-      "image_alt": "Il castello aragonese di Agropoli visto dal basso",
+      "image_alt": "The Aragonese castle of Agropoli from below",
       "photo_available": true
     },
     {
@@ -129,7 +129,7 @@
       "description": "At Pertosa you enter by boat into the dark that smells of cold river, at Padula you exit into 51,500 m² of Baroque: stone, cave water, wood-fired bread.",
       "practical": "Pertosa 16° constant · car, torch, fleece needed",
       "image": "https://gocilento.it/assets/img/teggiano.jpg",
-      "image_alt": "Belvedere di Teggiano sulla valle del Vallo di Diano",
+      "image_alt": "Teggiano belvedere over the Vallo di Diano valley",
       "photo_available": true
     },
     {
@@ -349,7 +349,7 @@
     {
       "n": "01",
       "title": "Essential Magna Graecia",
-      "days": "3 giorni",
+      "days": "3 days",
       "steps": [
         "Naples → Paestum (museum + temples at sunset), night in Agropoli. Buffalo in Capaccio.",
         "Velia in the morning + Ascea Marina in the afternoon. Evening in Acciaroli.",
@@ -360,7 +360,7 @@
     {
       "n": "02",
       "title": "Wild coast by boat",
-      "days": "5 giorni",
+      "days": "5 days",
       "steps": [
         "Base in Palinuro: caves by boat, Buondormire, Primula at sunset.",
         "Marina di Camerota: Infreschi by canoe, Cala Bianca. Evening in Pisciotta.",
@@ -371,7 +371,7 @@
     {
       "n": "03",
       "title": "Complete Park",
-      "days": "7 giorni",
+      "days": "7 days",
       "steps": [
         "As 'Wild coast'.",
         "Pertosa (boat in the cave) + Teggiano.",
@@ -415,11 +415,11 @@
       ],
       "timetable": [
         {
-          "route": "Londra STN · Ryanair",
+          "route": "London STN · Ryanair",
           "status": "seasonal"
         },
         {
-          "route": "Parigi ORY · Vueling, Transavia",
+          "route": "Paris ORY · Vueling, Transavia",
           "status": "active"
         },
         {
@@ -427,7 +427,7 @@
           "status": "active"
         },
         {
-          "route": "Barcellona · Vueling",
+          "route": "Barcelona · Vueling",
           "status": "active"
         },
         {
@@ -439,15 +439,15 @@
           "status": "seasonal"
         },
         {
-          "route": "Bruxelles CRL · Ryanair",
+          "route": "Brussels CRL · Ryanair",
           "status": "seasonal"
         },
         {
-          "route": "Lione · Nantes · Volotea",
+          "route": "Lyon · Nantes · Volotea",
           "status": "active"
         },
         {
-          "route": "Düsseldorf · Stoccarda · Eurowings",
+          "route": "Düsseldorf · Stuttgart · Eurowings",
           "status": "active"
         },
         {
@@ -464,15 +464,15 @@
       ],
       "timetable": [
         {
-          "route": "AV fino a Salerno · Frecciarossa / Italo",
+          "route": "HS to Salerno · Frecciarossa / Italo",
           "status": "then Regional"
         },
         {
-          "route": "Italo diretto ad Agropoli · da Napoli ~1h, da Roma ~2h04",
+          "route": "Direct Italo to Agropoli · from Naples ~1h, from Rome ~2h04",
           "status": "active"
         },
         {
-          "route": "InterCity Notte da Milano · arriva all'alba",
+          "route": "InterCity Night from Milan · arrives at dawn",
           "status": "active"
         },
         {

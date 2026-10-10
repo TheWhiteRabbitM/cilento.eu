@@ -17,7 +17,7 @@
   "hero": {
     "kicker": "Nationalpark, UNESCO 1998, 100 km Küste",
     "title": "Wo die Griechen in Stein, antwortete das Meer in Höhlen.",
-    "lede": "Templi dorici che Atene non ha più, baie che si aprono solo dal mare, borghi dove Ancel Keys ha capito perché qui si vive più a lungo. Sag mir, was für ein Reisender du bist. Ich sage dir, welches Cilento deins ist.",
+    "lede": "Dorische Tempel, die Athen nicht mehr hat, Buchten, die nur vom Meer aus erreichbar sind, Dörfer, in denen Ancel Keys verstand, warum man hier länger lebt. Sag mir, was für ein Reisender du bist. Ich sage dir, welches Cilento deins ist.",
     "cta": "Wähle deine Küste",
     "arrival_note": ""
   },
@@ -45,7 +45,7 @@
       "description": "Um 7 Uhr morgens, zwischen Mohn und hellem Travertin, summen die drei Tempel des 6.–5. Jh. v. Chr. nur von Zikaden. Athen, so intakt, hat sie nicht mehr.",
       "practical": "40.4239°N 15.0053°E · halber Tag + Büffel DOP",
       "image": "https://gocilento.it/assets/img/paestum.jpg",
-      "image_alt": "Le colonne del Tempio di Nettuno a Paestum tra i papaveri",
+      "image_alt": "Säulen des Neptuntempels in Paestum zwischen Mohnblumen",
       "photo_available": true
     },
     {
@@ -57,55 +57,55 @@
       "description": "Natürlicher Bogen am Bug, dann Sprung im Buondormire, wo der Sand weiß knackt und der Fels nach warmem Harz riecht.",
       "practical": "Boot um 9, Blaue Höhle vor 10",
       "image": "https://gocilento.it/assets/img/palinuro.jpg",
-      "image_alt": "L'Arco Naturale di Palinuro sporgente sul mare azzurro",
+      "image_alt": "Der natürliche Bogen von Palinuro über dem blauen Meer",
       "photo_available": true
     },
     {
       "id": "camerota",
       "url": "https://gocilento.it/de/#camerota",
       "territory": "mare",
-      "tag": "Cala dopo cala · Camerota",
+      "tag": "Bucht um Bucht · Camerota",
       "title": "Marina di Camerota",
       "description": "Von Lentiscelle bis Cala Bianca zählst du die Sarazentürme beim Schwimmen, mit dem Öl der jahrhundertealten Olivenbäume noch an den Händen vom Mittagessen.",
       "practical": "Nur zu Fuß oder Kajak · Meeresschutzgebiet",
       "image": "https://gocilento.it/assets/img/camerota.jpg",
-      "image_alt": "Spiaggia del Mingardo a Marina di Camerota vista da Capo Palinuro",
+      "image_alt": "Mingardo-Strand in Marina di Camerota, Blick vom Capo Palinuro",
       "photo_available": true
     },
     {
       "id": "acciaroli",
       "url": "https://gocilento.it/de/#acciaroli",
       "territory": "borgo",
-      "tag": "Borgo lento · Pollica",
+      "tag": "Langsames Dorf · Pollica",
       "title": "Acciaroli + Pioppi",
       "description": "Abends stellt den Hafen die Motoren ab und es bleibt nur das Klirren der Gläser. Hier hörte Hemingway den Fischern zu und Keys maß Langlebigkeit mit nativem Öl.",
       "practical": "Museum der mediterranen Diät · 5 Segel",
       "image": "https://gocilento.it/assets/img/acciaroli.jpg",
-      "image_alt": "Il porto di Acciaroli la sera",
+      "image_alt": "Der Hafen von Acciaroli am Abend",
       "photo_available": true
     },
     {
       "id": "castellabate",
       "url": "https://gocilento.it/de/#castellabate",
       "territory": "borgo",
-      "tag": "Borgo sul mare · UNESCO",
+      "tag": "Dorf am Meer · UNESCO",
       "title": "Castellabate",
       "description": "Vom normannischen Schloss steigst du Richtung Punta Licosa hinab zwischen gequetschtem Myrtus, und das Tyrrhenische darunter ist flaschengrün gegen weißen Kalkstein.",
       "practical": "Meeresschutzgebiet · Belvedere bei Sonnenuntergang",
       "image": "https://gocilento.it/assets/img/castellabate.jpg",
-      "image_alt": "Panorama di Santa Maria di Castellabate dal borgo",
+      "image_alt": "Santa Maria di Castellabate, Blick vom Dorf",
       "photo_available": true
     },
     {
       "id": "velia",
       "url": "https://gocilento.it/de/#velia",
       "territory": "storia",
-      "tag": "Filosofia · Ascea",
+      "tag": "Philosophie · Ascea",
       "title": "Velia, Elea",
       "description": "Geh die Porta Rosa entlang, den ersten griechischen Rundbogen, wo Parmenides an das Sein dachte. Unten, zehn Minuten entfernt, bringt dich Ascea Marina wieder ins Wasser.",
       "practical": "UNESCO · ideal mit Paestum an einem Tag",
       "image": "https://gocilento.it/assets/img/velia.jpg",
-      "image_alt": "La via di Porta Rosa a Velia",
+      "image_alt": "Porta-Rosa-Straße in Velia",
       "photo_available": true
     },
     {
@@ -117,7 +117,7 @@
       "description": "Steile Steinstufen, aragonesisches Schloss gegen den Wind, und bei Trentova schmeckt das Wasser nach echtem Salz nach dem Zug von Neapel. Dies ist das Tor, keine Zwischenstation.",
       "practical": "Bahnhof · Basis ohne Mietwagen",
       "image": "https://gocilento.it/assets/img/agropoli.jpg",
-      "image_alt": "Il castello aragonese di Agropoli visto dal basso",
+      "image_alt": "Das aragonesische Schloss von Agropoli von unten",
       "photo_available": true
     },
     {
@@ -129,7 +129,7 @@
       "description": "In Pertosa steigst du ins Boot in der Dunkelheit, die nach kaltem Fluss riecht, in Padula steigst du in 51.500 m² Barock aus: Stein, Höhlenwasser, Holzofenbrot.",
       "practical": "Pertosa 16° konstant · Auto, Taschenlampe, Fleece nötig",
       "image": "https://gocilento.it/assets/img/teggiano.jpg",
-      "image_alt": "Belvedere di Teggiano sulla valle del Vallo di Diano",
+      "image_alt": "Teggiano-Belvedere über dem Vallo di Diano",
       "photo_available": true
     },
     {
@@ -303,7 +303,7 @@
       "id": "p-inverno",
       "title": "Winter, Kamine und die Certosa",
       "text": "November–März: echte Dörfer, keine Warteschlangen. Certosa di Padula, Pertosa-Höhlen (immer 16° darin), Kichererbsensuppe und Lagane. Cervati manchmal verschneit.",
-      "practical": "Meer 14–16° · Binnenraum, Höhlenforschung, Küche",
+      "practical": "Meer 14–16° · Inland, Höhlenforschung, Küche",
       "image": "https://gocilento.it/assets/img/st-inverno.jpg"
     }
   ],
@@ -349,7 +349,7 @@
     {
       "n": "01",
       "title": "Essenzielle Magna Graecia",
-      "days": "3 giorni",
+      "days": "3 Tage",
       "steps": [
         "Neapel → Paestum (Museum + Tempel bei Sonnenuntergang), Nacht in Agropoli. Büffel in Capaccio.",
         "Velia am Morgen + Ascea Marina am Nachmittag. Abend in Acciaroli.",
@@ -360,7 +360,7 @@
     {
       "n": "02",
       "title": "Wilde Küste mit dem Boot",
-      "days": "5 giorni",
+      "days": "5 Tage",
       "steps": [
         "Basis in Palinuro: Höhlen mit dem Boot, Buondormire, Primula bei Sonnenuntergang.",
         "Marina di Camerota: Infreschi mit dem Kajak, Cala Bianca. Abend in Pisciotta.",
@@ -371,7 +371,7 @@
     {
       "n": "03",
       "title": "Kompletter Park",
-      "days": "7 giorni",
+      "days": "7 Tage",
       "steps": [
         "Wie „Wilde Küste“.",
         "Pertosa (Boot in der Höhle) + Teggiano.",
@@ -415,11 +415,11 @@
       ],
       "timetable": [
         {
-          "route": "Londra STN · Ryanair",
+          "route": "London STN · Ryanair",
           "status": "saisonal"
         },
         {
-          "route": "Parigi ORY · Vueling, Transavia",
+          "route": "Paris ORY · Vueling, Transavia",
           "status": "aktiv"
         },
         {
@@ -427,7 +427,7 @@
           "status": "aktiv"
         },
         {
-          "route": "Barcellona · Vueling",
+          "route": "Barcelona · Vueling",
           "status": "aktiv"
         },
         {
@@ -435,19 +435,19 @@
           "status": "aktiv"
         },
         {
-          "route": "Vienna · Ryanair",
+          "route": "Wien · Ryanair",
           "status": "saisonal"
         },
         {
-          "route": "Bruxelles CRL · Ryanair",
+          "route": "Brüssel CRL · Ryanair",
           "status": "saisonal"
         },
         {
-          "route": "Lione · Nantes · Volotea",
+          "route": "Lyon · Nantes · Volotea",
           "status": "aktiv"
         },
         {
-          "route": "Düsseldorf · Stoccarda · Eurowings",
+          "route": "Düsseldorf · Stuttgart · Eurowings",
           "status": "aktiv"
         },
         {
@@ -464,15 +464,15 @@
       ],
       "timetable": [
         {
-          "route": "AV fino a Salerno · Frecciarossa / Italo",
+          "route": "HS bis Salerno · Frecciarossa / Italo",
           "status": "dann Regional"
         },
         {
-          "route": "Italo diretto ad Agropoli · da Napoli ~1h, da Roma ~2h04",
+          "route": "Italo direkt nach Agropoli · ab Neapel ~1h, ab Rom ~2h04",
           "status": "aktiv"
         },
         {
-          "route": "InterCity Notte da Milano · arriva all'alba",
+          "route": "InterCity-Nacht aus Mailand · Ankunft im Morgengrauen",
           "status": "aktiv"
         },
         {
