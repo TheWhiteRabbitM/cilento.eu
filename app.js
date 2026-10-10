@@ -7,49 +7,6 @@
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ───────────── hero: il video si rivela solo se parte davvero ─────────────
-     Sotto al video c'è sempre la foto. Nessun poster, nessun salto di
-     immagine: se il video non parte, resta la foto e non si vede nulla di rotto. */
-
-  var heroVideo = document.querySelector('[data-hero-video]');
-
-  if (heroVideo) {
-    // Pausa se l'hero non è più in viewport: un video che gira fuori schermo
-    // è batteria sprecata. Riparte quando torna.
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting) {
-            var p = heroVideo.play();
-            if (p && p.catch) p.catch(function () {});
-          } else if (!heroVideo.paused) {
-            heroVideo.pause();
-          }
-        });
-      }, { threshold: 0.05 }).observe(heroVideo);
-    }
-
-    // Solo quando c'è un frame reale il video può diventare visibile.
-    function markReady() { heroVideo.dataset.ready = 'true'; }
-
-    if (heroVideo.readyState >= 3) markReady();
-
-    heroVideo.addEventListener('playing', markReady);
-    heroVideo.addEventListener('timeupdate', markReady, { once: true });
-    heroVideo.addEventListener('loadeddata', function () {
-      // loadeddata garantisce solo il primo frame: controllo le dimensioni reali
-      if (heroVideo.videoWidth > 0) markReady();
-    });
-
-    heroVideo.addEventListener('error', function () {
-      heroVideo.remove(); // lascia solo la foto
-    });
-
-    // autoplay può essere rifiutato: prova una volta, se non va la foto resta
-    var attempt = heroVideo.play();
-    if (attempt && attempt.catch) attempt.catch(function () {});
-  }
-
   /* ───────────── foglio nav: burger morph + contrasto misurato ───────────── */
 
   var navToggle = document.getElementById('navToggle');
@@ -99,6 +56,16 @@
 
     window.addEventListener('resize', function () {
       if (sheetOpen) syncBurgerContrast();
+    });
+  }
+
+  /* ───────────── file:// fallback: le directory non risolvono index ─────────────
+     Su http le lingue usano ../xx/ (URL puliti). Su file:// il browser mostra
+     invece l'indice della cartella: aggiungi index.html solo in quel caso. */
+  if (window.location && window.location.protocol === 'file:') {
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var h = a.getAttribute('href');
+      if (h && /\/$/.test(h) && h.charAt(0) !== '#') a.setAttribute('href', h + 'index.html');
     });
   }
 

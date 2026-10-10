@@ -103,15 +103,12 @@ section{padding-block:clamp(56px,8vw,104px)}
   border-radius:var(--radius-card);overflow:hidden;
   background:var(--mare-950);min-width:0;
 }
-.hero__media img,.hero__media video{
+.hero__media img{
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-}
-.hero__media img{filter:saturate(1.05) contrast(1.04)}
-.hero__media video{
-  opacity:0;transition:opacity .7s var(--ease);
   filter:saturate(1.05) contrast(1.04);
+  animation:kenburns 24s var(--ease) both;
 }
-.hero__media video[data-ready="true"]{opacity:1}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.08)}}
 .hero__media::after{
   content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,0) 38%);
@@ -307,11 +304,8 @@ section{padding-block:clamp(56px,8vw,104px)}
 
 .anim{animation:fade-up .82s var(--ease-out) backwards;animation-delay:calc(var(--d,0) * var(--stagger))}
 .hero__media.anim{animation-name:media-in;animation-duration:1.05s}
-.hero__media video.anim{animation:none}
-.hero__video.anim{animation-name:video-in;animation-duration:1.35s}
 @keyframes fade-up{from{opacity:0;transform:translate3d(0,18px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
 @keyframes media-in{from{opacity:0;transform:translate3d(28px,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}
-@keyframes video-in{from{opacity:0;transform:scale(1.06)}to{opacity:1;transform:scale(1)}}
 
 /* ───────────── RESPONSIVE HERO ───────────── */
 
@@ -522,6 +516,16 @@ section{padding-block:clamp(56px,8vw,104px)}
 .row p{color:var(--ink-soft);max-width:62ch;margin-bottom:10px}
 .row-meta{font-family:var(--fm);font-size:.74rem;color:var(--fondo)}
 
+/* coda itinerari: invito a progettare l'esperienza su misura */
+.tail-cta{
+  font-family:var(--fd);font-size:clamp(1.3rem,2.6vw,1.9rem);
+  letter-spacing:-.02em;line-height:1.3;max-width:26ch;
+  margin:clamp(30px,4vw,48px) 0 0;padding-top:clamp(24px,3vw,34px);
+  border-top:2px solid var(--terracotta);
+}
+.tail-cta a{color:var(--terracotta);text-decoration:underline;text-underline-offset:4px}
+.tail-cta a:hover{color:var(--ink)}
+
 /* il filetto tricolore: l'unico gradiente del sito */
 .verbi{background:var(--mare-950);color:#fff}
 .verbi .row{border-color:rgba(255,255,255,.16)}
@@ -591,12 +595,6 @@ section{padding-block:clamp(56px,8vw,104px)}
 .foot-top{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:center;margin-bottom:36px}
 .foot-logo{flex:0 0 auto}
 .foot-logo img{height:clamp(44px,4.5vw,64px);width:auto;display:block}
-.foot-tag{max-width:38ch;font-size:.92rem}
-.foot-cols{display:grid;gap:26px;grid-template-columns:repeat(2,minmax(0,1fr))}
-.foot h4{
-  font-family:var(--fm);font-weight:500;font-size:.68rem;
-  letter-spacing:.14em;text-transform:uppercase;color:#8FA3A0;margin-bottom:9px;
-}
 .foot p,.foot li{font-size:.82rem;line-height:1.55}
 .foot ul{list-style:none;padding:0}
 .foot-small{
@@ -631,7 +629,6 @@ section{padding-block:clamp(56px,8vw,104px)}
   .dest-body{grid-column:1 / -1;grid-row:3}
   .dest:not(:has(.dest-img)) .dest-body{grid-column:1 / -1}
   .flavours{grid-template-columns:1fr}
-  .foot-cols{grid-template-columns:1fr}
   .row-days{margin-left:0;width:100%}
 }
 
@@ -643,9 +640,5 @@ section{padding-block:clamp(56px,8vw,104px)}
   .anim{animation:none!important;opacity:1!important}
   .rv{opacity:1;transform:none}
   .navsheet__link,.navsheet__foot{transform:none}
-}
-
-/* risparmio dati / no-video: resta la foto, senza tentativi di rete */
-@media(prefers-reduced-data:save){
-  .hero__media video{display:none}
+  .hero__media img{animation:none}
 }

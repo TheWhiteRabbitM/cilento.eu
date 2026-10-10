@@ -2,7 +2,7 @@
 
 ![GoCilento](assets/logo.png)
 
-**Guida indipendente al Cilento. Niente prenotazioni, niente commissioni, niente newsletter.**
+**Guida indipendente al Cilento. Esperienze su misura: hello@gocilento.it.**
 
 > Dove i Greci hanno costruito in pietra,
 > il mare ha risposto in grotte.

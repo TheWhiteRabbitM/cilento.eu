@@ -1,6 +1,7 @@
 # CREDITS — GoCilento
 
-Tutte le immagini sono locali in `assets/img/` e provengono da Wikimedia Commons.
+Tutte le immagini sono locali in `assets/img/`. Tranne la foto dell'hero
+(`tramonto-palinuro.jpg`, foto propria), provengono da Wikimedia Commons.
 Licenze verificate via API il 2026-10-08. Nessuna foto generica da stock:
 sono tutte foto di luogo del Cilento o delle aree immediatamente adiacenti.
 
@@ -8,7 +9,7 @@ sono tutte foto di luogo del Cilento o delle aree immediatamente adiacenti.
 
 | File locale | Origine Commons | Autore | Licenza |
 |---|---|---|---|
-| `hero.jpg` | Il sole fa centro ...Palinuro - panoramio.jpg | Mario Penner | CC BY 3.0 |
+| `tramonto-palinuro.jpg` | foto propria del gestore, scattata a Palinuro | Agos Tours Srl | uso sul sito |
 | `paestum.jpg` | Capaccio Paestum - Tempio di Nettuno.jpg | AlessioAg89 | CC BY-SA 4.0 |
 | `palinuro.jpg` | Palinuro-arco-naturale-02.JPG | Mboesch | CC BY-SA 3.0 |
 | `camerota.jpg` | Spiaggia Mingardo (Marina di Camerota) e Capo Palinuro (panoramio).jpg | Mario Penner | CC BY 3.0 |
@@ -52,10 +53,13 @@ per non spacciare una foto d'autunno per una foto d'inverno.
 fuori dal Cilento in senso stretto, ma dentro l'area del Parco e usata
 già dal sito per il settore montano.
 
-## Video
+## Hero
 
-`https://assets.mixkit.co/videos/44498/44498-1080.mp4` — Mixkit Free License.
-**Non è un video del Cilento**: è un tramonto generico. Dichiarato nel footer.
+Niente video: l'hero usa `tramonto-palinuro.jpg` (tramonto sul mare a Palinuro,
+foto propria del gestore) con un lento zoom Ken Burns. Il precedente video Mixkit — un tramonto
+generico, non del Cilento — è stato rimosso il 2026-10-10 perché non esiste
+alcun video stock libero e verificabile del Cilento (verifica su Wikimedia
+Commons, Pexels e Coverr: zero risultati utilizzabili).
 
 ## Logo
 
