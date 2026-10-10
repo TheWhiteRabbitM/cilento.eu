@@ -4,6 +4,11 @@
   "url": "https://gocilento.it/it/",
   "updated": "2026-10-10",
   "license_texts": "Testi originali del progetto; foto CC Wikimedia (vedi docs/CREDITS.md).",
+  "operator": {
+    "name": "Agos Tours Srl",
+    "address": "Strada Loichita Vasile 1-3, Timisoara, Romania",
+    "vat_id": "RO31093182"
+  },
   "meta": {
     "title": "GoCilento | Dove i Greci hanno costruito in pietra, il mare ha risposto in grotte",
     "description": "100 km di costa tra Poseidonia e Palinuro: templi dorici, grotte via mare, borghi, Parco Nazionale e Dieta Mediterranea. Venti destinazioni, quattro stagioni, tre itinerari onesti.",
@@ -487,5 +492,6 @@
       "note": "In loco: bus estivi Cilento Blu fra i borghi, barca condivisa a Palinuro/Camerota da €25. Non prenotiamo niente: orari e prezzi cambiano, verifica in porto, al museo, in stazione."
     }
   ],
-  "tagline": "Guida indipendente al Cilento. Niente prenotazioni, niente commissioni, niente newsletter."
+  "tagline": "Guida indipendente al Cilento. Niente prenotazioni, niente commissioni, niente newsletter.",
+  "legal": "Gestore del sito: Agos Tours Srl, Strada Loichita Vasile 1-3, Timisoara (Romania) · CUI RO31093182."
 }

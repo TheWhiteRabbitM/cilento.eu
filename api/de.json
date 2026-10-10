@@ -4,6 +4,11 @@
   "url": "https://gocilento.it/de/",
   "updated": "2026-10-10",
   "license_texts": "Testi originali del progetto; foto CC Wikimedia (vedi docs/CREDITS.md).",
+  "operator": {
+    "name": "Agos Tours Srl",
+    "address": "Strada Loichita Vasile 1-3, Timisoara, Romania",
+    "vat_id": "RO31093182"
+  },
   "meta": {
     "title": "GoCilento | Wo die Griechen in Stein bauten, antwortete das Meer in Höhlen",
     "description": "100 km Küste zwischen Poseidonia und Palinuro: dorische Tempel, Meereshöhlen, Dörfer, Nationalpark und mediterrane Diät. Zwanzig Reiseziele, vier Jahreszeiten, drei ehrliche Routen.",
@@ -487,5 +492,6 @@
       "note": "Vor Ort: Sommerbus Cilento Blu zwischen den Dörfern, gemeinsames Boot ab €25 in Palinuro/Camerota. Wir buchen nichts: Zeiten und Preise ändern sich, prüfe im Hafen, Museum, Bahnhof."
     }
   ],
-  "tagline": "Unabhängiger Reiseführer für den Cilento. Keine Buchungen, keine Provision, kein Newsletter."
+  "tagline": "Unabhängiger Reiseführer für den Cilento. Keine Buchungen, keine Provision, kein Newsletter.",
+  "legal": "Betreiber: Agos Tours Srl, Strada Loichita Vasile 1-3, Timisoara (Rumänien) · CUI RO31093182."
 }
