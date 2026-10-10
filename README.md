@@ -17,6 +17,9 @@ HTML + CSS + JS vanilla, nessuna build, nessun framework.
 gocilento.it/
 ├── index.html          # redirect alla lingua (x-default)
 ├── it/ · en/ · de/     # le tre pagine reali, una per lingua
+├── api/it.json · api/en.json · api/de.json  # contenuti integrali per le AI
+├── llms.txt            # indice per LLM (pagine + API + destinazioni)
+├── 404.html            # pagina non trovata trilingue
 ├── styles.css          # design system unico
 ├── app.js              # solo comportamento (menu, tab, filtri)
 ├── assets/img/         # foto locali verificate (Wikimedia Commons)
@@ -42,6 +45,18 @@ gocilento.it/
 - URL path-based: `/it/`, `/en/`, `/de/` + `x-default` su `/`.
 - `hreflang` reciproci in ogni pagina e nella sitemap, `canonical`
   autodescrittivo, `og:locale` + alternati, meta title/description tradotti.
+
+## API per LLM
+
+- `api/{it,en,de}.json`: contenuto integrale di ogni pagina (hero, fatti,
+  20 destinazioni, stagioni, verbi, itinerari, sapori, pratico, crediti),
+  generato dall'HTML con `build-api.js` (l'HTML resta l'unica fonte).
+  Riesegui il generatore dopo ogni modifica ai testi.
+- `llms.txt`: indice per LLM (pagine + API + ancore + destinazioni).
+- JSON-LD (`WebSite` + `TravelGuide` + `ItemList` di 20 `TouristDestination`)
+  iniettato in ogni pagina dallo stesso generatore.
+- `robots.txt` ammette esplicitamente i crawler AI (anche `llms.txt` e `api/`).
+- Ogni footer linka `llms.txt` e l'API della propria lingua.
 
 ## Sviluppo locale
 

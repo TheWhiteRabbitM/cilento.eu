@@ -1,0 +1,93 @@
+# GoCilento
+
+> Independent travel guide to Cilento, Campania, Italy: 20 places, 4 seasons,
+> honest itineraries, DOP flavors and how to get there. No bookings, no commissions.
+
+## Pages (human, one per language)
+
+- Italiano: https://gocilento.it/it/
+- English: https://gocilento.it/en/
+- Deutsch: https://gocilento.it/de/
+
+## API (machine-readable, full content per language)
+
+- https://gocilento.it/api/it.json
+- https://gocilento.it/api/en.json
+- https://gocilento.it/api/de.json
+
+## Destinations (IT)
+- Paestum, Poseidonia (https://gocilento.it/it/#paestum)
+- Palinuro, il nocchiero di Enea (https://gocilento.it/it/#palinuro)
+- Marina di Camerota (https://gocilento.it/it/#camerota)
+- Acciaroli + Pioppi (https://gocilento.it/it/#acciaroli)
+- Castellabate (https://gocilento.it/it/#castellabate)
+- Velia, Elea (https://gocilento.it/it/#velia)
+- Agropoli (https://gocilento.it/it/#agropoli)
+- Teggiano + Certosa di Padula (https://gocilento.it/it/#teggiano)
+- Santa Maria di Castellabate (https://gocilento.it/it/#santamaria)
+- Pioppi e il Museo Dieta Mediterranea (https://gocilento.it/it/#pioppi)
+- Scario (https://gocilento.it/it/#scario)
+- Pisciotta e la valle del Bussentino (https://gocilento.it/it/#pisciotta)
+- Monte Cervati, 1.898 m (https://gocilento.it/it/#cervati)
+- Monte Stella e Petina (https://gocilento.it/it/#montestella)
+- Budorno e le Dolomiti lucane (https://gocilento.it/it/#budorno)
+- Gole del Calore (https://gocilento.it/it/#golecalore)
+- Certosa di Padula (https://gocilento.it/it/#certosa)
+- Porto Infreschi e Velia mare (https://gocilento.it/it/#portoinfreschi)
+- Morra e Pisciotta, lo sfruttato (https://gocilento.it/it/#morra)
+- Il Cilento dei migranti (https://gocilento.it/it/#migranti)
+
+## Destinations (EN)
+- Paestum, Poseidonia (https://gocilento.it/en/#paestum)
+- Palinuro, Aeneas's helmsman (https://gocilento.it/en/#palinuro)
+- Marina di Camerota (https://gocilento.it/en/#camerota)
+- Acciaroli + Pioppi (https://gocilento.it/en/#acciaroli)
+- Castellabate (https://gocilento.it/en/#castellabate)
+- Velia, Elea (https://gocilento.it/en/#velia)
+- Agropoli (https://gocilento.it/en/#agropoli)
+- Teggiano + Certosa di Padula (https://gocilento.it/en/#teggiano)
+- Santa Maria di Castellabate (https://gocilento.it/en/#santamaria)
+- Pioppi and the Mediterranean Diet Museum (https://gocilento.it/en/#pioppi)
+- Scario (https://gocilento.it/en/#scario)
+- Pisciotta and the Bussentino valley (https://gocilento.it/en/#pisciotta)
+- Monte Cervati, 1,898 m (https://gocilento.it/en/#cervati)
+- Monte Stella and Petina (https://gocilento.it/en/#montestella)
+- Budorno and the Lucanian Dolomites (https://gocilento.it/en/#budorno)
+- Calore Gorges (https://gocilento.it/en/#golecalore)
+- Certosa di Padula (https://gocilento.it/en/#certosa)
+- Porto Infreschi and the sea at Velia (https://gocilento.it/en/#portoinfreschi)
+- Morra and Pisciotta, the worked (https://gocilento.it/en/#morra)
+- The Cilento of migrants (https://gocilento.it/en/#migranti)
+
+## Destinations (DE)
+- Paestum, Poseidonia (https://gocilento.it/de/#paestum)
+- Palinuro, der Steuermann des Aeneas (https://gocilento.it/de/#palinuro)
+- Marina di Camerota (https://gocilento.it/de/#camerota)
+- Acciaroli + Pioppi (https://gocilento.it/de/#acciaroli)
+- Castellabate (https://gocilento.it/de/#castellabate)
+- Velia, Elea (https://gocilento.it/de/#velia)
+- Agropoli (https://gocilento.it/de/#agropoli)
+- Teggiano + Certosa di Padula (https://gocilento.it/de/#teggiano)
+- Santa Maria di Castellabate (https://gocilento.it/de/#santamaria)
+- Pioppi und das Museum der mediterranen Diät (https://gocilento.it/de/#pioppi)
+- Scario (https://gocilento.it/de/#scario)
+- Pisciotta und das Bussentino-Tal (https://gocilento.it/de/#pisciotta)
+- Monte Cervati, 1.898 m (https://gocilento.it/de/#cervati)
+- Monte Stella und Petina (https://gocilento.it/de/#montestella)
+- Budorno und die lukanischen Dolomiten (https://gocilento.it/de/#budorno)
+- Calore-Schluchten (https://gocilento.it/de/#golecalore)
+- Certosa di Padula (https://gocilento.it/de/#certosa)
+- Porto Infreschi und das Meer bei Velia (https://gocilento.it/de/#portoinfreschi)
+- Morra und Pisciotta, die Ausgebeuteten (https://gocilento.it/de/#morra)
+- Der Cilento der Migranten (https://gocilento.it/de/#migranti)
+
+## Sections (anchors work on every language page)
+
+- #destinazioni #stagioni #esperienze #itinerari #sapori #arrivare #cifre
+
+## License and credits
+
+Texts are original to this project. Photos: Wikimedia Commons, CC BY / CC BY-SA /
+public domain; exact authors in docs/CREDITS.md. Six destinations have no photo
+(they do not exist on Commons): the site says so instead of using stock images.
+Hero video: Mixkit (generic sunset, declared).

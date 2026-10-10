@@ -51,8 +51,21 @@ Contesto: il brief ha imposto la grammatica di interazione Halden. Scelta: mecca
 ### ADR-005: multilingua path-based (IT/EN/DE)
 Contesto: il sito deve essere SEO-friendly in 3 lingue. Scelta: path-based (`/it/`, `/en/`, `/de/`) con `hreflang` e `x-default`. Alternative: sottodomini (`en.gocilento.it`) — scartato (costi DNS, certificati, duplicazione). Query string (`?lang=en`) — scartato (SEO debole, non indicizzabile separatamente). Conseguenze: +SEO ottimale, +condivisione URL, −routing server-side richiesto (risolto con rewrite rules o hosting statico con fallback).
 
-### ADR-006: contenuti in JSON esterni
-Contesto: 3 lingue × 8 destinazioni + sezioni = molte stringhe. Scelta: file `i18n/{it,en,de}.json` caricati dinamicamente. Alternative: duplicare l'HTML per lingua — scartato (manutenibilità disastrosa, 3× bug). Conseguenze: +manutenibile, +scalabile, −richiede JS per il rendering (mitigato con fallback server-side o build-time).
+### ADR-006: contenuti in JSON esterni — SUPERATA
+Contesto (2026-10-08): si valutavano file `i18n/*.json` caricati via JS.
+Superata: scelta finale = tre pagine HTML reali (`it/`, `en/`, `de/`), contenuto
+nel markup, JS solo per comportamento. La cartella `i18n/` è stata eliminata:
+era orfana (niente la caricava), ferma a 8 destinazioni e al vecchio brand.
+Al suo posto: `api/*.json` generati dall'HTML (ADR-008), non il contrario.
+
+### ADR-008: API per LLM generate dall'HTML
+Contesto: gli LLM devono leggere e citare i contenuti in tutte le lingue.
+Scelta: `api/{it,en,de}.json` + `llms.txt` + JSON-LD (`WebSite`, `TravelGuide`,
+`ItemList` di 20 `TouristDestination`), tutti generati dall'HTML con
+`build-api.js`. L'HTML resta l'unica fonte di verità; i JSON non si
+modificano a mano. `robots.txt` ammette esplicitamente i crawler AI.
+Conseguenze: +contenuti citabili e verificabili, +nessuna deriva tra formati,
+−rigenerare dopo ogni modifica ai testi.
 
 ### ADR-007: wordmark senza .eu
 Contesto: il dominio potrebbe cambiare (.com, .it, ecc.). Scelta: wordmark `cilent` + o-arco, niente suffisso. Conseguenze: logo riusabile su qualsiasi dominio.
@@ -61,22 +74,26 @@ Contesto: il dominio potrebbe cambiare (.com, .it, ecc.). Scelta: wordmark `cile
 
 ```
 gocilento.it/
-  index.html              — template unico, legge ?lang= o path
+  index.html              — redirect alla lingua (x-default)
+  it/index.html           — pagina IT completa nel markup
+  en/index.html           — pagina EN completa nel markup
+  de/index.html           — pagina DE completa nel markup
+  api/it.json …           — generati dall'HTML (ADR-008), mai a mano
+  llms.txt                — indice per LLM
+  404.html                — pagina non trovata trilingue
   styles.css              — design system
-  app.js                  — rendering + routing + i18n
-  i18n/
-    it.json               — contenuti IT (default)
-    en.json               — contenuti EN
-    de.json               — contenuti DE
+  app.js                  — solo comportamento, mai contenuti
   assets/
-    logo.svg              — emblema o-arco
-    favicon.svg           — favicon
+    logo.png (+ .webp)    — marchio CILENTO illustrato
+    favicon.png, favicon-32.png, apple-touch-icon.png — dalla O del logo
+    img/                  — foto locali verificate
   docs/
     ARCHITECTURE.md
     DESIGN.md
     ORIGINALITY.md
-  _redirects              — hosting statico: /it → /?lang=it, /en → /?lang=en, /de → /?lang=de
+    CREDITS.md
   sitemap.xml             — sitemap multilingua con hreflang
+  robots.txt              — crawler AI ammessi + sitemap
 ```
 
 ## 5. SEO multilingua

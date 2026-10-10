@@ -125,8 +125,10 @@
 
       if (empty) empty.hidden = shown !== 0;
       if (status) {
+        var one = status.getAttribute('data-one') || 'luogo';
+        var many = status.getAttribute('data-many') || 'luoghi';
         status.textContent = chip.textContent.trim() + ': ' + shown +
-          (shown === 1 ? ' luogo' : ' luoghi');
+          (shown === 1 ? ' ' + one : ' ' + many);
       }
     });
   });

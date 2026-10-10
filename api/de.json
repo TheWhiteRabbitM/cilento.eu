@@ -1,0 +1,491 @@
+{
+  "site": "GoCilento",
+  "language": "de",
+  "url": "https://gocilento.it/de/",
+  "updated": "2026-10-10",
+  "license_texts": "Testi originali del progetto; foto CC Wikimedia (vedi docs/CREDITS.md).",
+  "meta": {
+    "title": "GoCilento | Wo die Griechen in Stein bauten, antwortete das Meer in Höhlen",
+    "description": "100 km Küste zwischen Poseidonia und Palinuro: dorische Tempel, Meereshöhlen, Dörfer, Nationalpark und mediterrane Diät. Zwanzig Reiseziele, vier Jahreszeiten, drei ehrliche Routen.",
+    "canonical": "https://gocilento.it/de/"
+  },
+  "hero": {
+    "kicker": "Nationalpark, UNESCO 1998, 100 km Küste",
+    "title": "Wo die Griechen in Stein, antwortete das Meer in Höhlen.",
+    "lede": "Templi dorici che Atene non ha più, baie che si aprono solo dal mare, borghi dove Ancel Keys ha capito perché qui si vive più a lungo. Sag mir, was für ein Reisender du bist. Ich sage dir, welches Cilento deins ist.",
+    "cta": "Wähle deine Küste",
+    "arrival_note": ""
+  },
+  "facts": [
+    {
+      "value": "181.048 ha",
+      "label": "2. größter Nationalpark Italiens (Gesetz 394/91)"
+    },
+    {
+      "value": "UNESCO 1998",
+      "label": "Paestum, Velia, Certosa di Padula (whc 842)"
+    },
+    {
+      "value": "Pioppi 1962",
+      "label": "Ancel Keys, mediterrane Diät UNESCO 2010"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "paestum",
+      "url": "https://gocilento.it/de/#paestum",
+      "territory": "storia",
+      "tag": "Magna Graecia · Capaccio-Paestum",
+      "title": "Paestum, Poseidonia",
+      "description": "Um 7 Uhr morgens, zwischen Mohn und hellem Travertin, summen die drei Tempel des 6.–5. Jh. v. Chr. nur von Zikaden. Athen, so intakt, hat sie nicht mehr.",
+      "practical": "40.4239°N 15.0053°E · halber Tag + Büffel DOP",
+      "image": "https://gocilento.it/assets/img/paestum.jpg",
+      "image_alt": "Le colonne del Tempio di Nettuno a Paestum tra i papaveri",
+      "photo_available": true
+    },
+    {
+      "id": "palinuro",
+      "url": "https://gocilento.it/de/#palinuro",
+      "territory": "mare",
+      "tag": "Wildes Meer · Centola",
+      "title": "Palinuro, der Steuermann des Aeneas",
+      "description": "Natürlicher Bogen am Bug, dann Sprung im Buondormire, wo der Sand weiß knackt und der Fels nach warmem Harz riecht.",
+      "practical": "Boot um 9, Blaue Höhle vor 10",
+      "image": "https://gocilento.it/assets/img/palinuro.jpg",
+      "image_alt": "L'Arco Naturale di Palinuro sporgente sul mare azzurro",
+      "photo_available": true
+    },
+    {
+      "id": "camerota",
+      "url": "https://gocilento.it/de/#camerota",
+      "territory": "mare",
+      "tag": "Cala dopo cala · Camerota",
+      "title": "Marina di Camerota",
+      "description": "Von Lentiscelle bis Cala Bianca zählst du die Sarazentürme beim Schwimmen, mit dem Öl der jahrhundertealten Olivenbäume noch an den Händen vom Mittagessen.",
+      "practical": "Nur zu Fuß oder Kajak · Meeresschutzgebiet",
+      "image": "https://gocilento.it/assets/img/camerota.jpg",
+      "image_alt": "Spiaggia del Mingardo a Marina di Camerota vista da Capo Palinuro",
+      "photo_available": true
+    },
+    {
+      "id": "acciaroli",
+      "url": "https://gocilento.it/de/#acciaroli",
+      "territory": "borgo",
+      "tag": "Borgo lento · Pollica",
+      "title": "Acciaroli + Pioppi",
+      "description": "Abends stellt den Hafen die Motoren ab und es bleibt nur das Klirren der Gläser. Hier hörte Hemingway den Fischern zu und Keys maß Langlebigkeit mit nativem Öl.",
+      "practical": "Museum der mediterranen Diät · 5 Segel",
+      "image": "https://gocilento.it/assets/img/acciaroli.jpg",
+      "image_alt": "Il porto di Acciaroli la sera",
+      "photo_available": true
+    },
+    {
+      "id": "castellabate",
+      "url": "https://gocilento.it/de/#castellabate",
+      "territory": "borgo",
+      "tag": "Borgo sul mare · UNESCO",
+      "title": "Castellabate",
+      "description": "Vom normannischen Schloss steigst du Richtung Punta Licosa hinab zwischen gequetschtem Myrtus, und das Tyrrhenische darunter ist flaschengrün gegen weißen Kalkstein.",
+      "practical": "Meeresschutzgebiet · Belvedere bei Sonnenuntergang",
+      "image": "https://gocilento.it/assets/img/castellabate.jpg",
+      "image_alt": "Panorama di Santa Maria di Castellabate dal borgo",
+      "photo_available": true
+    },
+    {
+      "id": "velia",
+      "url": "https://gocilento.it/de/#velia",
+      "territory": "storia",
+      "tag": "Filosofia · Ascea",
+      "title": "Velia, Elea",
+      "description": "Geh die Porta Rosa entlang, den ersten griechischen Rundbogen, wo Parmenides an das Sein dachte. Unten, zehn Minuten entfernt, bringt dich Ascea Marina wieder ins Wasser.",
+      "practical": "UNESCO · ideal mit Paestum an einem Tag",
+      "image": "https://gocilento.it/assets/img/velia.jpg",
+      "image_alt": "La via di Porta Rosa a Velia",
+      "photo_available": true
+    },
+    {
+      "id": "agropoli",
+      "url": "https://gocilento.it/de/#agropoli",
+      "territory": "borgo",
+      "tag": "Tor zum Cilento · Agropoli",
+      "title": "Agropoli",
+      "description": "Steile Steinstufen, aragonesisches Schloss gegen den Wind, und bei Trentova schmeckt das Wasser nach echtem Salz nach dem Zug von Neapel. Dies ist das Tor, keine Zwischenstation.",
+      "practical": "Bahnhof · Basis ohne Mietwagen",
+      "image": "https://gocilento.it/assets/img/agropoli.jpg",
+      "image_alt": "Il castello aragonese di Agropoli visto dal basso",
+      "photo_available": true
+    },
+    {
+      "id": "teggiano",
+      "url": "https://gocilento.it/de/#teggiano",
+      "territory": "parco",
+      "tag": "Binnenpark · Vallo di Diano",
+      "title": "Teggiano + Certosa di Padula",
+      "description": "In Pertosa steigst du ins Boot in der Dunkelheit, die nach kaltem Fluss riecht, in Padula steigst du in 51.500 m² Barock aus: Stein, Höhlenwasser, Holzofenbrot.",
+      "practical": "Pertosa 16° konstant · Auto, Taschenlampe, Fleece nötig",
+      "image": "https://gocilento.it/assets/img/teggiano.jpg",
+      "image_alt": "Belvedere di Teggiano sulla valle del Vallo di Diano",
+      "photo_available": true
+    },
+    {
+      "id": "santamaria",
+      "url": "https://gocilento.it/de/#santamaria",
+      "territory": "mare",
+      "tag": "Strand · Abatese-Schloss",
+      "title": "Santa Maria di Castellabate",
+      "description": "Das ist das Castellabate, das alle kennen, und es ist nicht das Bergdorf: hier geht man hinunter zum Strand, zum Moresco, mit den Ausflugsschiffen vom Hafen. Feiner Sand, flaches Wasser, und das Schloss der Fürsten Abatese schaut auf die Bucht hinunter.",
+      "practical": "Hotel Moresco, Ausflugsschiffe · Abatese-Schloss",
+      "image": "https://gocilento.it/assets/img/santamaria.jpg",
+      "image_alt": "Santa Maria di Castellabate, Strand und Badeort",
+      "photo_available": true
+    },
+    {
+      "id": "pioppi",
+      "url": "https://gocilento.it/de/#pioppi",
+      "territory": "borgo",
+      "tag": "Das erste Fresko des Mittelmeers",
+      "title": "Pioppi und das Museum der mediterranen Diät",
+      "description": "Das lebendige Museum von Ancel Keys: kein Glaskasten, sondern das Dorf selbst, mit denselben Häusern und denselben Essgewohnheiten von 1962. Olivenöl auf dem Tisch, Fisch, Getreidebrot. Hier ist die mediterrane Diät keine Theorie: sie ist das, was du mittags isst.",
+      "practical": "Ancel Keys 1962, UNESCO 2010 · die Fünf Segel",
+      "image": "https://gocilento.it/assets/img/pioppi-litorale.jpg",
+      "image_alt": "Das Ufer von Pioppi am Meer der Fünf Segel",
+      "photo_available": true
+    },
+    {
+      "id": "scario",
+      "url": "https://gocilento.it/de/#scario",
+      "territory": "mare",
+      "tag": "Das härtere Meer · die Cardano-Höhlen",
+      "title": "Scario",
+      "description": "Der Punkt, wo sich der Cilento schließt und das Meer dunkel wird. Von hier fahren die Boote zur Blauen Höhle und zu Cala delle Vipere, den Höhlen des Cardano-Vorgebirges. Kälteres Wasser, echterer Grund, weniger Welt drumherum.",
+      "practical": "Boote zur Blauen Höhle und Cala delle Vipere",
+      "image": "https://gocilento.it/assets/img/scario.jpg",
+      "image_alt": "Der Hafen von Scario und das Meer des südlichen Cilento",
+      "photo_available": true
+    },
+    {
+      "id": "pisciotta",
+      "url": "https://gocilento.it/de/#pisciotta",
+      "territory": "borgo",
+      "tag": "Das andere Feigenkap",
+      "title": "Pisciotta und das Bussentino-Tal",
+      "description": "Das Tor zum Golf von Policastro. Hier beginnt die andere Hälfte des Cilento, die weniger fotogene und echtere Hälfte: die Menaica-Sardinen, der Hafen, und hinauf ins Bussentino-Tal die Ölmühlen und die Öldörfer.",
+      "practical": "Fischereihafen · Menaica-Sardinen, Slow Food",
+      "image": "https://gocilento.it/assets/img/pisciotta.jpg",
+      "image_alt": "Pisciotta im Zentrum des Golfs von Policastro",
+      "photo_available": true
+    },
+    {
+      "id": "cervati",
+      "url": "https://gocilento.it/de/#cervati",
+      "territory": "parco",
+      "tag": "Binnenpark · Dach des Cilento",
+      "title": "Monte Cervati, 1.898 m",
+      "description": "Der höchste Punkt des Cilento und Süditaliens. Jahrhundertealte Buchenwälder, Sterne, die man vom Meer sieht, zwei Seen und der Nebel, der bis zum Mittag bleibt. Man steigt nicht zum Fotografieren hinauf: man steigt wegen der Stille hinauf. CAI-Weg von Piano del Cranio, 2,5 Stunden ab Parkplatz.",
+      "practical": "Trekking · Jacke, Wasser, Nebel bis Mittag mitnehmen",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "montestella",
+      "url": "https://gocilento.it/de/#montestella",
+      "territory": "parco",
+      "tag": "Felseneinsiedler · Ascea",
+      "title": "Monte Stella und Petina",
+      "description": "In den Fels gehauene Einsiedlerklöster, die es seit dem Mittelalter gibt, Wälder, die atmen. Das ist die Lunge des Cilento: sauberes Wasser, Luft, die du im Sommer nie eingeatmet hast. Fast keine Besucher. Die Petina-Höhlen erreicht man nur zu Fuß.",
+      "practical": "Felseneinsiedler · Quellwasser · wenige wissen, dass es sie gibt",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "budorno",
+      "url": "https://gocilento.it/de/#budorno",
+      "territory": "parco",
+      "tag": "Lukanische Dolomiten · Basilikata",
+      "title": "Budorno und die lukanischen Dolomiten",
+      "description": "Pietrapertosa über einem erloschenen Vulkan schwebend, Castelcivita zwischen den Wänden, Pertosa, wo der Fluss im Dunkeln bei festen 16° dahinfliesst. Wasser, Kälte, Fels. Das Berg-Pendant des Cilento und der Teil, den Touristen fast immer übersehen.",
+      "practical": "Pietrapertosa, Castelcivita, Pertosa · Auto nötig",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "golecalore",
+      "url": "https://gocilento.it/de/#golecalore",
+      "territory": "parco",
+      "tag": "Casentino · Wasser und Sprünge",
+      "title": "Calore-Schluchten",
+      "description": "Die „Kuren des Cilento\": Sprünge, kleine Wasserfälle und Wasser, das kalt von der Calore-Quelle kommt. Du läufst im Wasser, natürliche Sprünge, Kastanienwälder. Keine Menschenmenge, nicht einmal im August.",
+      "practical": "Sprünge und Quellen · frisches Wasser auch im August",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "certosa",
+      "url": "https://gocilento.it/de/#certosa",
+      "territory": "parco",
+      "tag": "Barock · UNESCO",
+      "title": "Certosa di Padula",
+      "description": "51.500 m² Barock, einer der größten Klöster der Welt, in UNESCO. Treppen, die nicht enden, eine Bibliothek mit 140 alten Bänden, der Fischklosterhof. Der Besuch allein ist einen halben Tag wert und erklärt das Vallo di Diano besser als jeder Reiseführer.",
+      "practical": "UNESCO whc 842 · halber Tag · Ticket vor Ort",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "portoinfreschi",
+      "url": "https://gocilento.it/de/#portoinfreschi",
+      "territory": "mare",
+      "tag": "Kühle Küste · Mündung des Sele",
+      "title": "Porto Infreschi und das Meer bei Velia",
+      "description": "Wo der Sele ins Meer mündet, läuft die Küste kühl: frischeres Wasser, flache Böden, und der Strand, wo die Unechte Karettenkröte noch nistet. Eine wilde Ecke zwei Schritte von den Tempeln von Velia. Nichts ist gebaut, und genau darum geht es.",
+      "practical": "Seewärts der Sele-Mündung · flacher Grund · Unechte Karettenkröte",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "morra",
+      "url": "https://gocilento.it/de/#morra",
+      "territory": "borgo",
+      "tag": "Der Cilento, der arbeitet",
+      "title": "Morra und Pisciotta, die Ausgebeuteten",
+      "description": "Man kommt nicht wegen des Strands hierher, sondern wegen der Fischerei. Werften, Sardinen, Grillen und Büffelhörner. Morra ist der Industriehafen des Cilento, Pisciotta das andere Gesicht, das um vier aufwacht. Resilienz als Wirtschaft: Das Meer ist hier keine Annehmlichkeit, es ist Arbeit.",
+      "practical": "Industriehafen und Fischerei · Sardinen, Grillen, Frühstück in den Werften",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "migranti",
+      "url": "https://gocilento.it/de/#migranti",
+      "territory": "mare",
+      "tag": "Das Meer als Grenze",
+      "title": "Der Cilento der Migranten",
+      "description": "Die Cilento-Küste ist auch eine Transitroute. Bei Ispani, Roccella und Sapri beobachten die Rettungsverbände das Meer täglich, und die Küstenwache fährt die schwierigste Route im Mittelmeer. Das ist der unbequeme, aktuelle, am wenigsten erzählte Teil dieses Reiseführers: Das Meer, das wir als Schönheit beschrieben haben, war für jemanden eine Schwelle.",
+      "practical": "Ispani, Roccella, Sapri · Rettungsroute und Küstenwache",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    }
+  ],
+  "seasons": [
+    {
+      "id": "p-primavera",
+      "title": "Frühling, leere Ausgrabungen und Ginster",
+      "text": "April–Mai: 18–22°, Mohn zwischen den Tempeln, Monte-Stella-Wege ohne Hitze. Paestum und Velia morgens fast leer. Artischocken- und Erdbeerfeste.",
+      "practical": "Meer 17–19° · Archäologie, Trekking, Radfahren",
+      "image": "https://gocilento.it/assets/img/st-primavera.jpg"
+    },
+    {
+      "id": "p-estate",
+      "title": "Sommer, Morgen im Boot und Siesta im Schatten",
+      "text": "Juni–August: Buondormire-Bucht und Cala Bianca vor 10, Dörfer nach 21 Uhr. Boote und Tische buchen. Punta Licosa zu Fuß bei Sonnenuntergang, nicht um 13 Uhr.",
+      "practical": "Meer 24–27° · Höhlen, Kajak, Fischfeste",
+      "image": "https://gocilento.it/assets/img/st-estate.jpg"
+    },
+    {
+      "id": "p-autunno",
+      "title": "Herbst, neues Öl und tiefes Licht",
+      "text": "September–Oktober: der beste Monat. Wasser noch 23–25°, leere Strände, Ernte und offene Ölmühlen. Teggiano und Padula mit schönen Morgennebeln.",
+      "practical": "Meer 21–25° · Essen, Trekking, Tempelfotos",
+      "image": "https://gocilento.it/assets/img/st-autunno.jpg"
+    },
+    {
+      "id": "p-inverno",
+      "title": "Winter, Kamine und die Certosa",
+      "text": "November–März: echte Dörfer, keine Warteschlangen. Certosa di Padula, Pertosa-Höhlen (immer 16° darin), Kichererbsensuppe und Lagane. Cervati manchmal verschneit.",
+      "practical": "Meer 14–16° · Binnenraum, Höhlenforschung, Küche",
+      "image": "https://gocilento.it/assets/img/st-inverno.jpg"
+    }
+  ],
+  "verbs": [
+    {
+      "n": "01",
+      "title": "In den Höhlen schwimmen",
+      "text": "Palinuro und Camerota: Bootstouren im Morgengrauen, Blaue Höhle, Bluthöhle, Bad im Buondormire. Felschuhe mitbringen.",
+      "details": [
+        "Dauer 2–3 h",
+        "Mai–Oktober, 8–11 Uhr"
+      ]
+    },
+    {
+      "n": "02",
+      "title": "Unter den Griechen wandern",
+      "text": "Paestum + Velia an einem Tag mit Audioguide und Museum. In Paestum richten sich die Säulen am 18.–19. August bei Sonnenuntergang aus.",
+      "details": [
+        "Kombikarte Paestum+Velia",
+        "Archäologische Führung empfohlen"
+      ]
+    },
+    {
+      "n": "03",
+      "title": "In den Park steigen",
+      "text": "Monte Cervati (1.898 m), Calore-Schluchten, Capelli-di-Venere-Wasserfälle, Castelcivita- und Pertosa-Höhlen. Zu Fuß oder mit E-Bike.",
+      "details": [
+        "CAI + UNESCO-Geopark",
+        "Taschenlampe und Fleece auch im August"
+      ]
+    },
+    {
+      "n": "04",
+      "title": "Langsam essen",
+      "text": "Mozzarella am selben Morgen, Menaica-Sardinen, Felitto-Fusillo, weißer Feige DOP, natives Öl. In Pioppi versteht man, warum man länger lebt.",
+      "details": [
+        "Slow-Food-Presidien",
+        "Ferienhöfe im Park"
+      ]
+    }
+  ],
+  "itineraries": [
+    {
+      "n": "01",
+      "title": "Essenzielle Magna Graecia",
+      "days": "3 giorni",
+      "steps": [
+        "Neapel → Paestum (Museum + Tempel bei Sonnenuntergang), Nacht in Agropoli. Büffel in Capaccio.",
+        "Velia am Morgen + Ascea Marina am Nachmittag. Abend in Acciaroli.",
+        "Pioppi (mediterrane Diät) + Castellabate, Rückkehr ab Agropoli FS."
+      ],
+      "practical": "Auto oder Zug+Bus · 180 km gesamt"
+    },
+    {
+      "n": "02",
+      "title": "Wilde Küste mit dem Boot",
+      "days": "5 giorni",
+      "steps": [
+        "Basis in Palinuro: Höhlen mit dem Boot, Buondormire, Primula bei Sonnenuntergang.",
+        "Marina di Camerota: Infreschi mit dem Kajak, Cala Bianca. Abend in Pisciotta.",
+        "Scario + Blaue Höhle, Abendessen mit Menaica-Sardinen."
+      ],
+      "practical": "Boot am Vortag buchen · Felschuhe"
+    },
+    {
+      "n": "03",
+      "title": "Kompletter Park",
+      "days": "7 giorni",
+      "steps": [
+        "Wie „Wilde Küste“.",
+        "Pertosa (Boot in der Höhle) + Teggiano.",
+        "Certosa di Padula + Capelli di Venere.",
+        "Cervati oder Calore-Schluchten + Paestum zum Abschluss."
+      ],
+      "practical": "Auto nötig · Binnenstraßen langsam, und schön"
+    }
+  ],
+  "flavors": [
+    {
+      "title": "Mozzarella di Bufala DOP",
+      "text": "Molkereien in Capaccio-Paestum. Innerhalb von 6 Stunden essen, noch warm."
+    },
+    {
+      "title": "Menaica-Sardinen",
+      "text": "Pisciotta, gefangen mit dem Netz, das auswählt. Slow-Food-Presidium."
+    },
+    {
+      "title": "Felitto-Fusillo",
+      "text": "Pasta auf dem Messingdraht gezogen, Bergfleischsoßen. Lagane und Kichererbsen dazu."
+    },
+    {
+      "title": "Weiße Feige des Cilento DOP",
+      "text": "Oktober: offene Ölmühlen, Holzofenbrot, Oliven in neuem Öl."
+    },
+    {
+      "title": "Aglianico und Fiano del Cilento DOC",
+      "text": "Weingüter zwischen Rutino, Agropoli und San Mauro. Vulkanische Böden, wenige Abfüller."
+    },
+    {
+      "title": "Caciocavallo von Stigliano",
+      "text": "Der Ballen 8 Monate im Holz gereift. Gefolgt von der Peperoni crusco."
+    }
+  ],
+  "practical": [
+    {
+      "title": "Mit dem Flugzeug, Salerno QSR",
+      "text": [
+        "Der Flughafen Costa d'Amalfi und Cilento liegt in Pontecagnano, 40′ von Paestum. Saisonstrecken ändern sich: prüfe auf der Website der Airline."
+      ],
+      "timetable": [
+        {
+          "route": "Londra STN · Ryanair",
+          "status": "saisonal"
+        },
+        {
+          "route": "Parigi ORY · Vueling, Transavia",
+          "status": "aktiv"
+        },
+        {
+          "route": "Amsterdam · Transavia",
+          "status": "aktiv"
+        },
+        {
+          "route": "Barcellona · Vueling",
+          "status": "aktiv"
+        },
+        {
+          "route": "Madrid · Iberia",
+          "status": "aktiv"
+        },
+        {
+          "route": "Vienna · Ryanair",
+          "status": "saisonal"
+        },
+        {
+          "route": "Bruxelles CRL · Ryanair",
+          "status": "saisonal"
+        },
+        {
+          "route": "Lione · Nantes · Volotea",
+          "status": "aktiv"
+        },
+        {
+          "route": "Düsseldorf · Stoccarda · Eurowings",
+          "status": "aktiv"
+        },
+        {
+          "route": "Dubai · flydubai",
+          "status": "aktiv"
+        }
+      ],
+      "note": "Von QSR: Airlink-Bus zum Bahnhof Salerno 30–40′ ~5 €, dann Regional. Alternative: Neapel-Capodichino + Alibus."
+    },
+    {
+      "title": "Mit dem Zug, die Tirrenische",
+      "text": [
+        "Neapel–Reggio Calabria. Der Regional Neapel–Sapri (~2h45) ist die Linie, die dich dort absetzt, wo du hinmusst."
+      ],
+      "timetable": [
+        {
+          "route": "AV fino a Salerno · Frecciarossa / Italo",
+          "status": "dann Regional"
+        },
+        {
+          "route": "Italo diretto ad Agropoli · da Napoli ~1h, da Roma ~2h04",
+          "status": "aktiv"
+        },
+        {
+          "route": "InterCity Notte da Milano · arriva all'alba",
+          "status": "aktiv"
+        },
+        {
+          "route": "Vallo di Diano · kein Zug seit 1987",
+          "status": "nur Bus + Auto"
+        }
+      ],
+      "note": "Live-Zeiten auf RFI-Monitor und trenitalia.com. Sicignano-Lagonegro hat nie wieder geöffnet: für den Vallo di Diano braucht es anderes."
+    },
+    {
+      "title": "Mit dem Auto, und wann",
+      "text": [
+        "A2 Ausfahrten Battipaglia–Eboli für Paestum und Agropoli; Atena Lucana–Sala Consilina– Padula-Buonabitacolo für das Hinterland; Schnellstraße für Policastro und Sapri.",
+        "SS18 Küstenstraße: Agropoli → Palinuro sind 55 km in ~1h20, langsam und schön. Im Sommer sind die Parkplätze vor 10 Uhr voll."
+      ],
+      "timetable": [],
+      "note": "Vor Ort: Sommerbus Cilento Blu zwischen den Dörfern, gemeinsames Boot ab €25 in Palinuro/Camerota. Wir buchen nichts: Zeiten und Preise ändern sich, prüfe im Hafen, Museum, Bahnhof."
+    }
+  ],
+  "tagline": "Unabhängiger Reiseführer für den Cilento. Keine Buchungen, keine Provision, kein Newsletter."
+}

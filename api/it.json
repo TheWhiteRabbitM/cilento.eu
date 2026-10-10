@@ -1,0 +1,491 @@
+{
+  "site": "GoCilento",
+  "language": "it",
+  "url": "https://gocilento.it/it/",
+  "updated": "2026-10-10",
+  "license_texts": "Testi originali del progetto; foto CC Wikimedia (vedi docs/CREDITS.md).",
+  "meta": {
+    "title": "GoCilento | Dove i Greci hanno costruito in pietra, il mare ha risposto in grotte",
+    "description": "100 km di costa tra Poseidonia e Palinuro: templi dorici, grotte via mare, borghi, Parco Nazionale e Dieta Mediterranea. Venti destinazioni, quattro stagioni, tre itinerari onesti.",
+    "canonical": "https://gocilento.it/it/"
+  },
+  "hero": {
+    "kicker": "Parco Nazionale, UNESCO 1998, 100 km di costa",
+    "title": "Dove i Greci hanno costruito in pietra, il mare ha risposto in grotte.",
+    "lede": "Templi dorici che Atene non ha più, baie che si aprono solo dal mare, borghi dove Ancel Keys ha capito perché qui si vive più a lungo. Dimmi che viaggiatore sei. Ti dico quale Cilento è il tuo.",
+    "cta": "Scegli la tua costa",
+    "arrival_note": ""
+  },
+  "facts": [
+    {
+      "value": "181.048 ha",
+      "label": "2° Parco Nazionale d'Italia (Legge 394/91)"
+    },
+    {
+      "value": "UNESCO 1998",
+      "label": "Paestum, Velia, Certosa di Padula (whc 842)"
+    },
+    {
+      "value": "Pioppi 1962",
+      "label": "Ancel Keys, Dieta Mediterranea UNESCO 2010"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "paestum",
+      "url": "https://gocilento.it/it/#paestum",
+      "territory": "storia",
+      "tag": "Magna Grecia · Capaccio-Paestum",
+      "title": "Paestum, Poseidonia",
+      "description": "Alle 7 del mattino, tra papaveri e travertino biondo, i tre templi del VI–V sec. a.C. ronzano solo di cicale. Atene, così intatta, non ce l'ha più.",
+      "practical": "40.4239°N 15.0053°E · mezza giornata + bufala DOP",
+      "image": "https://gocilento.it/assets/img/paestum.jpg",
+      "image_alt": "Le colonne del Tempio di Nettuno a Paestum tra i papaveri",
+      "photo_available": true
+    },
+    {
+      "id": "palinuro",
+      "url": "https://gocilento.it/it/#palinuro",
+      "territory": "mare",
+      "tag": "Mare selvaggio · Centola",
+      "title": "Palinuro, il nocchiero di Enea",
+      "description": "Arco Naturale a prua, poi tuffo al Buondormire dove la sabbia scricchiola bianca e la falesia odora di resina calda.",
+      "practical": "Barca ore 9, Grotta Azzurra prima delle 10",
+      "image": "https://gocilento.it/assets/img/palinuro.jpg",
+      "image_alt": "L'Arco Naturale di Palinuro sporgente sul mare azzurro",
+      "photo_available": true
+    },
+    {
+      "id": "camerota",
+      "url": "https://gocilento.it/it/#camerota",
+      "territory": "mare",
+      "tag": "Cala dopo cala · Camerota",
+      "title": "Marina di Camerota",
+      "description": "Da Lentiscelle a Cala Bianca conti le torri saracene a nuoto, con l'olio degli ulivi centenari ancora sulle mani dal pranzo.",
+      "practical": "Solo a piedi o in canoa · Area Marina Protetta",
+      "image": "https://gocilento.it/assets/img/camerota.jpg",
+      "image_alt": "Spiaggia del Mingardo a Marina di Camerota vista da Capo Palinuro",
+      "photo_available": true
+    },
+    {
+      "id": "acciaroli",
+      "url": "https://gocilento.it/it/#acciaroli",
+      "territory": "borgo",
+      "tag": "Borgo lento · Pollica",
+      "title": "Acciaroli + Pioppi",
+      "description": "La sera il porto spegne i motori e resta il rumore dei bicchieri. Qui Hemingway ascoltava i pescatori e Keys misurava la longevità a colpi di olio EVO.",
+      "practical": "Museo Vivente Dieta Mediterranea · 5 Vele",
+      "image": "https://gocilento.it/assets/img/acciaroli.jpg",
+      "image_alt": "Il porto di Acciaroli la sera",
+      "photo_available": true
+    },
+    {
+      "id": "castellabate",
+      "url": "https://gocilento.it/it/#castellabate",
+      "territory": "borgo",
+      "tag": "Borgo sul mare · UNESCO",
+      "title": "Castellabate",
+      "description": "Dal castello normanno scendi verso Punta Licosa tra mirto pestato dai passi, e il Tirreno sotto è verde-bottiglia contro calcare bianco.",
+      "practical": "Area Marina Protetta · belvedere al tramonto",
+      "image": "https://gocilento.it/assets/img/castellabate.jpg",
+      "image_alt": "Panorama di Santa Maria di Castellabate dal borgo",
+      "photo_available": true
+    },
+    {
+      "id": "velia",
+      "url": "https://gocilento.it/it/#velia",
+      "territory": "storia",
+      "tag": "Filosofia · Ascea",
+      "title": "Velia, Elea",
+      "description": "Cammini sulla Porta Rosa, il primo arco a tutto sesto greco, dove Parmenide pensava l'essere. Sotto, a dieci minuti, Ascea Marina ti rimette i piedi in acqua.",
+      "practical": "UNESCO · ideale con Paestum in un giorno",
+      "image": "https://gocilento.it/assets/img/velia.jpg",
+      "image_alt": "La via di Porta Rosa a Velia",
+      "photo_available": true
+    },
+    {
+      "id": "agropoli",
+      "url": "https://gocilento.it/it/#agropoli",
+      "territory": "borgo",
+      "tag": "Porta del Cilento · Agropoli",
+      "title": "Agropoli",
+      "description": "Scaloni in pietra ripida, castello aragonese controvento, e a Trentova l'acqua sa di sale vero dopo il treno da Napoli. Questa è la porta, non la tappa.",
+      "practical": "Stazione FS · base senza auto a noleggio",
+      "image": "https://gocilento.it/assets/img/agropoli.jpg",
+      "image_alt": "Il castello aragonese di Agropoli visto dal basso",
+      "photo_available": true
+    },
+    {
+      "id": "teggiano",
+      "url": "https://gocilento.it/it/#teggiano",
+      "territory": "parco",
+      "tag": "Parco interno · Vallo di Diano",
+      "title": "Teggiano + Certosa di Padula",
+      "description": "A Pertosa entri in barca nel buio che odora di fiume freddo, a Padula esci in 51.500 m² di barocco: pietra, acqua di grotta, pane cotto a legna.",
+      "practical": "Pertosa 16° fissi · serve auto, torcia, felpa",
+      "image": "https://gocilento.it/assets/img/teggiano.jpg",
+      "image_alt": "Belvedere di Teggiano sulla valle del Vallo di Diano",
+      "photo_available": true
+    },
+    {
+      "id": "santamaria",
+      "url": "https://gocilento.it/it/#santamaria",
+      "territory": "mare",
+      "tag": "Bagni · Castello Abatese",
+      "title": "Santa Maria di Castellabate",
+      "description": "È la Castellabate che tutti conoscono, e non è il borgo: qui scende la gente in spiaggia, al Moresco, con le navi turistiche dal porto. Sabbia fine, acqua bassa, e un castello dei principi Abatese che guarda giù sulla baia.",
+      "practical": "Hotel Moresco, navi turistiche · castello Abatese",
+      "image": "https://gocilento.it/assets/img/santamaria.jpg",
+      "image_alt": "Santa Maria di Castellabate, bagni sul mare",
+      "photo_available": true
+    },
+    {
+      "id": "pioppi",
+      "url": "https://gocilento.it/it/#pioppi",
+      "territory": "borgo",
+      "tag": "Il primo affresco del Mediterraneo",
+      "title": "Pioppi e il Museo Dieta Mediterranea",
+      "description": "Il museo Vivente Ancel Keys: non una teca di vetro, ma il borgo stesso con le stesse case e le stesse abitudini alimentari del 1962. Olio a tavola, pesce, pane di cereali. Qui la Dieta Mediterranea non è una teoria: è quello che mangi a pranzo.",
+      "practical": "Ancel Keys 1962, UNESCO 2010 · le 5 Vele",
+      "image": "https://gocilento.it/assets/img/pioppi-litorale.jpg",
+      "image_alt": "Il litorale di Pioppi con il mare delle 5 Vele",
+      "photo_available": true
+    },
+    {
+      "id": "scario",
+      "url": "https://gocilento.it/it/#scario",
+      "territory": "mare",
+      "tag": "Il mare più duro · grotte del Cardano",
+      "title": "Scario",
+      "description": "Il punto dove il Cilento si chiude e il mare diventa scuro. Da qui partono le barche per la Grotta Azzurra e Cala delle Vipere, le grotte del promontorio del Cardano. Acqua più fredda, fondale più vero, meno mondo intorno.",
+      "practical": "Barche per Grotta Azzurra e Cala delle Vipere",
+      "image": "https://gocilento.it/assets/img/scario.jpg",
+      "image_alt": "Il porto di Scario e il mare del Cilento meridionale",
+      "photo_available": true
+    },
+    {
+      "id": "pisciotta",
+      "url": "https://gocilento.it/it/#pisciotta",
+      "territory": "borgo",
+      "tag": "L'altro capo di fico",
+      "title": "Pisciotta e la valle del Bussentino",
+      "description": "La porta del Golfo di Policastro. Qui comincia l'altra metà del Cilento, quella meno fotogenica e più sua: le alici di Menaica, il porto, e su per la valle del Bussentino i frantoi e i paesi dell'olio.",
+      "practical": "Porto peschereccio · alici di Menaica Slow Food",
+      "image": "https://gocilento.it/assets/img/pisciotta.jpg",
+      "image_alt": "Il centro di Pisciotta sul Golfo di Policastro",
+      "photo_available": true
+    },
+    {
+      "id": "cervati",
+      "url": "https://gocilento.it/it/#cervati",
+      "territory": "parco",
+      "tag": "Parco interno · tetto del Cilento",
+      "title": "Monte Cervati, 1.898 m",
+      "description": "Il punto più alto del Cilento e del sud Italia. Faggete secolari, stelle che si vedono dal mare, due laghi e la nebbia che resta fino a mezzogiorno. Non si sale per fotografare: si sale per il silenzio. Sentiero CAI da Piano del Cranio, ore 2,5 dal parcheggio.",
+      "practical": "Trekking · portati giacca, acqua, nebbia fino a mezzogiorno",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "montestella",
+      "url": "https://gocilento.it/it/#montestella",
+      "territory": "parco",
+      "tag": "Santuari rupestri · Ascea",
+      "title": "Monte Stella e Petina",
+      "description": "Eremi incastonati nella roccia, santuari che esistono dal Medioevo, boschi che respirano. È il polmone del Cilento: acqua pulita, aria che non hai sentito in estate. Quasi nessun visitatore. Le grotte di Petina si raggiungono solo a piedi.",
+      "practical": "Santuari rupestri · acqua sorgiva · pochi sanno che esiste",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "budorno",
+      "url": "https://gocilento.it/it/#budorno",
+      "territory": "parco",
+      "tag": "Dolomiti lucane · Basilicata",
+      "title": "Budorno e le Dolomiti lucane",
+      "description": "Pietrapertosa sospesa su un vulcano spento, Castelcivita tra le pareti, la Pertosa dove il fiume scorre al buio a 16° fissi. Acqua, freddo, roccia. Il counterpart montano del Cilento, e la parte che i turisti ignorano quasi sempre.",
+      "practical": "Pietrapertosa, Castelcivita, Pertosa · serve auto",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "golecalore",
+      "url": "https://gocilento.it/it/#golecalore",
+      "territory": "parco",
+      "tag": "Casentino · Acqua e tuffi",
+      "title": "Gole del Calore",
+      "description": "Le «terme del Cilento»: tuffi, cascatelle e acqua che arriva fredda dalla sorgente del Calore. Cammini in mezzo all'acqua, tuffi naturali, boschi di castagno. Nessuna folla, nemmeno d'agosto.",
+      "practical": "Tuffi e sorgenti · acqua fresca anche in agosto",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "certosa",
+      "url": "https://gocilento.it/it/#certosa",
+      "territory": "parco",
+      "tag": "Barocco · UNESCO",
+      "title": "Certosa di Padula",
+      "description": "51.500 m² di barocco, uno dei complessi monastici più grandi del mondo, in UNESCO. Scale che non finiscono, biblioteca con 140 volumi antichi, chiostro dei pesci. Vale la visita da sola, mezza giornata, e ti spiega il Vallo di Diano meglio di una guida.",
+      "practical": "UNESCO whc 842 · mezza giornata ·ticket sul posto",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "portoinfreschi",
+      "url": "https://gocilento.it/it/#portoinfreschi",
+      "territory": "mare",
+      "tag": "Litorale infresco · foce del Sele",
+      "title": "Porto Infreschi e Velia mare",
+      "description": "Dove il Sele incontra il mare c'è litorale infresco: acque più fresche, fondali bassi, e la spiaggia dove la tartaruga caretta depone ancora. Un angolo selvaggio a due passi dai templi di Velia. Non c'è nulla costruito, ed è il punto.",
+      "practical": "A mare della foce del Sele · fondale basso · tartaruga caretta",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "morra",
+      "url": "https://gocilento.it/it/#morra",
+      "territory": "borgo",
+      "tag": "Il Cilento che lavora",
+      "title": "Morra e Pisciotta, lo sfruttato",
+      "description": "Qui non si viene per la spiaggia: si viene per la pesca. Cantieri, alici, braci e corna di bufalo. Morra è il porto industriale del Cilento, Pisciotta l'altra faccia, quella che si sveglia alle quattro. È la resilienza come economia: il mare non è un amenità, è un lavoro.",
+      "practical": "Porto industriale e pesca · alici, braci, colazione nei cantieri",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
+      "id": "migranti",
+      "url": "https://gocilento.it/it/#migranti",
+      "territory": "mare",
+      "tag": "Il mare come frontiera",
+      "title": "Il Cilento dei migranti",
+      "description": "La costa del Cilento è anche rotta di passaggio. A Ispani, Roccella e Sapri le associazioni di soccorso monitorano il mare ogni giorno e i guardacoste fanno la più difficile rotta del Mediterraneo. È la parte scomoda, attuale e meno raccontata di questa guida: il mare che abbiamo descritto come bellezza, per qualcuno è stato una soglia.",
+      "practical": "Ispani, Roccella, Sapri · rotta soccorso e guardia costiera",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    }
+  ],
+  "seasons": [
+    {
+      "id": "p-primavera",
+      "title": "Primavera, scavi vuoti e ginestre",
+      "text": "Aprile-maggio: 18–22°, papaveri tra i templi, sentieri del Monte Stella senza caldo. Paestum e Velia quasi deserte al mattino. Sagre del carciofo e della fragola.",
+      "practical": "Mare 17–19° · archeologia, trekking, bici",
+      "image": "https://gocilento.it/assets/img/st-primavera.jpg"
+    },
+    {
+      "id": "p-estate",
+      "title": "Estate, alba in barca e siesta all'ombra",
+      "text": "Giugno-agosto: Baia del Buondormire e Cala Bianca prima delle 10, borghi dopo le 21. Prenota barche e tavoli. Punta Licosa a piedi al tramonto, non alle 13.",
+      "practical": "Mare 24–27° · grotte, canoe, sagre del pesce",
+      "image": "https://gocilento.it/assets/img/st-estate.jpg"
+    },
+    {
+      "id": "p-autunno",
+      "title": "Autunno, olio nuovo e luce bassa",
+      "text": "Settembre-ottobre: il mese migliore. Acqua ancora a 23–25°, spiagge svuotate, vendemmia e frantoi aperti. Teggiano e Padula con nebbie del mattino bellissime.",
+      "practical": "Mare 21–25° · cibo, trekking, foto ai templi",
+      "image": "https://gocilento.it/assets/img/st-autunno.jpg"
+    },
+    {
+      "id": "p-inverno",
+      "title": "Inverno, camini e Certosa",
+      "text": "Novembre-marzo: borghi veri, nessuna fila. Certosa di Padula, Grotte di Pertosa (sempre 16° dentro), zuppa di ceci e lagane. Cervati a volte innevato.",
+      "practical": "Mare 14–16° · interni, speleologia, cucina",
+      "image": "https://gocilento.it/assets/img/st-inverno.jpg"
+    }
+  ],
+  "verbs": [
+    {
+      "n": "01",
+      "title": "Nuotare nelle grotte",
+      "text": "Palinuro e Camerota: escursioni in barca all'alba, Grotta Azzurra, Grotta del Sangue, bagno al Buondormire. Porta scarpette da scoglio.",
+      "details": [
+        "Durata 2–3 h",
+        "Maggio–ottobre, ore 8–11"
+      ]
+    },
+    {
+      "n": "02",
+      "title": "Camminare tra i Greci",
+      "text": "Paestum + Velia in un giorno con audioguida e museo. A Paestum il 18–19 agosto le colonne si allineano al tramonto.",
+      "details": [
+        "Biglietto unico Paestum+Velia",
+        "Guida archeologica consigliata"
+      ]
+    },
+    {
+      "n": "03",
+      "title": "Salire nel Parco",
+      "text": "Monte Cervati (1.898 m), Gole del Calore, Cascata Capelli di Venere, Grotte di Castelcivita e Pertosa. A piedi o in e-bike.",
+      "details": [
+        "CAI + Geoparco UNESCO",
+        "Torcia e felpa anche ad agosto"
+      ]
+    },
+    {
+      "n": "04",
+      "title": "Mangiare lento",
+      "text": "Mozzarella nella stessa mattina, alici di Menaica, fusillo di Felitto, fico bianco DOP, olio EVO. A Pioppi capisci perché si vive a lungo.",
+      "details": [
+        "Presìdi Slow Food",
+        "Agriturismi del Parco"
+      ]
+    }
+  ],
+  "itineraries": [
+    {
+      "n": "01",
+      "title": "Magna Grecia essenziale",
+      "days": "3 giorni",
+      "steps": [
+        "Napoli → Paestum (museo + templi al tramonto), notte ad Agropoli. Bufala a Capaccio.",
+        "Velia al mattino + Ascea Marina al pomeriggio. Sera ad Acciaroli.",
+        "Pioppi (Dieta Mediterranea) + Castellabate, rientro da Agropoli FS."
+      ],
+      "practical": "Auto o treno+bus · 180 km totali"
+    },
+    {
+      "n": "02",
+      "title": "Costa selvaggia in barca",
+      "days": "5 giorni",
+      "steps": [
+        "Base a Palinuro: grotte in barca, Buondormire, Primula al tramonto.",
+        "Marina di Camerota: Infreschi in canoa, Cala Bianca. Sera a Pisciotta.",
+        "Scario + Grotta Azzurra, cena di alici di Menaica."
+      ],
+      "practical": "Prenota barca il giorno prima · scarpe da scoglio"
+    },
+    {
+      "n": "03",
+      "title": "Parco completo",
+      "days": "7 giorni",
+      "steps": [
+        "Come «Costa selvaggia».",
+        "Pertosa (barca in grotta) + Teggiano.",
+        "Certosa di Padula + Capelli di Venere.",
+        "Cervati o Gole del Calore + Paestum di chiusura."
+      ],
+      "practical": "Serve auto · strade interne lente, e bellissime"
+    }
+  ],
+  "flavors": [
+    {
+      "title": "Mozzarella di Bufala DOP",
+      "text": "Caseifici di Capaccio-Paestum. Mangiala entro 6 ore, ancora tiepida."
+    },
+    {
+      "title": "Alici di Menaica",
+      "text": "Pisciotta, pescate con la rete che seleziona. Presìdio Slow Food."
+    },
+    {
+      "title": "Fusillo di Felitto",
+      "text": "Pasta tirata al ferretto, sughi di carne dei monti. Lagane e ceci accanto."
+    },
+    {
+      "title": "Fico bianco del Cilento DOP",
+      "text": "Ottobre: frantoi aperti, pane cotto a legna, olive in olio nuovo."
+    },
+    {
+      "title": "Aglianico e Fiano del Cilento DOC",
+      "text": "Cantine tra Rutino, Agropoli e San Mauro. Terre vulcaniche, pochi imbottigliatori."
+    },
+    {
+      "title": "Caciocavallo di Stigliano",
+      "text": "Il peso della palla 8 mesi nel legno. Seguito dal peperone crusco."
+    }
+  ],
+  "practical": [
+    {
+      "title": "In aereo, Salerno QSR",
+      "text": [
+        "L'aeroporto Costa d'Amalfi e del Cilento è a Pontecagnano, 40′ da Paestum. Le stagionali cambiano: verifica sul sito della compagnia."
+      ],
+      "timetable": [
+        {
+          "route": "Londra STN · Ryanair",
+          "status": "stagionale"
+        },
+        {
+          "route": "Parigi ORY · Vueling, Transavia",
+          "status": "attivo"
+        },
+        {
+          "route": "Amsterdam · Transavia",
+          "status": "attivo"
+        },
+        {
+          "route": "Barcellona · Vueling",
+          "status": "attivo"
+        },
+        {
+          "route": "Madrid · Iberia",
+          "status": "attivo"
+        },
+        {
+          "route": "Vienna · Ryanair",
+          "status": "stagionale"
+        },
+        {
+          "route": "Bruxelles CRL · Ryanair",
+          "status": "stagionale"
+        },
+        {
+          "route": "Lione · Nantes · Volotea",
+          "status": "attivo"
+        },
+        {
+          "route": "Düsseldorf · Stoccarda · Eurowings",
+          "status": "attivo"
+        },
+        {
+          "route": "Dubai · flydubai",
+          "status": "attivo"
+        }
+      ],
+      "note": "Da QSR: bus Airlink verso la stazione Salerno 30–40′ ~5 €, poi Regionale. Alternativa: Napoli-Capodichino + Alibus."
+    },
+    {
+      "title": "In treno, la Tirrenica",
+      "text": [
+        "Napoli–Reggio Calabria. Il Regionale Napoli–Sapri (~2h45) è la linea che ti lascia dove serve."
+      ],
+      "timetable": [
+        {
+          "route": "AV fino a Salerno · Frecciarossa / Italo",
+          "status": "poi Regionale"
+        },
+        {
+          "route": "Italo diretto ad Agropoli · da Napoli ~1h, da Roma ~2h04",
+          "status": "attivo"
+        },
+        {
+          "route": "InterCity Notte da Milano · arriva all'alba",
+          "status": "attivo"
+        },
+        {
+          "route": "Vallo di Diano · nessun treno dal 1987",
+          "status": "solo bus + auto"
+        }
+      ],
+      "note": "Orari live su monitor RFI e trenitalia.com. La Sicignano-Lagonegro non ha mai riaperto: per il Vallo di Diano serve altro."
+    },
+    {
+      "title": "In auto, e quando",
+      "text": [
+        "A2 uscite Battipaglia–Eboli per Paestum e Agropoli; Atena Lucana–Sala Consilina–Padula-Buonabitacolo per l'interno; superstrada per Policastro e Sapri.",
+        "SS18 costiera: Agropoli → Palinuro sono 55 km in ~1h20, lenta e bellissima. In estate i parcheggi sono pieni prima delle 10."
+      ],
+      "timetable": [],
+      "note": "In loco: bus estivi Cilento Blu fra i borghi, barca condivisa a Palinuro/Camerota da €25. Non prenotiamo niente: orari e prezzi cambiano, verifica in porto, al museo, in stazione."
+    }
+  ],
+  "tagline": "Guida indipendente al Cilento. Niente prenotazioni, niente commissioni, niente newsletter."
+}

@@ -1,4 +1,33 @@
 User-agent: *
 Allow: /
 
+# Crawler AI esplicitamente ammessi: vogliamo che i contenuti
+# (anche via /llms.txt e /api/*.json) siano leggibili e citabili.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-WebIndexer
+Allow: /
+
 Sitemap: https://gocilento.it/sitemap.xml
