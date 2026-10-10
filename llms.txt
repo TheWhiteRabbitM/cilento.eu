@@ -5,9 +5,9 @@
 
 ## Pages (human, one per language)
 
-- Italiano: https://gocilento.it/it/
-- English: https://gocilento.it/en/
-- Deutsch: https://gocilento.it/de/
+- Italiano: https://gocilento.it/it/ · note legali: https://gocilento.it/it/impressum.html
+- English: https://gocilento.it/en/ · legal notice: https://gocilento.it/en/impressum.html
+- Deutsch: https://gocilento.it/de/ · Impressum: https://gocilento.it/de/impressum.html
 
 ## API (machine-readable, full content per language)
 

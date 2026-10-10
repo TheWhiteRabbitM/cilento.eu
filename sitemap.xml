@@ -7,6 +7,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/"/>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,6 +17,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/"/>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -25,7 +27,38 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/"/>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gocilento.it/it/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gocilento.it/it/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/it/impressum.html"/>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://gocilento.it/en/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gocilento.it/it/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/it/impressum.html"/>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://gocilento.it/de/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gocilento.it/it/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gocilento.it/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gocilento.it/de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gocilento.it/it/impressum.html"/>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
