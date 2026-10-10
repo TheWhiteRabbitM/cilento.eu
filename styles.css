@@ -526,6 +526,18 @@ section{padding-block:clamp(56px,8vw,104px)}
 .tail-cta a{color:var(--terracotta);text-decoration:underline;text-underline-offset:4px}
 .tail-cta a:hover{color:var(--ink)}
 
+/* ───────────── TRADE ───────────── */
+.trade .wrap{max-width:68ch}
+.trade .h-sub{font-size:1.3rem;margin-top:44px}
+.trade .kicker a{text-decoration:none;color:inherit}
+.trade-fig{margin:clamp(24px,4vh,44px) 0 0}
+.trade-fig img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
+.trade-fig figcaption{font-family:var(--fm);font-size:.72rem;color:var(--ink-soft);margin-top:10px}
+.row--media .row-media{display:grid;grid-template-columns:230px minmax(0,1fr);gap:20px;align-items:start;margin-top:4px}
+.row--media .row-media img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.row--media .row-media p{margin-bottom:0}
+@media(max-width:760px){.row--media .row-media{grid-template-columns:1fr}.row--media .row-media img{aspect-ratio:16/10}}
+
 /* il filetto tricolore: l'unico gradiente del sito */
 .verbi{background:var(--mare-950);color:#fff}
 .verbi .row{border-color:rgba(255,255,255,.16)}
