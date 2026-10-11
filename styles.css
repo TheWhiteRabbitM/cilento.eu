@@ -32,6 +32,7 @@
   --gut:24px;
   --maxw:1180px;
   --pad:clamp(20px,2.2vw,34px);
+  --oro-chiaro:#E9C46A;
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -115,19 +116,6 @@ section{padding-block:clamp(56px,8vw,104px)}
   pointer-events:none;
 }
 
-/* pill angolo: info arrivi vere, non social inventati */
-.pill{
-  position:absolute;right:0;bottom:0;z-index:3;
-  display:flex;align-items:center;gap:12px;
-  background:#fff;color:var(--ink);text-decoration:none;
-  padding:clamp(14px,1.5vw,24px) clamp(20px,2.2vw,38px);
-  border-top-left-radius:36px;border-bottom-right-radius:var(--radius-card);
-  transition:background .25s ease;
-}
-.pill:hover{background:var(--paper-2)}
-.pill__txt{font-family:var(--fm);font-size:clamp(13px,.95vw,15px);font-weight:500;white-space:nowrap}
-.pill__arrow{width:20px;height:20px;flex:0 0 auto;color:var(--terracotta)}
-
 /* colonna sinistra */
 .hero__left{
   position:relative;order:1;display:flex;flex-direction:column;min-width:0;
@@ -197,19 +185,6 @@ section{padding-block:clamp(56px,8vw,104px)}
   margin:clamp(22px,3.2vh,42px) 0 0;max-width:47ch;color:var(--ink-soft);
   font-size:clamp(14px,1.02vw,17px);line-height:1.95;
 }
-.cta{
-  display:inline-flex;align-items:center;gap:clamp(14px,1.5vw,24px);
-  margin-top:clamp(28px,5vh,66px);text-decoration:none;color:inherit;
-}
-.cta__label{font-size:clamp(15px,1.1vw,19px);font-weight:500}
-.cta__icon{
-  width:clamp(44px,3.6vw,58px);height:clamp(44px,3.6vw,58px);
-  border-radius:50%;border:1.5px solid rgba(28,36,32,.55);
-  display:grid;place-items:center;flex:0 0 auto;
-  transition:background .25s ease,color .25s ease,transform .25s ease;
-}
-.cta__icon svg{width:44%;height:44%}
-.cta:hover .cta__icon{background:var(--mare-950);color:#fff;transform:translateX(4px)}
 
 /* lingue inline su desktop (il foglio resta solo per mobile) */
 .langs--desk{display:flex;gap:2px;flex:0 0 auto;margin-inline-start:4px;border-left:1px solid rgba(28,36,32,.12);padding-inline-start:12px}
@@ -346,16 +321,12 @@ section{padding-block:clamp(56px,8vw,104px)}
   .hero__title{font-size:clamp(2rem,9.2vw,3rem);line-height:1.14}
   .hl{color:#E8E2D2}
   .hero__text{color:rgba(255,255,255,.82);max-width:38ch;line-height:1.75;font-size:15px}
-  .cta{color:#fff;margin-top:32px}
-  .cta__icon{border-color:rgba(255,255,255,.6)}
-  .cta:hover .cta__icon{background:#fff;color:var(--ink)}
   .langs--mobile{display:flex;position:static;background:transparent;padding:0;margin-top:34px;gap:26px;border-radius:0;z-index:auto}
   .langs--mobile a{color:#fff}
 }
 @media(max-width:420px){
   .hero__title{font-size:clamp(1.8rem,8.6vw,2.4rem)}
   .hero__text{font-size:14px;line-height:1.7}
-  .cta{margin-top:26px}
   .langs--mobile{margin-top:26px}
 }
 @media(max-width:360px){
@@ -371,9 +342,6 @@ section{padding-block:clamp(56px,8vw,104px)}
   .hero__content{padding:10px 0;margin-top:auto}
   .hero__title{font-size:clamp(1.5rem,6.2vh,2.1rem);line-height:1.12}
   .hero__text{font-size:13px;line-height:1.6;max-width:56ch;margin-top:12px}
-  .cta{margin-top:16px;gap:12px}
-  .cta__icon{width:38px;height:38px}
-  .cta__label{font-size:14px}
   .langs--mobile{margin-top:16px;gap:22px}
   .navsheet__panel{padding-top:calc(var(--pad) + 64px)}
   .navsheet__link{font-size:clamp(1.15rem,4.6vh,1.5rem);padding:10px 2px}
@@ -706,7 +674,52 @@ section{padding-block:clamp(56px,8vw,104px)}
   #cifre .facts{grid-template-columns:1fr}
   #cifre dd{max-width:none}
   .flavours{grid-template-columns:1fr}
-  .row-days{margin-left:0;width:100%}
+}
+.hero__media img{transform:scale(1.08)}
+.hero__left{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;padding:var(--pad);padding-left:max(var(--pad),env(safe-area-inset-left));padding-right:max(var(--pad),env(safe-area-inset-right))}
+/* ───────────── HERO CINEMATICO: base full-bleed ─────────────
+   Vince sulle vecchie regole hero (stessa specificità, viene dopo). */
+.hero{display:block;padding:0;color:#fff;min-height:100svh;overflow:hidden;background:#040c14}
+.hero__media{position:absolute;inset:-24px;z-index:0;border-radius:0;background:#040c14;will-change:transform}
+.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,12,20,.66) 0%,rgba(4,12,20,.28) 42%,rgba(4,12,20,.86) 100%);pointer-events:none}
+.nav__links{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;padding:6px 10px;
+}
+.nav__links a{color:rgba(255,255,255,.9)}
+.nav__links a:hover{color:#fff}
+.langs--desk{border-left-color:rgba(255,255,255,.22)}
+.langs--desk a{color:rgba(255,255,255,.75)}
+.langs--desk a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.langs--desk a[aria-current="page"]{color:#fff;background:rgba(255,255,255,.14)}
+.hero__content{text-align:center;margin:0 auto;max-width:900px;padding:clamp(48px,9vh,110px) 0 0}
+.hero__kicker{color:var(--oro-chiaro)}
+.hero__title{color:#fff;font-size:clamp(40px,5.4vw,72px);line-height:1.1;letter-spacing:-.02em}
+.hl{color:var(--oro-chiaro)}
+.hero__bottom{margin-top:auto;text-align:center;padding:0 0 clamp(20px,3vh,40px);display:flex;flex-direction:column;align-items:center;gap:clamp(20px,3vh,30px)}
+.hero__text{color:rgba(255,255,255,.85);max-width:620px;font-size:15px;line-height:1.9;margin:0 auto}
+.hero__text span{color:rgba(255,255,255,.55)}
+.cta-solid{
+  display:inline-flex;align-items:center;
+  background:#fff;color:var(--ink);
+  font-size:15px;font-weight:500;text-decoration:none;
+  border-radius:999px;padding:14px 32px;
+  transition:transform .25s var(--ease),box-shadow .25s ease;
+}
+.cta-solid:hover{transform:scale(1.03);box-shadow:0 0 32px 4px rgba(255,255,255,.2);color:var(--ink)}
+.cta-solid:active{transform:scale(.97)}
+.hero__micro{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--fm);font-size:11px;font-weight:500;
+  letter-spacing:.14em;color:rgba(255,255,255,.7);margin:0;
+}
+.hero__micro svg{width:13px;height:13px}
+@media(max-width:768px){
+  .nav__links{display:none}
+  .hero__title{font-size:clamp(2rem,9.2vw,3rem)}
+  .hero__content{padding-top:clamp(40px,8vh,80px)}
 }
 
 @media(prefers-reduced-motion:reduce){
