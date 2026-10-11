@@ -466,11 +466,12 @@ section{padding-block:clamp(56px,8vw,104px)}
 /* ───────────── VETRINA: Paestum apre l'imbuto ─────────────
    Prima riga a tutta larghezza: l'esca famosa, poi il resto.
    Il numero 01 arriva da solo dal contatore (primo nel DOM). */
-.dest--lead{grid-column:1 / -1;grid-template-columns:52px minmax(0,1.05fr) minmax(0,1fr);gap:8px 30px;padding:34px 0 30px}
-.dest--lead h3{font-size:clamp(1.6rem,3vw,2.2rem)}
-.dest--lead .dest-img{aspect-ratio:16/10}
+.dest--lead{grid-column:1 / -1;grid-template-columns:52px minmax(0,1.15fr) minmax(0,.9fr);gap:4px 28px;padding:26px 0 22px}
+.dest--lead h3{font-size:clamp(1.4rem,2.4vw,1.8rem)}
+.dest--lead .dest-img{aspect-ratio:21/9}
+.dest--lead .dest-body{gap:6px}
 .dest-start{font-family:var(--fm);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--terracotta)}
-.dest-next{font-family:var(--fm);font-size:.74rem;color:var(--terracotta);margin-top:12px}
+.dest-next{font-family:var(--fm);font-size:.74rem;color:var(--terracotta);margin-top:8px}
 .dest h3{font-size:clamp(1.25rem,2.2vw,1.5rem);transition:color .18s}
 .dest:hover h3{color:var(--terracotta)}
 .dest-desc{font-size:.93rem;color:var(--ink-soft);max-width:58ch}
