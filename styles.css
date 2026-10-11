@@ -124,8 +124,15 @@ section{padding-block:clamp(56px,8vw,104px)}
 
 .nav{display:flex;align-items:center;gap:clamp(10px,1.4vw,24px);padding-top:clamp(4px,.6vw,10px)}
 .brand{display:flex;align-items:center;text-decoration:none;color:inherit;flex:0 0 auto;min-width:0}
-.brand__logo{flex:0 0 auto}
-.brand__logo img{height:clamp(30px,2.6vw,38px);width:auto;display:block}
+/* il logo ha lettere scure (O navy, L verde): sul cielo del tramonto
+   sparivano. Piastra bianca = leggibile su qualsiasi foto. */
+.brand__logo{
+  flex:0 0 auto;display:flex;align-items:center;
+  background:#fff;border-radius:999px;
+  padding:7px 15px;
+  box-shadow:0 2px 16px rgba(0,0,0,.2);
+}
+.brand__logo img{height:clamp(24px,2.1vw,29px);width:auto;display:block}
 .nav__links{
   display:flex;align-items:center;gap:clamp(10px,1.2vw,20px);
   margin:0 auto 0 clamp(8px,1vw,20px);padding:0;list-style:none;
@@ -331,7 +338,8 @@ section{padding-block:clamp(56px,8vw,104px)}
 }
 @media(max-width:360px){
   :root{--pad:16px}
-  .brand__logo img{height:30px}
+  .brand__logo{padding:5px 11px}
+  .brand__logo img{height:23px}
   .burger span{width:26px}
   .hero__text{max-width:none}
 }
@@ -393,31 +401,26 @@ section{padding-block:clamp(56px,8vw,104px)}
 .dests{display:flex;flex-direction:column;counter-reset:dest}
 .dests .dest:last-child{border-bottom:1px solid rgba(28,36,32,.12)}
 
-/* ───────────── DESTINAZIONI: card squadrate, una voce un colore ─────────────
-   Come le lettere del logo: spigoli vivi, niente radius, niente ombre.
-   Il colore del territorio fa tutto il lavoro. */
-.dests{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px);counter-reset:dest}
+/* ───────────── DESTINAZIONI: card stile Apple ─────────────
+   Superficie bianca, raggio generoso, ombra che si alza al passaggio.
+   Il colore del territorio non tinge lo sfondo: resta solo nel tag,
+   cosi le 20 voci non diventano 20 diversi colori. */
+.dests{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2.2vw,28px)}
 .dest{
-  counter-increment:dest;
-  background:var(--paper-2);
-  border-radius:0;padding:0;overflow:hidden;
+  background:#fff;
+  border-radius:22px;overflow:hidden;
   display:flex;flex-direction:column;
+  box-shadow:0 1px 2px rgba(28,36,32,.06),0 6px 18px rgba(28,36,32,.05);
+  transition:transform .35s var(--ease-out),box-shadow .35s var(--ease-out);
 }
-.dest[data-territorio="mare"]{background:color-mix(in srgb, var(--fondo) 9%, var(--paper))}
-.dest[data-territorio="storia"]{background:color-mix(in srgb, var(--tramonto) 9%, var(--paper))}
-.dest[data-territorio="borgo"]{background:color-mix(in srgb, var(--uva) 9%, var(--paper))}
-.dest[data-territorio="parco"]{background:color-mix(in srgb, var(--oliva) 10%, var(--paper))}
+.dest:hover{
+  transform:translateY(-5px);
+  box-shadow:0 2px 4px rgba(28,36,32,.06),0 18px 40px rgba(28,36,32,.12);
+}
 .dest[hidden]{display:none}
-/* contatore piccolo solo per le schede senza foto (le foto hanno il numero grande) */
-.dest::before{
-  content:counter(dest,decimal-leading-zero);
-  display:block;
-  font-family:var(--fm);font-size:.78rem;letter-spacing:.16em;
-  color:var(--ink-soft);opacity:.75;padding:16px 18px 0;
-}
-.dest-img{position:relative;aspect-ratio:16/10;overflow:hidden}
-.dest-img img{width:100%;height:100%;object-fit:cover}
-.dest-body{display:flex;flex-direction:column;gap:10px;min-width:0;padding:18px}
+.dest-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper-2)}
+.dest-img img{width:100%;height:100%;object-fit:cover;display:block}
+.dest-body{display:flex;flex-direction:column;gap:9px;min-width:0;padding:22px 22px 24px}
 
 .dest:not(:has(.dest-img)) .dest-body::after{
   content:"Foto non disponibile su Wikimedia";
@@ -425,7 +428,7 @@ section{padding-block:clamp(56px,8vw,104px)}
   font-family:var(--fm);font-size:.68rem;color:var(--ink-soft);opacity:.65;
 }
 .dest-tag{
-  font-family:var(--fm);font-size:.72rem;font-weight:500;letter-spacing:.13em;
+  font-family:var(--fm);font-size:.7rem;font-weight:500;letter-spacing:.13em;
   text-transform:uppercase;color:var(--oliva);
 }
 /* un colore del logo per territorio, come le lettere */
@@ -434,40 +437,22 @@ section{padding-block:clamp(56px,8vw,104px)}
 .dest[data-territorio="borgo"] .dest-tag{color:var(--uva)}
 .dest[data-territorio="parco"] .dest-tag{color:var(--oliva)}
 
-/* ───────────── DESTINAZIONI FOTO: scena piena ─────────────
-   Foto a tutto bordo sopra, tutto il resto sotto. Il numero grande
-   è sempre bianco sopra la foto, il titolo in tinta nel testo. */
-.dest--photo::before{display:none}
-.dest-n{
-  position:absolute;left:16px;bottom:10px;z-index:2;
-  font-family:var(--fd);font-style:italic;font-weight:600;
-  font-size:clamp(3rem,6vw,4.6rem);line-height:1;letter-spacing:-.02em;
-  color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.5);
+.dest h3{font-size:clamp(1.2rem,1.5vw,1.4rem);letter-spacing:-.015em;line-height:1.25}
+.dest-desc{font-size:.92rem;color:var(--ink-soft);max-width:60ch}
+.dest-meta{
+  font-family:var(--fm);font-size:.72rem;color:var(--ink-soft);
+  border-top:1px solid rgba(28,36,32,.1);padding-top:11px;max-width:60ch;
+  margin-top:3px;
 }
-.dest--photo h3{font-size:clamp(1.25rem,1.8vw,1.5rem)}
-.dest--photo .dest-desc{font-size:.92rem}
 
 /* ───────────── VETRINA: Paestum apre l'imbuto ─────────────
-   Stessa card delle altre, ma larga tutta la griglia e orizzontale:
-   foto a sinistra, testo a destra. Il numero 01 arriva da solo
-   dal contatore (primo nel DOM). */
-.dest--lead{grid-column:1 / -1;display:grid;grid-template-columns:1.1fr minmax(0,1fr);gap:clamp(20px,3vw,36px);align-items:center;padding:18px}
-.dest--lead::before{display:none}
-.dest--lead .dest-img{aspect-ratio:16/10}
-.dest--lead .dest-body{padding:10px 10px 10px 0}
-.dest.dest--lead h3{font-size:clamp(1.7rem,3.2vw,2.4rem)}
+   Stessa card, larga tutta la griglia: foto a sinistra, testo a destra. */
+.dest--lead{grid-column:1 / -1;display:grid;grid-template-columns:1.08fr minmax(0,1fr);align-items:stretch}
+.dest--lead .dest-img{aspect-ratio:auto;height:100%;min-height:320px}
+.dest--lead .dest-body{padding:clamp(26px,3.4vw,48px);justify-content:center;gap:11px}
+.dest.dest--lead h3{font-size:clamp(1.6rem,2.8vw,2.2rem)}
 .dest-start{font-family:var(--fm);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--terracotta)}
 .dest-next{font-family:var(--fm);font-size:.78rem;color:var(--terracotta);margin-top:10px}
-.dest h3{font-size:clamp(1.5rem,2.8vw,2.1rem);letter-spacing:-.02em}
-.dest[data-territorio="mare"] h3{color:var(--fondo)}
-.dest[data-territorio="storia"] h3{color:var(--tramonto)}
-.dest[data-territorio="borgo"] h3{color:var(--uva)}
-.dest[data-territorio="parco"] h3{color:var(--oliva)}
-.dest-desc{font-size:.95rem;color:var(--ink-soft);max-width:60ch}
-.dest-meta{
-  font-family:var(--fm);font-size:.74rem;color:var(--ink-soft);
-  border-top:1px dashed rgba(28,36,32,.2);padding-top:10px;max-width:60ch;
-}
 
 .empty{padding:44px 0;color:var(--ink-soft)}
 .empty[hidden]{display:none}
@@ -700,7 +685,9 @@ section{padding-block:clamp(56px,8vw,104px)}
 .hero__content{text-align:center;margin:0 auto;max-width:900px;padding:clamp(48px,9vh,110px) 0 0}
 .hero__kicker{color:var(--oro-chiaro)}
 .hero__title{color:#fff;font-size:clamp(40px,5.4vw,72px);line-height:1.1;letter-spacing:-.02em}
-.hl{color:var(--oro-chiaro)}
+/* "pietra" resta bianco: la sottolineatura a scarabocchio porta il colore */
+.hl{color:#fff}
+.hl::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 Q 20 2 40 7 T 78 6 T 118 7' fill='none' stroke='%23E9C46A' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E")}
 .hero__bottom{margin-top:auto;text-align:center;padding:0 0 clamp(20px,3vh,40px);display:flex;flex-direction:column;align-items:center;gap:clamp(20px,3vh,30px)}
 .hero__text{color:rgba(255,255,255,.85);max-width:620px;font-size:15px;line-height:1.9;margin:0 auto}
 .hero__text span{color:rgba(255,255,255,.55)}
