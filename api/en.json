@@ -49,54 +49,6 @@
       "photo_available": true
     },
     {
-      "id": "palinuro",
-      "url": "https://gocilento.it/en/#palinuro",
-      "territory": "mare",
-      "tag": "Wild sea · Centola",
-      "title": "Palinuro, Aeneas's helmsman",
-      "description": "Natural Arch at the bow, then a dip at Buondormire where the sand crackles white and the cliff smells of warm resin.",
-      "practical": "Boat at 9, Blue Cave before 10",
-      "image": "https://gocilento.it/assets/img/palinuro.jpg",
-      "image_alt": "The Natural Arch of Palinuro over the blue sea",
-      "photo_available": true
-    },
-    {
-      "id": "camerota",
-      "url": "https://gocilento.it/en/#camerota",
-      "territory": "mare",
-      "tag": "Cove after cove · Camerota",
-      "title": "Marina di Camerota",
-      "description": "From Lentiscelle to Cala Bianca you count the Saracen towers by swimming, with the oil of century-old olive trees still on your hands from lunch.",
-      "practical": "Only on foot or by canoe · Marine Protected Area",
-      "image": "https://gocilento.it/assets/img/camerota.jpg",
-      "image_alt": "Mingardo beach at Marina di Camerota seen from Capo Palinuro",
-      "photo_available": true
-    },
-    {
-      "id": "acciaroli",
-      "url": "https://gocilento.it/en/#acciaroli",
-      "territory": "borgo",
-      "tag": "Slow village · Pollica",
-      "title": "Acciaroli + Pioppi",
-      "description": "In the evening the harbor turns off its engines and only the clink of glasses remains. Here Hemingway listened to fishermen and Keys measured longevity with EVO oil.",
-      "practical": "Living Museum of the Mediterranean Diet · 5 Sails",
-      "image": "https://gocilento.it/assets/img/acciaroli.jpg",
-      "image_alt": "Acciaroli harbour in the evening",
-      "photo_available": true
-    },
-    {
-      "id": "castellabate",
-      "url": "https://gocilento.it/en/#castellabate",
-      "territory": "borgo",
-      "tag": "Village by the sea · UNESCO",
-      "title": "Castellabate",
-      "description": "From the Norman castle descend toward Punta Licosa among crushed myrtle, and the Tyrrhenian below is bottle-green against white limestone.",
-      "practical": "Marine Protected Area · belvedere at sunset",
-      "image": "https://gocilento.it/assets/img/castellabate.jpg",
-      "image_alt": "Santa Maria di Castellabate seen from the village",
-      "photo_available": true
-    },
-    {
       "id": "velia",
       "url": "https://gocilento.it/en/#velia",
       "territory": "storia",
@@ -121,15 +73,39 @@
       "photo_available": true
     },
     {
-      "id": "teggiano",
-      "url": "https://gocilento.it/en/#teggiano",
-      "territory": "parco",
-      "tag": "Inland Park · Vallo di Diano",
-      "title": "Teggiano + Certosa di Padula",
-      "description": "At Pertosa you enter by boat into the dark that smells of cold river, at Padula you exit into 51,500 m² of Baroque: stone, cave water, wood-fired bread.",
-      "practical": "Pertosa 16° constant · car, torch, fleece needed",
-      "image": "https://gocilento.it/assets/img/teggiano.jpg",
-      "image_alt": "Teggiano belvedere over the Vallo di Diano valley",
+      "id": "palinuro",
+      "url": "https://gocilento.it/en/#palinuro",
+      "territory": "mare",
+      "tag": "Wild sea · Centola",
+      "title": "Palinuro, Aeneas's helmsman",
+      "description": "Natural Arch at the bow, then a dip at Buondormire where the sand crackles white and the cliff smells of warm resin.",
+      "practical": "Boat at 9, Blue Cave before 10",
+      "image": "https://gocilento.it/assets/img/palinuro.jpg",
+      "image_alt": "The Natural Arch of Palinuro over the blue sea",
+      "photo_available": true
+    },
+    {
+      "id": "camerota",
+      "url": "https://gocilento.it/en/#camerota",
+      "territory": "mare",
+      "tag": "Cove after cove · Camerota",
+      "title": "Marina di Camerota",
+      "description": "From Lentiscelle to Cala Bianca you count the Saracen towers by swimming, with the oil of century-old olive trees still on your hands from lunch.",
+      "practical": "Only on foot or by canoe · Marine Protected Area",
+      "image": "https://gocilento.it/assets/img/camerota.jpg",
+      "image_alt": "Mingardo beach at Marina di Camerota seen from Capo Palinuro",
+      "photo_available": true
+    },
+    {
+      "id": "castellabate",
+      "url": "https://gocilento.it/en/#castellabate",
+      "territory": "borgo",
+      "tag": "Village by the sea · UNESCO",
+      "title": "Castellabate",
+      "description": "From the Norman castle descend toward Punta Licosa among crushed myrtle, and the Tyrrhenian below is bottle-green against white limestone.",
+      "practical": "Marine Protected Area · belvedere at sunset",
+      "image": "https://gocilento.it/assets/img/castellabate.jpg",
+      "image_alt": "Santa Maria di Castellabate seen from the village",
       "photo_available": true
     },
     {
@@ -142,6 +118,18 @@
       "practical": "Hotel Moresco, tourist boats · Abatese Castle",
       "image": "https://gocilento.it/assets/img/santamaria.jpg",
       "image_alt": "Santa Maria di Castellabate, beach and bathing resort",
+      "photo_available": true
+    },
+    {
+      "id": "acciaroli",
+      "url": "https://gocilento.it/en/#acciaroli",
+      "territory": "borgo",
+      "tag": "Slow village · Pollica",
+      "title": "Acciaroli + Pioppi",
+      "description": "In the evening the harbor turns off its engines and only the clink of glasses remains. Here Hemingway listened to fishermen and Keys measured longevity with EVO oil.",
+      "practical": "Living Museum of the Mediterranean Diet · 5 Sails",
+      "image": "https://gocilento.it/assets/img/acciaroli.jpg",
+      "image_alt": "Acciaroli harbour in the evening",
       "photo_available": true
     },
     {
@@ -169,6 +157,18 @@
       "photo_available": true
     },
     {
+      "id": "portoinfreschi",
+      "url": "https://gocilento.it/en/#portoinfreschi",
+      "territory": "mare",
+      "tag": "Cool shore · mouth of the Sele",
+      "title": "Porto Infreschi and the sea at Velia",
+      "description": "Where the Sele meets the sea the shore runs cool: fresher water, shallow bottoms, and the beach where the loggerhead turtle still nests. A wild corner two steps from the temples of Velia. Nothing is built here, and that is the point.",
+      "practical": "Seaward of the Sele mouth · shallow bottom · loggerhead turtle",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
       "id": "pisciotta",
       "url": "https://gocilento.it/en/#pisciotta",
       "territory": "borgo",
@@ -179,6 +179,30 @@
       "image": "https://gocilento.it/assets/img/pisciotta.jpg",
       "image_alt": "Pisciotta town on the Gulf of Policastro",
       "photo_available": true
+    },
+    {
+      "id": "teggiano",
+      "url": "https://gocilento.it/en/#teggiano",
+      "territory": "parco",
+      "tag": "Inland Park · Vallo di Diano",
+      "title": "Teggiano + Certosa di Padula",
+      "description": "At Pertosa you enter by boat into the dark that smells of cold river, at Padula you exit into 51,500 m² of Baroque: stone, cave water, wood-fired bread.",
+      "practical": "Pertosa 16° constant · car, torch, fleece needed",
+      "image": "https://gocilento.it/assets/img/teggiano.jpg",
+      "image_alt": "Teggiano belvedere over the Vallo di Diano valley",
+      "photo_available": true
+    },
+    {
+      "id": "certosa",
+      "url": "https://gocilento.it/en/#certosa",
+      "territory": "parco",
+      "tag": "Baroque · UNESCO",
+      "title": "Certosa di Padula",
+      "description": "51,500 m² of Baroque, one of the largest monastic complexes in the world, in UNESCO. Stairs that never end, a library with 140 antique volumes, the cloister of the fish. Worth the visit on its own, half a day, and it explains the Vallo di Diano better than any guide.",
+      "practical": "UNESCO whc 842 · half a day · ticket on site",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
     },
     {
       "id": "cervati",
@@ -224,30 +248,6 @@
       "title": "Calore Gorges",
       "description": "The \"spas of the Cilento\": plunges, little waterfalls and water arriving cold from the Calore spring. You walk in the water, natural plunges, chestnut woods. No crowds, not even in August.",
       "practical": "Plunges and springs · fresh water even in August",
-      "image": null,
-      "image_alt": null,
-      "photo_available": false
-    },
-    {
-      "id": "certosa",
-      "url": "https://gocilento.it/en/#certosa",
-      "territory": "parco",
-      "tag": "Baroque · UNESCO",
-      "title": "Certosa di Padula",
-      "description": "51,500 m² of Baroque, one of the largest monastic complexes in the world, in UNESCO. Stairs that never end, a library with 140 antique volumes, the cloister of the fish. Worth the visit on its own, half a day, and it explains the Vallo di Diano better than any guide.",
-      "practical": "UNESCO whc 842 · half a day · ticket on site",
-      "image": null,
-      "image_alt": null,
-      "photo_available": false
-    },
-    {
-      "id": "portoinfreschi",
-      "url": "https://gocilento.it/en/#portoinfreschi",
-      "territory": "mare",
-      "tag": "Cool shore · mouth of the Sele",
-      "title": "Porto Infreschi and the sea at Velia",
-      "description": "Where the Sele meets the sea the shore runs cool: fresher water, shallow bottoms, and the beach where the loggerhead turtle still nests. A wild corner two steps from the temples of Velia. Nothing is built here, and that is the point.",
-      "practical": "Seaward of the Sele mouth · shallow bottom · loggerhead turtle",
       "image": null,
       "image_alt": null,
       "photo_available": false

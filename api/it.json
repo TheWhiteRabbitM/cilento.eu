@@ -49,54 +49,6 @@
       "photo_available": true
     },
     {
-      "id": "palinuro",
-      "url": "https://gocilento.it/it/#palinuro",
-      "territory": "mare",
-      "tag": "Mare selvaggio · Centola",
-      "title": "Palinuro, il nocchiero di Enea",
-      "description": "Arco Naturale a prua, poi tuffo al Buondormire dove la sabbia scricchiola bianca e la falesia odora di resina calda.",
-      "practical": "Barca ore 9, Grotta Azzurra prima delle 10",
-      "image": "https://gocilento.it/assets/img/palinuro.jpg",
-      "image_alt": "L'Arco Naturale di Palinuro sporgente sul mare azzurro",
-      "photo_available": true
-    },
-    {
-      "id": "camerota",
-      "url": "https://gocilento.it/it/#camerota",
-      "territory": "mare",
-      "tag": "Cala dopo cala · Camerota",
-      "title": "Marina di Camerota",
-      "description": "Da Lentiscelle a Cala Bianca conti le torri saracene a nuoto, con l'olio degli ulivi centenari ancora sulle mani dal pranzo.",
-      "practical": "Solo a piedi o in canoa · Area Marina Protetta",
-      "image": "https://gocilento.it/assets/img/camerota.jpg",
-      "image_alt": "Spiaggia del Mingardo a Marina di Camerota vista da Capo Palinuro",
-      "photo_available": true
-    },
-    {
-      "id": "acciaroli",
-      "url": "https://gocilento.it/it/#acciaroli",
-      "territory": "borgo",
-      "tag": "Borgo lento · Pollica",
-      "title": "Acciaroli + Pioppi",
-      "description": "La sera il porto spegne i motori e resta il rumore dei bicchieri. Qui Hemingway ascoltava i pescatori e Keys misurava la longevità a colpi di olio EVO.",
-      "practical": "Museo Vivente Dieta Mediterranea · 5 Vele",
-      "image": "https://gocilento.it/assets/img/acciaroli.jpg",
-      "image_alt": "Il porto di Acciaroli la sera",
-      "photo_available": true
-    },
-    {
-      "id": "castellabate",
-      "url": "https://gocilento.it/it/#castellabate",
-      "territory": "borgo",
-      "tag": "Borgo sul mare · UNESCO",
-      "title": "Castellabate",
-      "description": "Dal castello normanno scendi verso Punta Licosa tra mirto pestato dai passi, e il Tirreno sotto è verde-bottiglia contro calcare bianco.",
-      "practical": "Area Marina Protetta · belvedere al tramonto",
-      "image": "https://gocilento.it/assets/img/castellabate.jpg",
-      "image_alt": "Panorama di Santa Maria di Castellabate dal borgo",
-      "photo_available": true
-    },
-    {
       "id": "velia",
       "url": "https://gocilento.it/it/#velia",
       "territory": "storia",
@@ -121,15 +73,39 @@
       "photo_available": true
     },
     {
-      "id": "teggiano",
-      "url": "https://gocilento.it/it/#teggiano",
-      "territory": "parco",
-      "tag": "Parco interno · Vallo di Diano",
-      "title": "Teggiano + Certosa di Padula",
-      "description": "A Pertosa entri in barca nel buio che odora di fiume freddo, a Padula esci in 51.500 m² di barocco: pietra, acqua di grotta, pane cotto a legna.",
-      "practical": "Pertosa 16° fissi · serve auto, torcia, felpa",
-      "image": "https://gocilento.it/assets/img/teggiano.jpg",
-      "image_alt": "Belvedere di Teggiano sulla valle del Vallo di Diano",
+      "id": "palinuro",
+      "url": "https://gocilento.it/it/#palinuro",
+      "territory": "mare",
+      "tag": "Mare selvaggio · Centola",
+      "title": "Palinuro, il nocchiero di Enea",
+      "description": "Arco Naturale a prua, poi tuffo al Buondormire dove la sabbia scricchiola bianca e la falesia odora di resina calda.",
+      "practical": "Barca ore 9, Grotta Azzurra prima delle 10",
+      "image": "https://gocilento.it/assets/img/palinuro.jpg",
+      "image_alt": "L'Arco Naturale di Palinuro sporgente sul mare azzurro",
+      "photo_available": true
+    },
+    {
+      "id": "camerota",
+      "url": "https://gocilento.it/it/#camerota",
+      "territory": "mare",
+      "tag": "Cala dopo cala · Camerota",
+      "title": "Marina di Camerota",
+      "description": "Da Lentiscelle a Cala Bianca conti le torri saracene a nuoto, con l'olio degli ulivi centenari ancora sulle mani dal pranzo.",
+      "practical": "Solo a piedi o in canoa · Area Marina Protetta",
+      "image": "https://gocilento.it/assets/img/camerota.jpg",
+      "image_alt": "Spiaggia del Mingardo a Marina di Camerota vista da Capo Palinuro",
+      "photo_available": true
+    },
+    {
+      "id": "castellabate",
+      "url": "https://gocilento.it/it/#castellabate",
+      "territory": "borgo",
+      "tag": "Borgo sul mare · UNESCO",
+      "title": "Castellabate",
+      "description": "Dal castello normanno scendi verso Punta Licosa tra mirto pestato dai passi, e il Tirreno sotto è verde-bottiglia contro calcare bianco.",
+      "practical": "Area Marina Protetta · belvedere al tramonto",
+      "image": "https://gocilento.it/assets/img/castellabate.jpg",
+      "image_alt": "Panorama di Santa Maria di Castellabate dal borgo",
       "photo_available": true
     },
     {
@@ -142,6 +118,18 @@
       "practical": "Hotel Moresco, navi turistiche · castello Abatese",
       "image": "https://gocilento.it/assets/img/santamaria.jpg",
       "image_alt": "Santa Maria di Castellabate, bagni sul mare",
+      "photo_available": true
+    },
+    {
+      "id": "acciaroli",
+      "url": "https://gocilento.it/it/#acciaroli",
+      "territory": "borgo",
+      "tag": "Borgo lento · Pollica",
+      "title": "Acciaroli + Pioppi",
+      "description": "La sera il porto spegne i motori e resta il rumore dei bicchieri. Qui Hemingway ascoltava i pescatori e Keys misurava la longevità a colpi di olio EVO.",
+      "practical": "Museo Vivente Dieta Mediterranea · 5 Vele",
+      "image": "https://gocilento.it/assets/img/acciaroli.jpg",
+      "image_alt": "Il porto di Acciaroli la sera",
       "photo_available": true
     },
     {
@@ -169,6 +157,18 @@
       "photo_available": true
     },
     {
+      "id": "portoinfreschi",
+      "url": "https://gocilento.it/it/#portoinfreschi",
+      "territory": "mare",
+      "tag": "Litorale infresco · foce del Sele",
+      "title": "Porto Infreschi e Velia mare",
+      "description": "Dove il Sele incontra il mare c'è litorale infresco: acque più fresche, fondali bassi, e la spiaggia dove la tartaruga caretta depone ancora. Un angolo selvaggio a due passi dai templi di Velia. Non c'è nulla costruito, ed è il punto.",
+      "practical": "A mare della foce del Sele · fondale basso · tartaruga caretta",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
+    },
+    {
       "id": "pisciotta",
       "url": "https://gocilento.it/it/#pisciotta",
       "territory": "borgo",
@@ -179,6 +179,30 @@
       "image": "https://gocilento.it/assets/img/pisciotta.jpg",
       "image_alt": "Il centro di Pisciotta sul Golfo di Policastro",
       "photo_available": true
+    },
+    {
+      "id": "teggiano",
+      "url": "https://gocilento.it/it/#teggiano",
+      "territory": "parco",
+      "tag": "Parco interno · Vallo di Diano",
+      "title": "Teggiano + Certosa di Padula",
+      "description": "A Pertosa entri in barca nel buio che odora di fiume freddo, a Padula esci in 51.500 m² di barocco: pietra, acqua di grotta, pane cotto a legna.",
+      "practical": "Pertosa 16° fissi · serve auto, torcia, felpa",
+      "image": "https://gocilento.it/assets/img/teggiano.jpg",
+      "image_alt": "Belvedere di Teggiano sulla valle del Vallo di Diano",
+      "photo_available": true
+    },
+    {
+      "id": "certosa",
+      "url": "https://gocilento.it/it/#certosa",
+      "territory": "parco",
+      "tag": "Barocco · UNESCO",
+      "title": "Certosa di Padula",
+      "description": "51.500 m² di barocco, uno dei complessi monastici più grandi del mondo, in UNESCO. Scale che non finiscono, biblioteca con 140 volumi antichi, chiostro dei pesci. Vale la visita da sola, mezza giornata, e ti spiega il Vallo di Diano meglio di una guida.",
+      "practical": "UNESCO whc 842 · mezza giornata ·ticket sul posto",
+      "image": null,
+      "image_alt": null,
+      "photo_available": false
     },
     {
       "id": "cervati",
@@ -224,30 +248,6 @@
       "title": "Gole del Calore",
       "description": "Le «terme del Cilento»: tuffi, cascatelle e acqua che arriva fredda dalla sorgente del Calore. Cammini in mezzo all'acqua, tuffi naturali, boschi di castagno. Nessuna folla, nemmeno d'agosto.",
       "practical": "Tuffi e sorgenti · acqua fresca anche in agosto",
-      "image": null,
-      "image_alt": null,
-      "photo_available": false
-    },
-    {
-      "id": "certosa",
-      "url": "https://gocilento.it/it/#certosa",
-      "territory": "parco",
-      "tag": "Barocco · UNESCO",
-      "title": "Certosa di Padula",
-      "description": "51.500 m² di barocco, uno dei complessi monastici più grandi del mondo, in UNESCO. Scale che non finiscono, biblioteca con 140 volumi antichi, chiostro dei pesci. Vale la visita da sola, mezza giornata, e ti spiega il Vallo di Diano meglio di una guida.",
-      "practical": "UNESCO whc 842 · mezza giornata ·ticket sul posto",
-      "image": null,
-      "image_alt": null,
-      "photo_available": false
-    },
-    {
-      "id": "portoinfreschi",
-      "url": "https://gocilento.it/it/#portoinfreschi",
-      "territory": "mare",
-      "tag": "Litorale infresco · foce del Sele",
-      "title": "Porto Infreschi e Velia mare",
-      "description": "Dove il Sele incontra il mare c'è litorale infresco: acque più fresche, fondali bassi, e la spiaggia dove la tartaruga caretta depone ancora. Un angolo selvaggio a due passi dai templi di Velia. Non c'è nulla costruito, ed è il punto.",
-      "practical": "A mare della foce del Sele · fondale basso · tartaruga caretta",
       "image": null,
       "image_alt": null,
       "photo_available": false
