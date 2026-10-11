@@ -425,36 +425,39 @@ section{padding-block:clamp(56px,8vw,104px)}
 .dests{display:flex;flex-direction:column;counter-reset:dest}
 .dests .dest:last-child{border-bottom:1px solid rgba(28,36,32,.12)}
 
+/* ───────────── DESTINAZIONI: una voce, un colore ─────────────
+   Come le lettere del logo: ognuna il suo mondo. Niente griglie timide,
+   niente testo microscopico: foto grande, titolo pieno in tinta, fondo
+   appena tinto per territorio. */
+.dests{display:flex;flex-direction:column;gap:clamp(20px,3vw,32px);counter-reset:dest}
 .dest{
-  display:grid;grid-template-columns:52px minmax(0,1fr) 320px;
-  gap:6px 26px;align-items:start;
-  padding:30px 0;border-top:1px solid rgba(28,36,32,.12);
   counter-increment:dest;
+  border-radius:24px;padding:clamp(18px,2.6vw,28px);
+  background:var(--paper-2);
 }
+.dest[data-territorio="mare"]{background:color-mix(in srgb, var(--fondo) 9%, var(--paper))}
+.dest[data-territorio="storia"]{background:color-mix(in srgb, var(--tramonto) 9%, var(--paper))}
+.dest[data-territorio="borgo"]{background:color-mix(in srgb, var(--uva) 9%, var(--paper))}
+.dest[data-territorio="parco"]{background:color-mix(in srgb, var(--oliva) 10%, var(--paper))}
+.dest[hidden]{display:none}
+/* contatore piccolo solo per le righe senza foto (le foto hanno il numero grande) */
 .dest::before{
   content:counter(dest,decimal-leading-zero);
-  grid-column:1;grid-row:1;
-  font-family:var(--fm);font-size:.72rem;letter-spacing:.14em;
-  color:var(--terracotta);padding-top:5px;
+  display:block;
+  font-family:var(--fm);font-size:.78rem;letter-spacing:.16em;
+  color:var(--ink-soft);opacity:.75;margin-bottom:10px;
 }
-.dest[hidden]{display:none}
-
-.dest-img{
-  grid-column:3;grid-row:1;
-  aspect-ratio:4/3;overflow:hidden;border-radius:12px;background:var(--paper-2);
-}
+.dest-img{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:16px}
 .dest-img img{width:100%;height:100%;object-fit:cover}
-.dest-body{grid-column:2;grid-row:1;display:flex;flex-direction:column;gap:9px;min-width:0}
+.dest-body{display:flex;flex-direction:column;gap:10px;min-width:0;padding:20px 6px 6px}
 
-/* riga senza foto: il testo occupa anche la colonna immagine */
-.dest:not(:has(.dest-img)) .dest-body{grid-column:2 / 4;max-width:62ch}
 .dest:not(:has(.dest-img)) .dest-body::after{
   content:"Foto non disponibile su Wikimedia";
   display:block;margin-top:4px;
   font-family:var(--fm);font-size:.68rem;color:var(--ink-soft);opacity:.65;
 }
 .dest-tag{
-  font-family:var(--fm);font-size:.66rem;letter-spacing:.13em;
+  font-family:var(--fm);font-size:.72rem;font-weight:500;letter-spacing:.13em;
   text-transform:uppercase;color:var(--oliva);
 }
 /* un colore del logo per territorio, come le lettere */
@@ -467,49 +470,36 @@ section{padding-block:clamp(56px,8vw,104px)}
 .dest[data-territorio="borgo"] .dest-n{color:var(--uva)}
 .dest[data-territorio="parco"] .dest-n{color:var(--oliva)}
 
-/* ───────────── DESTINAZIONI VETRINA: foto grandi, numeri pieni ─────────────
-   Solo dove la foto esiste davvero. Alternanza automatica pari/dispari,
-   numero in tinta territorio, niente ombre finte né lift in hover. */
-.dest--photo{
-  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
-  gap:clamp(20px,3vw,40px);align-items:center;
-  padding:clamp(26px,3.4vw,40px) 0;
-  border-top:1px solid rgba(28,36,32,.12);
-}
-.dests .dest--photo:last-child{border-bottom:1px solid rgba(28,36,32,.12)}
-.dest--photo:nth-child(even) .dest-img{order:2}
+/* ───────────── DESTINAZIONI FOTO: scena piena ─────────────
+   Niente alternanza, niente lift: foto grande sopra, tutto il resto sotto.
+   Il numero grande in tinta vive sulla foto, il titolo in tinta nel testo. */
 .dest--photo::before{display:none}
-.dest--photo .dest-img{position:relative;aspect-ratio:16/10;border-radius:20px}
-.dest--photo .dest-img img{border-radius:20px}
+.dest--photo .dest-img{position:relative}
+.dest--photo .dest-img img{border-radius:16px}
 .dest-n{
-  position:absolute;left:14px;bottom:6px;z-index:2;
+  position:absolute;left:16px;bottom:10px;z-index:2;
   font-family:var(--fd);font-style:italic;font-weight:600;
-  font-size:clamp(2.6rem,4.5vw,3.8rem);line-height:1;letter-spacing:-.02em;
-  color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45);
+  font-size:clamp(3rem,6vw,4.6rem);line-height:1;letter-spacing:-.02em;
+  color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.5);
 }
-.dest--photo .dest-body{padding:0}
-.dest--photo h3{font-size:clamp(1.4rem,2.6vw,2rem)}
-.dest--photo .dest-desc{font-size:.98rem;max-width:44ch}
-@media(max-width:760px){
-  .dest--photo{grid-template-columns:1fr}
-  .dest--photo:nth-child(even) .dest-img{order:0}
-}
+.dest--photo h3{font-size:clamp(1.6rem,3vw,2.3rem)}
+.dest--photo .dest-desc{font-size:1rem;max-width:56ch}
 
 /* ───────────── VETRINA: Paestum apre l'imbuto ─────────────
-   Prima riga a tutta larghezza: l'esca famosa, poi il resto.
-   Il numero 01 arriva da solo dal contatore (primo nel DOM). */
-.dest--lead{grid-column:1 / -1;grid-template-columns:52px minmax(0,1.15fr) minmax(0,.9fr);gap:4px 28px;padding:26px 0 22px}
-.dest--lead h3{font-size:clamp(1.4rem,2.4vw,1.8rem)}
-.dest--lead .dest-img{aspect-ratio:21/9}
-.dest--lead .dest-body{gap:6px}
-.dest-start{font-family:var(--fm);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--terracotta)}
-.dest-next{font-family:var(--fm);font-size:.74rem;color:var(--terracotta);margin-top:8px}
-.dest h3{font-size:clamp(1.25rem,2.2vw,1.5rem);transition:color .18s}
-.dest:hover h3{color:var(--terracotta)}
-.dest-desc{font-size:.93rem;color:var(--ink-soft);max-width:58ch}
+   Stessa scena delle altre, ma titolo più grande. Il numero 01 arriva
+   da solo dal contatore (primo nel DOM). */
+.dest--lead h3{font-size:clamp(1.9rem,3.6vw,2.7rem)}
+.dest-start{font-family:var(--fm);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--terracotta)}
+.dest-next{font-family:var(--fm);font-size:.78rem;color:var(--terracotta);margin-top:10px}
+.dest h3{font-size:clamp(1.5rem,2.8vw,2.1rem);letter-spacing:-.02em}
+.dest[data-territorio="mare"] h3{color:var(--fondo)}
+.dest[data-territorio="storia"] h3{color:var(--tramonto)}
+.dest[data-territorio="borgo"] h3{color:var(--uva)}
+.dest[data-territorio="parco"] h3{color:var(--oliva)}
+.dest-desc{font-size:.95rem;color:var(--ink-soft);max-width:60ch}
 .dest-meta{
-  font-family:var(--fm);font-size:.72rem;color:var(--fondo);
-  border-top:1px dashed rgba(28,36,32,.18);padding-top:10px;max-width:58ch;
+  font-family:var(--fm);font-size:.74rem;color:var(--ink-soft);
+  border-top:1px dashed rgba(28,36,32,.2);padding-top:10px;max-width:60ch;
 }
 
 .empty{padding:44px 0;color:var(--ink-soft)}
@@ -705,7 +695,6 @@ section{padding-block:clamp(56px,8vw,104px)}
 /* ───────────── RESPONSIVE ───────────── */
 
 @media(max-width:1000px){
-  .dest{grid-template-columns:44px minmax(0,1fr) 240px;gap:6px 20px}
   .routes-grid{grid-template-columns:1fr}
   .panel{grid-template-columns:1fr;gap:24px}
   .panel-img{aspect-ratio:16/9}
@@ -716,11 +705,6 @@ section{padding-block:clamp(56px,8vw,104px)}
   body{font-size:16px}
   #cifre .facts{grid-template-columns:1fr}
   #cifre dd{max-width:none}
-  .dest{grid-template-columns:40px minmax(0,1fr);padding:24px 0}
-  .dest::before{grid-column:1 / -1;grid-row:1;padding-top:0}
-  .dest-img{grid-column:1 / -1;grid-row:2;aspect-ratio:16/10}
-  .dest-body{grid-column:1 / -1;grid-row:3}
-  .dest:not(:has(.dest-img)) .dest-body{grid-column:1 / -1}
   .flavours{grid-template-columns:1fr}
   .row-days{margin-left:0;width:100%}
 }
