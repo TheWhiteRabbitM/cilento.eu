@@ -41,8 +41,8 @@ riverificate in questa passata. Nessun access gap è stato colato come esito pos
 | RF-2 | **Storia / asset** | 4 URL `images.unsplash.com/photo-…` in `i18n/{it,en,de}.json` | nessun riferimento | **immagini stock hotlinked** in JSON pubblicati, poi `i18n/` cancellato | MEDIA | rimosso; **restano nella storia** |
 | RF-3 | **Asset / asset** | `styles.css:85` commento «meccanica OceanPulse, contenuti Cilento» | R10 (non disponibile) | nome di un terzo in un commento CSS pubblicato | LOW | nota di provenienza, non contenuto. Decisione del cliente |
 | RF-4 | **Struttura** | hero full-bleed + titolo serif + nav con link attivo; **0 `<form>`, 0 `<input>`, 0 `<select>`** in tutto il sito | Travellian: hero full-bleed + serif + nav underline + **barra di prenotazione a 4 campi + "Book Now"** | solo la grammatica hero/nav, che è **comune** e **permissivamente licenziata** | LOW | accettata; il dispositivo più distintivo del template **non è stato preso** |
-| RF-5 | **Testi / legal** | `it/en/de/impressum.html:128` dichiara «un video da Mixkit» | — | **dichiarazione legale falsa**: il video non esiste più nel codice | **ALTA** | **da correggere** |
-| RF-6 | **Markup** | `it/en/de/impressum.html:123` | — | `</p>` di troppo: 11 `<p>` contro 12 `</p>` | MEDIA | **da correggere** |
+| RF-5 | **Testi / legal** | `it/en/de/impressum.html:128` dichiarava «un video da Mixkit» | — | **dichiarazione legale falsa**: il video non esiste più nel codice | **ALTA** | ✅ **CORRETTO 2026-10-12**: riscritto il paragrafo Privacy in IT/EN/DE, ora dichiara solo Google Fonts e aggiunge che tutte le immagini sono locali |
+| RF-6 | **Markup** | `it/en/de/impressum.html:123` | — | `</p>` di troppo: 11 `<p>` contro 12 `</p>` | MEDIA | ✅ **CORRETTO 2026-10-12**: rimossa la chiusura orfana in tutte e tre le lingue, ora 11/11 |
 
 ### Dettaglio su RF-4 (licenza, dato oggettivo)
 
@@ -110,9 +110,9 @@ riscrivere la storia o lasciarla — è tua.
 
 ## 6. Piano di correzione, in ordine
 
-1. **Corregge `it/en/de/impressum.html`** — togliere «un video da Mixkit» dalla Privacy
-   (il video non c'è più: resta solo Google Fonts) e rimuovere il `</p>` di troppo alla
-   riga 123. *Due minuti, ma è una pagina legale pubblicata.*
+1. ~~**Corregge `it/en/de/impressum.html`**~~ — ✅ **fatto il 2026-10-12**: la Privacy ora
+   dichiara solo Google Fonts, tutte le immagini sono locali, e il `</p>` di troppo è
+   sparito. Verificato nel browser: 11/11 paragrafi, zero richieste esterne, console pulita.
 2. **Decidere sulla storia git** — riscrivere i commit che contengono il video Mixkit e
    gli URL Unsplash, oppure accettarli e registrarlo qui.
 3. **Decidere sul commento `styles.css:85`** — se non vuoi il nome di un terzo nel CSS
