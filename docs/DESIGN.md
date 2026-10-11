@@ -19,7 +19,7 @@ Pannello CTA pre-footer (btn-solid + btn-line) verso mail e Trade.
 Nomi propri mai categorie; misura non aggettivi (ore, gradi, metri); sempre un dettaglio sensoriale verificabile; mito come istruzione d'uso; onestà operativa (scarpe, auto, torcia).
 
 ## Sistema editoriale (anti-slop, rev 3)
-Tre ruoli tipo e basta: Fraunces = display, Archivo = testo, Plex Mono = dati (orari, coordinate, tag, tab). Niente pill: filtri e stagioni sono tab sottolineati. Niente card-contenitore dove basta una riga: destinazioni, verbi e itinerari sono righe con filetto, non box. Niente widget SaaS: la ricerca è un tabellone partenze marittimo con orari tipo onesti ("verifica in porto"). L'hero segue la meccanica OceanPulse adattata (media prima nel DOM, foglio nav, marker, pill arrivi): font e palette restano cilentani, gli asset sono locali e verificati, i social finti sono sostituiti dalla pill arrivi.
+Tre ruoli tipo e basta: Fraunces = display, Archivo = testo, Plex Mono = dati (orari, coordinate, tag, tab). Niente pill: filtri e stagioni sono tab sottolineati. Niente card-contenitore dove basta una riga: destinazioni, verbi e itinerari sono righe con filetto, non box. Niente widget SaaS: la ricerca è un tabellone partenze marittimo con orari tipo onesti ("verifica in porto"). Hero cinematico full-bleed (foto tramonto locale + Ken Burns + parallax mouse vanilla, pill di vetro, CTA bianca): font e palette restano cilentani, gli asset sono locali e verificati, niente social finti.
 
 ## Cosa abbiamo rimosso / corretto (removal test + audit coerenza)
 - Claim "più scelto" → "5 giorni · costa + barca" (informativo, non prova inventata).
