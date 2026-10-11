@@ -462,6 +462,38 @@ section{padding-block:clamp(56px,8vw,104px)}
 .dest[data-territorio="storia"] .dest-tag{color:var(--tramonto)}
 .dest[data-territorio="borgo"] .dest-tag{color:var(--uva)}
 .dest[data-territorio="parco"] .dest-tag{color:var(--oliva)}
+.dest[data-territorio="mare"] .dest-n{color:var(--fondo)}
+.dest[data-territorio="storia"] .dest-n{color:var(--tramonto)}
+.dest[data-territorio="borgo"] .dest-n{color:var(--uva)}
+.dest[data-territorio="parco"] .dest-n{color:var(--oliva)}
+
+/* ───────────── DESTINAZIONI VETRINA: foto grandi, numeri pieni ─────────────
+   Solo dove la foto esiste davvero. Alternanza automatica pari/dispari,
+   numero in tinta territorio, niente ombre finte né lift in hover. */
+.dest--photo{
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  gap:clamp(20px,3vw,40px);align-items:center;
+  padding:clamp(26px,3.4vw,40px) 0;
+  border-top:1px solid rgba(28,36,32,.12);
+}
+.dests .dest--photo:last-child{border-bottom:1px solid rgba(28,36,32,.12)}
+.dest--photo:nth-child(even) .dest-img{order:2}
+.dest--photo::before{display:none}
+.dest--photo .dest-img{position:relative;aspect-ratio:16/10;border-radius:20px}
+.dest--photo .dest-img img{border-radius:20px}
+.dest-n{
+  position:absolute;left:14px;bottom:6px;z-index:2;
+  font-family:var(--fd);font-style:italic;font-weight:600;
+  font-size:clamp(2.6rem,4.5vw,3.8rem);line-height:1;letter-spacing:-.02em;
+  color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45);
+}
+.dest--photo .dest-body{padding:0}
+.dest--photo h3{font-size:clamp(1.4rem,2.6vw,2rem)}
+.dest--photo .dest-desc{font-size:.98rem;max-width:44ch}
+@media(max-width:760px){
+  .dest--photo{grid-template-columns:1fr}
+  .dest--photo:nth-child(even) .dest-img{order:0}
+}
 
 /* ───────────── VETRINA: Paestum apre l'imbuto ─────────────
    Prima riga a tutta larghezza: l'esca famosa, poi il resto.
@@ -558,14 +590,17 @@ section{padding-block:clamp(56px,8vw,104px)}
 .verbi-fig img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:18px}
 .verbi-fig figcaption{font-family:var(--fm);font-size:.72rem;color:#A9BDB8;margin-top:10px}
 @media(max-width:900px){.verbi-grid{grid-template-columns:1fr}.verbi-fig{position:static}.verbi-fig img{aspect-ratio:16/10}}
-.panel-cta{background:var(--paper-2);border-radius:28px;padding:clamp(36px,5vw,64px) clamp(24px,4vw,56px);text-align:center}
+.panel-cta{background:var(--mare-950);color:#fff;border-radius:28px;padding:clamp(40px,6vw,72px) clamp(24px,4vw,56px);text-align:center}
+.panel-cta .kicker{color:var(--oro)}
 .panel-cta h2{font-size:clamp(1.7rem,3.4vw,2.6rem);margin-bottom:12px}
-.panel-cta p{color:var(--ink-soft);max-width:52ch;margin:0 auto 26px}
+.panel-cta p{color:#C3CFCC;max-width:52ch;margin:0 auto 26px}
 .panel-cta__btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .btn-solid{display:inline-flex;align-items:center;padding:13px 26px;border-radius:999px;background:var(--terracotta);color:#fff;font-weight:500;text-decoration:none;transition:background .2s,transform .2s var(--ease)}
 .btn-solid:hover{background:#a34c28;transform:translateY(-2px)}
 .btn-line{display:inline-flex;align-items:center;padding:13px 26px;border-radius:999px;border:1.5px solid rgba(28,36,32,.35);color:var(--ink);font-weight:500;text-decoration:none;transition:border-color .2s,color .2s}
 .btn-line:hover{border-color:var(--terracotta);color:var(--terracotta)}
+.btn-line--light{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-line--light:hover{border-color:var(--oro);color:var(--oro)}
 
 /* ───────────── TORNA IN CIMA ───────────── */
 .to-top{
