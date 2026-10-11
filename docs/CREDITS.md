@@ -71,3 +71,26 @@ sono stati rimossi su richiesta.
 `assets/favicon.svg`: originale, vettore puro.
 `assets/favicon.png` (64px), `favicon-32.png`, `apple-touch-icon.png` (180px):
 ritaglio della O col pesce da `assets/logo.png`, fondo trasparente.
+
+## Librerie di terzi (motion)
+
+Servono al sistema di movimento. Sono **vendorizzate in `assets/vendor/`**, non
+caricare da CDN: il sito dichiara nell'Impressum che l'unica richiesta verso un
+server esterno è Google Fonts, e un CDN farebbe diventare falso.
+
+| File | Libreria | Versione | Licenza | Note |
+|---|---|---|---|---|
+| `assets/vendor/gsap.min.js` | GSAP | 3.13.0 | **GreenSock Standard License** | © 2025 GreenSock, tutti i diritti riservati. **Non è open source**: uso gratuito secondo https://gsap.com/standard-license |
+| `assets/vendor/ScrollTrigger.min.js` | ScrollTrigger | 3.13.0 | **GreenSock Standard License** | idem |
+| `assets/vendor/lenis.min.js` | Lenis | 1.3.x | MIT | studio darkroom.engineering |
+| `assets/motion.js` | — | — | nostro | wiring del sistema di movimento, nessuna dipendenza |
+
+**Da rifare prima del rilascio commerciale:** la licenza standard GSAP è gratuita
+per la maggior parte dei siti, ma ha condizioni (niente uso in prodotti a pagamento,
+niente rivendita del file). Se Agos Tours dovesse vendere il sito come prodotto o
+usarlo in un contesto coperto da quelle clausole, va acquistata una licenza
+Commercial o sostituita GSAP. Lenis (MIT) non ha problemi.
+
+Nessuna di queste librerie è un bundler: sono file UMD serviti così come sono.
+Per questo **non c'è `package.json`, `node_modules` né passaggio di build**
+(vedi ADR-001 e ADR-009).

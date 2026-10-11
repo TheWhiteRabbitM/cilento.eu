@@ -100,6 +100,26 @@ gocilento.it/
 
 ## 5. SEO multilingua
 
+
+### ADR-009: motion cinematografico con librerie vendorizzate
+Contesto: il sito aveva solo keyframe CSS e IntersectionObserver. Serviva un
+linguaggio di movimento piu' ricco (testo mascherato, scroll morbido, pin,
+hover magnetici, cursore) senza abbandonare il sito statico.
+Scelta: GSAP 3.13 + ScrollTrigger + Lenis 1.3 in `assets/vendor/`, wiring
+nostro in `assets/motion.js`. Alternative scartate:
+- **Angular 17 + NgRx + signals** (`ng build`): abbatte ADR-001. Un SPA senza
+  SSR non serve HTML statico ai crawler: perdiamo URL per lingua, hreflang,
+  sitemap, JSON-LD e lo strato LLM generato dall'HTML (ADR-008). Con SSR si
+  aggiunge build, non si toglie.
+- **React/Vite/Tailwind/GSAP (spec Wanderful)**: stessa violazione, piu' asset
+  di terzi non licenziati.
+- **Motion solo con IntersectionObserver e CSS**: nessuna libreria, ma niente
+  scroll morbido ne pin, e il risultato non e' quello richiesto.
+Conseguenze: +146 KB (133 KB di librerie + 13 KB di wiring), tre richieste in
+piu' ma locali e senza CDN, nessun processo di build, nessuna dipendenza da
+installare. `prefers-reduced-motion` e l'assenza di JS lasciano la pagina
+identica a prima: verificato che senza GSAP tutte le card restano visibili.
+
 ### hreflang (in `<head>` di index.html)
 ```html
 <link rel="alternate" hreflang="it" href="https://gocilento.it/it/" />

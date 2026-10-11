@@ -95,7 +95,7 @@
 <section id="stagioni">
   <div class="wrap">
     <p class="kicker">Der Cilento schließt nicht im September</p>
-    <h2 class="h-sec">Jahreszeiten</h2>
+    <h2 data-reveal="fade-up" class="h-sec">Jahreszeiten</h2>
 
     <div class="tabs" role="tablist" aria-label="Wähle eine Jahreszeit">
       <button class="tab" role="tab" id="t-primavera" aria-controls="p-primavera" aria-selected="true"  tabindex="0">Frühling</button>
@@ -170,7 +170,7 @@
 <section id="esperienze" class="verbi on-dark">
   <div class="wrap">
     <p class="kicker">Was man hier wirklich tut</p>
-    <h2 class="h-sec">Vier cilento-Verben</h2>
+    <h2 data-reveal="fade-up" class="h-sec">Vier cilento-Verben</h2>
 
     <div class="verbi-grid">
       <div class="rows">
@@ -266,6 +266,11 @@
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
 </button>
 
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/motion.js" defer></script>
 <script src="../app.js" defer></script>
+  <div class="cursor" data-cursor aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__label" data-cursor-label></span></div>
 </body>
 </html>

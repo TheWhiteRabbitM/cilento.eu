@@ -91,7 +91,14 @@
     }
     window.addEventListener('scroll', onScrollTop, { passive: true });
     onScrollTop();
-    toTop.addEventListener('click', function () {
+    toTop.addEventListener('click', function (e) {
+      e.preventDefault();
+      // Se il motion system e' attivo, lo scroll lo governa Lenis:
+      // chiamare insieme scrollTo nativo e Lenis fa saltare la pagina.
+      if (window.__goCilentoLenis) {
+        window.__goCilentoLenis.scrollTo(0, { duration: 1.2 });
+        return;
+      }
       window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
     });
   }
@@ -155,22 +162,15 @@
     });
   });
 
-  /* ───────────── reveal on scroll ───────────── */
+  /* ───────────── reveal on scroll ─────────────
+     Le .rv le conduce GSAP in motion.js. Qui non resta piu' niente:
+     il CSS le tiene visibili per default, quindi senza librerie
+     (o senza JS) la pagina resta completa. Aggiornare ScrollTrigger
+     quando GSAP prende il comando, cosi' i trigger non sono spostati. */
 
-  var targets = document.querySelectorAll('.rv');
-  if (!reduce && 'IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) {
-          en.target.classList.add('in');
-          io.unobserve(en.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    targets.forEach(function (el) { io.observe(el); });
-  } else {
-    targets.forEach(function (el) { el.classList.add('in'); });
-  }
+  window.addEventListener('load', function () {
+    if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+  });
 
   /* ───────────── init tab in base all'hash ───────────── */
 

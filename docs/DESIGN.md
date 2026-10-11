@@ -28,3 +28,5 @@ Tre ruoli tipo e basta: Fraunces = display, Archivo = testo, Plex Mono = dati (o
 - Badge/duplicazioni: tide nascosta su mobile; hero-facts a 2 col su mobile.
 - Unico gradiente ammesso: filetto tricolore dei verbi su dark, non replicare altrove.
 - Focus-visible unico color terracotta (oro su dark); chip hover/active, btn active/disabled; aria-pressed/selected + frecce sulle stagioni.
+
+**Motion (GSAP + Lenis, vendorizzati).** Coreografia dell'hero in quest'ordine: sfondo, nav, occhiello, titolo riga per riga, testo, bottone, micro-riga. Testo che sale con maschere, stagger 0.045s sulle parole. Rivelazioni allo scroll con stagger 0.07s sulle card. Immagini: clip dal basso + parallasse a velocita' 0.14 in uscita dallo schermo. Hover magnetico su CTA e link principali, cursore custom su puntatore fine. Tempi lunghi e ease `power3/power4`: niente rimbalzi, niente scatti. Con `prefers-reduced-motion` sparisce tutto e resta una pagina ferma; senza GSAP il CSS tiene il contenuto visibile, quindi la pagina non dipende da nessuna libreria per essere leggibile.
