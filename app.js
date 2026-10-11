@@ -69,29 +69,6 @@
     });
   }
 
-  /* ───────────── parallax hero su mouse (solo pointer fine, no reduced-motion) ───────────── */
-
-  var hero = document.querySelector('.hero');
-  var heroMedia = document.querySelector('.hero__media');
-  if (hero && heroMedia && !reduce && window.matchMedia('(pointer:fine)').matches) {
-    var ptx = 0, pty = 0, pcx = 0, pcy = 0, praf = null;
-    function ploop() {
-      pcx += (ptx - pcx) * 0.06;
-      pcy += (pty - pcy) * 0.06;
-      heroMedia.style.transform = 'translate3d(' + pcx.toFixed(2) + 'px,' + pcy.toFixed(2) + 'px,0)';
-      if (Math.abs(ptx - pcx) > 0.05 || Math.abs(pty - pcy) > 0.05) {
-        praf = window.requestAnimationFrame(ploop);
-      } else {
-        praf = null;
-      }
-    }
-    hero.addEventListener('mousemove', function (e) {
-      ptx = ((e.clientX - window.innerWidth / 2) / (window.innerWidth / 2)) * 20;
-      pty = ((e.clientY - window.innerHeight / 2) / (window.innerHeight / 2)) * 20;
-      if (!praf) praf = window.requestAnimationFrame(ploop);
-    });
-  }
-
   /* ───────────── torna in cima ───────────── */
 
   var toTop = document.getElementById('toTop');

@@ -393,31 +393,31 @@ section{padding-block:clamp(56px,8vw,104px)}
 .dests{display:flex;flex-direction:column;counter-reset:dest}
 .dests .dest:last-child{border-bottom:1px solid rgba(28,36,32,.12)}
 
-/* ───────────── DESTINAZIONI: una voce, un colore ─────────────
-   Come le lettere del logo: ognuna il suo mondo. Niente griglie timide,
-   niente testo microscopico: foto grande, titolo pieno in tinta, fondo
-   appena tinto per territorio. */
-.dests{display:flex;flex-direction:column;gap:clamp(20px,3vw,32px);counter-reset:dest}
+/* ───────────── DESTINAZIONI: card squadrate, una voce un colore ─────────────
+   Come le lettere del logo: spigoli vivi, niente radius, niente ombre.
+   Il colore del territorio fa tutto il lavoro. */
+.dests{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px);counter-reset:dest}
 .dest{
   counter-increment:dest;
-  border-radius:24px;padding:clamp(18px,2.6vw,28px);
   background:var(--paper-2);
+  border-radius:0;padding:0;overflow:hidden;
+  display:flex;flex-direction:column;
 }
 .dest[data-territorio="mare"]{background:color-mix(in srgb, var(--fondo) 9%, var(--paper))}
 .dest[data-territorio="storia"]{background:color-mix(in srgb, var(--tramonto) 9%, var(--paper))}
 .dest[data-territorio="borgo"]{background:color-mix(in srgb, var(--uva) 9%, var(--paper))}
 .dest[data-territorio="parco"]{background:color-mix(in srgb, var(--oliva) 10%, var(--paper))}
 .dest[hidden]{display:none}
-/* contatore piccolo solo per le righe senza foto (le foto hanno il numero grande) */
+/* contatore piccolo solo per le schede senza foto (le foto hanno il numero grande) */
 .dest::before{
   content:counter(dest,decimal-leading-zero);
   display:block;
   font-family:var(--fm);font-size:.78rem;letter-spacing:.16em;
-  color:var(--ink-soft);opacity:.75;margin-bottom:10px;
+  color:var(--ink-soft);opacity:.75;padding:16px 18px 0;
 }
-.dest-img{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:16px}
+.dest-img{position:relative;aspect-ratio:16/10;overflow:hidden}
 .dest-img img{width:100%;height:100%;object-fit:cover}
-.dest-body{display:flex;flex-direction:column;gap:10px;min-width:0;padding:20px 6px 6px}
+.dest-body{display:flex;flex-direction:column;gap:10px;min-width:0;padding:18px}
 
 .dest:not(:has(.dest-img)) .dest-body::after{
   content:"Foto non disponibile su Wikimedia";
@@ -433,30 +433,29 @@ section{padding-block:clamp(56px,8vw,104px)}
 .dest[data-territorio="storia"] .dest-tag{color:var(--tramonto)}
 .dest[data-territorio="borgo"] .dest-tag{color:var(--uva)}
 .dest[data-territorio="parco"] .dest-tag{color:var(--oliva)}
-.dest[data-territorio="mare"] .dest-n{color:var(--fondo)}
-.dest[data-territorio="storia"] .dest-n{color:var(--tramonto)}
-.dest[data-territorio="borgo"] .dest-n{color:var(--uva)}
-.dest[data-territorio="parco"] .dest-n{color:var(--oliva)}
 
 /* ───────────── DESTINAZIONI FOTO: scena piena ─────────────
-   Niente alternanza, niente lift: foto grande sopra, tutto il resto sotto.
-   Il numero grande in tinta vive sulla foto, il titolo in tinta nel testo. */
+   Foto a tutto bordo sopra, tutto il resto sotto. Il numero grande
+   è sempre bianco sopra la foto, il titolo in tinta nel testo. */
 .dest--photo::before{display:none}
-.dest--photo .dest-img{position:relative}
-.dest--photo .dest-img img{border-radius:16px}
 .dest-n{
   position:absolute;left:16px;bottom:10px;z-index:2;
   font-family:var(--fd);font-style:italic;font-weight:600;
   font-size:clamp(3rem,6vw,4.6rem);line-height:1;letter-spacing:-.02em;
   color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.5);
 }
-.dest--photo h3{font-size:clamp(1.6rem,3vw,2.3rem)}
-.dest--photo .dest-desc{font-size:1rem;max-width:56ch}
+.dest--photo h3{font-size:clamp(1.25rem,1.8vw,1.5rem)}
+.dest--photo .dest-desc{font-size:.92rem}
 
 /* ───────────── VETRINA: Paestum apre l'imbuto ─────────────
-   Stessa scena delle altre, ma titolo più grande. Il numero 01 arriva
-   da solo dal contatore (primo nel DOM). */
-.dest--lead h3{font-size:clamp(1.9rem,3.6vw,2.7rem)}
+   Stessa card delle altre, ma larga tutta la griglia e orizzontale:
+   foto a sinistra, testo a destra. Il numero 01 arriva da solo
+   dal contatore (primo nel DOM). */
+.dest--lead{grid-column:1 / -1;display:grid;grid-template-columns:1.1fr minmax(0,1fr);gap:clamp(20px,3vw,36px);align-items:center;padding:18px}
+.dest--lead::before{display:none}
+.dest--lead .dest-img{aspect-ratio:16/10}
+.dest--lead .dest-body{padding:10px 10px 10px 0}
+.dest.dest--lead h3{font-size:clamp(1.7rem,3.2vw,2.4rem)}
 .dest-start{font-family:var(--fm);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--terracotta)}
 .dest-next{font-family:var(--fm);font-size:.78rem;color:var(--terracotta);margin-top:10px}
 .dest h3{font-size:clamp(1.5rem,2.8vw,2.1rem);letter-spacing:-.02em}
@@ -663,6 +662,9 @@ section{padding-block:clamp(56px,8vw,104px)}
 /* ───────────── RESPONSIVE ───────────── */
 
 @media(max-width:1000px){
+  .dests{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dest--lead{grid-template-columns:1fr}
+  .dest--lead .dest-img{aspect-ratio:16/9}
   .routes-grid{grid-template-columns:1fr}
   .panel{grid-template-columns:1fr;gap:24px}
   .panel-img{aspect-ratio:16/9}
@@ -673,6 +675,7 @@ section{padding-block:clamp(56px,8vw,104px)}
   body{font-size:16px}
   #cifre .facts{grid-template-columns:1fr}
   #cifre dd{max-width:none}
+  .dests{grid-template-columns:1fr}
   .flavours{grid-template-columns:1fr}
 }
 .hero__media img{transform:scale(1.08)}
@@ -680,7 +683,7 @@ section{padding-block:clamp(56px,8vw,104px)}
 /* ───────────── HERO CINEMATICO: base full-bleed ─────────────
    Vince sulle vecchie regole hero (stessa specificità, viene dopo). */
 .hero{display:block;padding:0;color:#fff;min-height:100svh;overflow:hidden;background:#040c14}
-.hero__media{position:absolute;inset:-24px;z-index:0;border-radius:0;background:#040c14;will-change:transform}
+.hero__media{position:absolute;inset:0;z-index:0;border-radius:0;background:#040c14}
 .hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,12,20,.66) 0%,rgba(4,12,20,.28) 42%,rgba(4,12,20,.86) 100%);pointer-events:none}
 .nav__links{
   background:rgba(255,255,255,.08);
