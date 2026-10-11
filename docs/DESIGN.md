@@ -10,6 +10,9 @@
 --oro #C59D21 (dalla T, solo grafica e titoli grandi), --cielo #4D9FC6 (dalla C, solo grafica),
 --terracotta #BE5B33 (azioni), radius 18px. Fraunces = display/epigrafe, Archivo = uso.
 Tag destinazioni: un colore per territorio (mare blu, storia arancio, borgo viola, parco verde).
+Sottolineatura hero: scarabocchio SVG arancio tramonto sulla parola chiave (data-uri, niente asset).
+Esperienze in due colonne con figura fissa sticky (foto vera con didascalia e crediti).
+Pannello CTA pre-footer (btn-solid + btn-line) verso mail e Trade.
 
 ## Voce (5 regole)
 Nomi propri mai categorie; misura non aggettivi (ore, gradi, metri); sempre un dettaglio sensoriale verificabile; mito come istruzione d'uso; onestà operativa (scarpe, auto, torcia).

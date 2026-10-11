@@ -187,7 +187,11 @@ section{padding-block:clamp(56px,8vw,104px)}
 .hero__line{display:block}
 .hl{
   display:inline-block;color:#2B3033;
-  padding:0 .04em;margin:0;
+  padding:0 .04em;margin:0;position:relative;z-index:0;
+}
+.hl::after{
+  content:"";position:absolute;left:-3%;right:-3%;bottom:.02em;height:.22em;z-index:-1;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 Q 20 2 40 7 T 78 6 T 118 7' fill='none' stroke='%23A85A1C' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%;
 }
 .hero__text{
   margin:clamp(22px,3.2vh,42px) 0 0;max-width:47ch;color:var(--ink-soft);
@@ -537,6 +541,21 @@ section{padding-block:clamp(56px,8vw,104px)}
 .row--media .row-media img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
 .row--media .row-media p{margin-bottom:0}
 @media(max-width:760px){.row--media .row-media{grid-template-columns:1fr}.row--media .row-media img{aspect-ratio:16/10}}
+
+/* ───────────── ESPERIENZE con figura fissa + PANNELLO CTA ───────────── */
+.verbi-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:clamp(24px,4vw,52px);align-items:start}
+.verbi-fig{position:sticky;top:96px;margin:0}
+.verbi-fig img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:18px}
+.verbi-fig figcaption{font-family:var(--fm);font-size:.72rem;color:#A9BDB8;margin-top:10px}
+@media(max-width:900px){.verbi-grid{grid-template-columns:1fr}.verbi-fig{position:static}.verbi-fig img{aspect-ratio:16/10}}
+.panel-cta{background:var(--paper-2);border-radius:28px;padding:clamp(36px,5vw,64px) clamp(24px,4vw,56px);text-align:center}
+.panel-cta h2{font-size:clamp(1.7rem,3.4vw,2.6rem);margin-bottom:12px}
+.panel-cta p{color:var(--ink-soft);max-width:52ch;margin:0 auto 26px}
+.panel-cta__btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-solid{display:inline-flex;align-items:center;padding:13px 26px;border-radius:999px;background:var(--terracotta);color:#fff;font-weight:500;text-decoration:none;transition:background .2s,transform .2s var(--ease)}
+.btn-solid:hover{background:#a34c28;transform:translateY(-2px)}
+.btn-line{display:inline-flex;align-items:center;padding:13px 26px;border-radius:999px;border:1.5px solid rgba(28,36,32,.35);color:var(--ink);font-weight:500;text-decoration:none;transition:border-color .2s,color .2s}
+.btn-line:hover{border-color:var(--terracotta);color:var(--terracotta)}
 
 /* ───────────── TORNA IN CIMA ───────────── */
 .to-top{
