@@ -9,6 +9,11 @@
 - English: https://gocilento.it/en/ · legal notice: https://gocilento.it/en/impressum.html · trade: https://gocilento.it/en/trade.html
 - Deutsch: https://gocilento.it/de/ · Impressum: https://gocilento.it/de/impressum.html · trade: https://gocilento.it/de/trade.html
 
+## Content pages (same structure, all languages)
+
+- /esperienze.html · /itinerari.html · /info.html (sotto ogni lingua):
+  stagioni e verbi, itinerari onesti, sapori e come arrivare.
+
 ## API (machine-readable, full content per language)
 
 - https://gocilento.it/api/it.json
@@ -81,13 +86,13 @@
 - Morra und Pisciotta, die Ausgebeuteten (https://gocilento.it/de/#morra)
 - Der Cilento der Migranten (https://gocilento.it/de/#migranti)
 
-## Sections (anchors work on every language page)
+## Sections (home page anchors)
 
-- #destinazioni #stagioni #esperienze #itinerari #sapori #arrivare #cifre
+- #destinazioni #cifre · pagine: esperienze, itinerari, info (una per lingua)
 
 ## License and credits
 
 Texts are original to this project. Photos: Wikimedia Commons, CC BY / CC BY-SA /
 public domain; exact authors in docs/CREDITS.md. Six destinations have no photo
 (they do not exist on Commons): the site says so instead of using stock images.
-Hero video: Mixkit (generic sunset, declared).
+Hero: own sunset photo taken in Palinuro.

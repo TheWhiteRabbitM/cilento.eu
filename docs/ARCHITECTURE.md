@@ -75,9 +75,11 @@ Contesto: il dominio potrebbe cambiare (.com, .it, ecc.). Scelta: wordmark `cile
 ```
 gocilento.it/
   index.html              — redirect alla lingua (x-default)
-  it/index.html           — pagina IT completa nel markup
-  en/index.html           — pagina EN completa nel markup
-  de/index.html           — pagina DE completa nel markup
+  it/index.html           — home: hero, cifre, destinazioni, CTA, footer
+  it/esperienze.html      — stagioni + verbi cilentani
+  it/itinerari.html       — 3 itinerari onesti + CTA tailor-made
+  it/info.html            — sapori + come arrivare
+  (stessa struttura per en/ e de/)
   api/it.json …           — generati dall'HTML (ADR-008), mai a mano
   llms.txt                — indice per LLM
   404.html                — pagina non trovata trilingue
