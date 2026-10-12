@@ -25,7 +25,6 @@ sono tutte foto di luogo del Cilento o delle aree immediatamente adiacenti.
 |---|---|---|---|
 | `santamaria.jpg` | Chiesapace.jpg | Pinto Gabriele | Public domain |
 | `pioppi-litorale.jpg` | Litorale di Pioppi.JPG | Spinoziano | CC BY-SA 3.0 |
-| `pioppi-torre.jpg` | Torre di Pioppi.JPG | Geofix | CC BY-SA 3.0 |
 | `scario.jpg` | Port of Scario.jpg | Bernd Schade | CC BY-SA 3.0 |
 | `pisciotta.jpg` | Pisciotta - Italy.JPG | Heinz-Josef Lücking | CC BY-SA 3.0 de |
 
@@ -68,8 +67,7 @@ dall'utente, generata con AI, usata in header e footer di tutte e tre le
 lingue. Originale `Downloads/cilentoeu.png` (2400x700) conservato fuori
 dal sito. I precedenti `logo-cilento.svg` / `logo-cilento-light.svg`
 sono stati rimossi su richiesta.
-`assets/favicon.svg`: originale, vettore puro.
-`assets/favicon.png` (64px), `favicon-32.png`, `apple-touch-icon.png` (180px):
+`assets/favicon.png` (64px), `apple-touch-icon.png` (180px):
 ritaglio della O col pesce da `assets/logo.png`, fondo trasparente.
 
 ## Librerie di terzi (motion)
@@ -94,3 +92,19 @@ Commercial o sostituita GSAP. Lenis (MIT) non ha problemi.
 Nessuna di queste librerie è un bundler: sono file UMD serviti così come sono.
 Per questo **non c'è `package.json`, `node_modules` né passaggio di build**
 (vedi ADR-001 e ADR-009).
+
+## Varianti leggere delle foto
+
+Ogni foto di contenuto esiste in due versioni: il file con il nome normale
+(lato lungo massimo 1280 px) e `<nome>-640.jpg` (640 px di larghezza). Le pagine
+usano `srcset`, quindi il browser scarica solo quella che gli serve: circa
+**1,1 MB per pagina invece di 6 MB**. Le immagini sono state ricompresse a
+qualita' 78, progressive, senza metadati EXIF.
+
+`pioppi-torre.jpg` e' stata rimossa: nessuna pagina la usava.
+
+## Strumenti
+
+`tools/build-api.js` rigenera `api/{it,en,de}.json` dall'HTML. Non fa parte della
+build del sito: i JSON sono committati. Con `--check` confronta l'output con i
+file esistenti senza scrivere nulla.

@@ -82,7 +82,7 @@ h1,h2,h3{font-family:var(--fd);font-weight:600;line-height:1.08;letter-spacing:-
 section{padding-block:clamp(56px,8vw,104px)}
 .paper-2{background:var(--paper-2)}
 
-/* ───────────── HERO + NAV (meccanica OceanPulse, contenuti Cilento) ─────────────
+/* ───────────── HERO + NAV. Griglia, ordine di sezione e scelte tipografiche sono del progetto; la provenienza delle meccaniche e' documentata in docs/ARCHITECTURE.md ─────────────
    DOM: .hero__media PRIMA, .hero__left DOPO; l'ordine visivo è ripristinato
    con order, così .hero__left non forma stacking context e il burger (z:70)
    resta sopra il foglio nav (z:60). Niente z-index su .hero__left. */

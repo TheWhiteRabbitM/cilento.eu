@@ -62,10 +62,12 @@ Al suo posto: `api/*.json` generati dall'HTML (ADR-008), non il contrario.
 Contesto: gli LLM devono leggere e citare i contenuti in tutte le lingue.
 Scelta: `api/{it,en,de}.json` + `llms.txt` + JSON-LD (`WebSite`, `TravelGuide`,
 `ItemList` di 20 `TouristDestination`), tutti generati dall'HTML con
-`build-api.js`. L'HTML resta l'unica fonte di verità; i JSON non si
+`tools/build-api.js`. L'HTML resta l'unica fonte di verità; i JSON non si
 modificano a mano. `robots.txt` ammette esplicitamente i crawler AI.
 Conseguenze: +contenuti citabili e verificabili, +nessuna deriva tra formati,
 −rigenerare dopo ogni modifica ai testi.
+
+**Stato del generatore.** `tools/build-api.js` ricostruisce `meta`, `hero`, `facts` e le 20 `destinations` dai tre `index.html`, verificato campo per campo contro i JSON esistenti. Le sezioni `seasons`, `verbs`, `itineraries`, `flavors`, `practical`, `tagline` e `legal` **non** sono ancora rigenerate: il generatore le preserva per non scrivere dati che non sa ricavare. Finche' non saranno coperte, modificarle nell'HTML richiede di aggiornare a mano il JSON. `llms.txt` e' scritto a mano.
 
 ### ADR-007: wordmark senza .eu
 Contesto: il dominio potrebbe cambiare (.com, .it, ecc.). Scelta: wordmark `cilent` + o-arco, niente suffisso. Conseguenze: logo riusabile su qualsiasi dominio.
