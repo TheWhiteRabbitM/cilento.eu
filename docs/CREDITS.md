@@ -30,8 +30,9 @@ sono tutte foto di luogo del Cilento o delle aree immediatamente adiacenti.
 
 ## Destinazioni senza foto
 
-Sei destinazioni **non hanno foto**: Trentova, Porto Infreschi, Morra,
-Monte Cervati, Monte Stella, Gole del Calore. Non esistono su Wikimedia
+Otto destinazioni **non hanno foto**: Porto Infreschi, Certosa di Padula,
+Monte Cervati, Monte Stella, Budorno, Gole del Calore, Morra e la rotta dei
+migranti. Non esistono su Wikimedia
 Commons e non abbiamo usato immagini generiche al loro posto. Le schede
 dicono esplicitamente "Foto non disponibile su Wikimedia".
 

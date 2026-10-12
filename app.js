@@ -36,6 +36,36 @@
       : (navToggle.getAttribute('data-label-open') || 'Open menu'));
     if (next) navSheet.removeAttribute('inert');
     else navSheet.setAttribute('inert', '');
+
+    // Il focus deve entrare nel pannello e restarci: se scappa sulla pagina
+    // sotto, chi naviga con la tastiera crede di essere ancora nel menu.
+    if (next) {
+      var primo = navSheet.querySelector('a[href], button:not([disabled])');
+      if (primo) primo.focus();
+    }
+  }
+
+  /* Focus trap: Tab e Shift+Tab cicliano dentro il foglio, Escape esce.
+     Serve perche' il pannello copre la pagina ma non e' un dialogo nativo. */
+  function trapFocus(e) {
+    if (!sheetOpen || !navSheet) return;
+    if (e.key === 'Tab') {
+      var fuochi = Array.prototype.slice.call(
+        navSheet.querySelectorAll('a[href], button:not([disabled])')
+      ).filter(function (el) { return el.offsetParent !== null; });
+      if (!fuochi.length) return;
+      var primo = fuochi[0];
+      var ultimo = fuochi[fuochi.length - 1];
+      if (e.shiftKey && document.activeElement === primo) {
+        e.preventDefault(); ultimo.focus();
+      } else if (!e.shiftKey && document.activeElement === ultimo) {
+        e.preventDefault(); primo.focus();
+      }
+    } else if (e.key === 'Escape') {
+      e.preventDefault();
+      setSheetOpen(false);
+      navToggle.focus();
+    }
   }
 
   if (navToggle && navSheet) {
@@ -52,6 +82,11 @@
         setSheetOpen(false);
         navToggle.focus();
       }
+    });
+
+    // il focus trap gestisce anche Escape: qui ci limitiamo al Tab
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Tab' && sheetOpen) trapFocus(e);
     });
 
     window.addEventListener('resize', function () {

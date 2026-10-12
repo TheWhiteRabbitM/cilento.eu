@@ -93,6 +93,6 @@
 ## License and credits
 
 Texts are original to this project. Photos: Wikimedia Commons, CC BY / CC BY-SA /
-public domain; exact authors in docs/CREDITS.md. Six destinations have no photo
+public domain; exact authors in docs/CREDITS.md. Eight destinations have no photo
 (they do not exist on Commons): the site says so instead of using stock images.
 Hero: own sunset photo taken in Palinuro.

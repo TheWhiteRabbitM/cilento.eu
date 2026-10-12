@@ -9,6 +9,11 @@
   --ink:#1C2420;
   --ink-soft:#4A5550;
   --terracotta:#BE5B33;
+  /* Stessa tinta, ma scurita per il testo piccolo su fondo chiaro.
+     #BE5B33 su #F2EAD6 arriva a 3.70:1 e non passa il 4.5 della WCAG AA.
+     #A64F2D arriva a 4.64 ed e' piu' vicino alla E del logo (#B9543C)
+     di quanto fosse il colore precedente. */
+  --terracotta-testo:#A64F2D;
   --oro:#C59D21;
   --oliva:#6E702C;
   /* dal logo: mediane misurate sulle 7 lettere (PIL) */
@@ -68,7 +73,7 @@ h1,h2,h3{font-family:var(--fd);font-weight:600;line-height:1.08;letter-spacing:-
 
 .kicker{
   font-family:var(--fm);font-size:.72rem;font-weight:500;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--terracotta);
+  letter-spacing:.18em;text-transform:uppercase;color:var(--terracotta-testo);
   margin-bottom:14px;
 }
 .on-dark .kicker{color:var(--oro)}
@@ -165,7 +170,7 @@ section{padding-block:clamp(56px,8vw,104px)}
 .hero__content{margin-top:auto;padding:clamp(24px,4vh,60px) 0;max-width:820px}
 .hero__kicker{
   font-family:var(--fm);font-size:.72rem;font-weight:500;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--terracotta);
+  letter-spacing:.18em;text-transform:uppercase;color:var(--terracotta-testo);
   margin-bottom:14px;
 }
 .hero__title{
@@ -420,7 +425,7 @@ section{padding-block:clamp(56px,8vw,104px)}
 .dest:not(:has(.dest-img)) .dest-body::after{
   content:"Foto non disponibile su Wikimedia";
   display:block;margin-top:4px;
-  font-family:var(--fm);font-size:.68rem;color:var(--ink-soft);opacity:.65;
+  font-family:var(--fm);font-size:.68rem;color:var(--ink-soft);
 }
 .dest-tag{
   font-family:var(--fm);font-size:.7rem;font-weight:500;letter-spacing:.13em;
@@ -532,7 +537,7 @@ section{padding-block:clamp(56px,8vw,104px)}
 .panel-cta h2{font-size:clamp(1.7rem,3.4vw,2.6rem);margin-bottom:12px}
 .panel-cta p{color:#C3CFCC;max-width:52ch;margin:0 auto 26px}
 .panel-cta__btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-solid{display:inline-flex;align-items:center;padding:13px 26px;border-radius:999px;background:var(--terracotta);color:#fff;font-weight:500;text-decoration:none;transition:background .2s,transform .2s var(--ease)}
+.btn-solid{display:inline-flex;align-items:center;padding:13px 26px;border-radius:999px;background:var(--terracotta-testo);color:#fff;font-weight:500;text-decoration:none;transition:background .2s,transform .2s var(--ease)}
 .btn-solid:hover{background:#a34c28;transform:translateY(-2px)}
 .btn-line{display:inline-flex;align-items:center;padding:13px 26px;border-radius:999px;border:1.5px solid rgba(28,36,32,.35);color:var(--ink);font-weight:500;text-decoration:none;transition:border-color .2s,color .2s}
 .btn-line:hover{border-color:var(--terracotta);color:var(--terracotta)}
@@ -611,7 +616,7 @@ section{padding-block:clamp(56px,8vw,104px)}
   color:var(--oliva);text-transform:uppercase;padding-left:12px;
 }
 .timetable tr:last-child td{border-bottom:0}
-.status-off{color:var(--ink-soft);opacity:.7}
+.status-off{color:var(--ink-soft)}
 
 .honest{
   font-family:var(--fm);font-size:.76rem;color:var(--fondo);
@@ -629,7 +634,7 @@ section{padding-block:clamp(56px,8vw,104px)}
 .foot ul{list-style:none;padding:0}
 .foot-small{
   border-top:1px solid rgba(255,255,255,.14);padding-top:22px;
-  font-family:var(--fm);font-size:.7rem;color:#7E928E;line-height:1.7;
+  font-family:var(--fm);font-size:.7rem;color:#A9BDB8;line-height:1.7;
 }
 .foot-small a{color:#A9BDB8}
 
@@ -733,6 +738,11 @@ html.has-motion .rv{opacity:0;transform:translateY(22px)}
   .hero__content{padding-top:clamp(40px,8vh,80px)}
 }
 
+/* Il foglio nav si apre sopra il contenuto: senza questo blocco la
+   pagina sotto resta scrollabile e tabulabile (WCAG 2.1.2). */
+body.nav-open{overflow:hidden}
+body.nav-open .navsheet__panel{overscroll-behavior:contain}
+
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{
     animation-duration:.01ms!important;animation-iteration-count:1!important;
@@ -803,3 +813,8 @@ html.lenis,html.lenis body{height:auto}
   .motion-line,.motion-word{will-change:auto}
   [data-parallax-section] [data-parallax-image]{height:100%}
 }
+
+/* Il main riceve il focus dal link di salto: lo rendiamo invisibile,
+   altrimenti il contorno segnalerebbe un bordo che non esiste. */
+main:focus{outline:none}
+main:focus-visible{outline:2px solid var(--terracotta-testo);outline-offset:4px}

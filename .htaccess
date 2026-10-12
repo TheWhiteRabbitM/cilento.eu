@@ -17,18 +17,36 @@ ErrorDocument 404 /404.html
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/xml image/svg+xml
 </IfModule>
 
-# Cache lunga per asset versionati da nome file, niente cache forzata sull'HTML
+# Cache
+# Attenzione: styles.css e app.js NON hanno il nome versionato (niente build,
+# vedi ADR-001). Con "access plus 1 month" un restyle restava invisibile ai
+# visitatori ritornanti per trenta giorni. Qui quindi CSS e JS non vengono
+# mai considerati freschi: il browser li riverifica e riceve un 304 se sono
+# invariati (costano 70 KB gzip, non un problema).
+# Le immagini invece restano in cache lunga: se ne cambi una, rinomina il file.
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/jpeg "access plus 6 months"
   ExpiresByType image/png "access plus 6 months"
   ExpiresByType image/webp "access plus 6 months"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 6 months"
 </IfModule>
 
 # Header di sicurezza conservativi (niente CSP: abbiamo SVG e style inline)
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # HTML, CSS, JS e JSON: sempre riverificati, mai serviti dalla cache
+  <FilesMatch "\.(html|json|txt|xml)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+    Header unset Expires
+  </FilesMatch>
+  # Font: stabili per nome, cache lunga
+  <FilesMatch "\.(woff2|woff|ttf|otf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
 </IfModule>
