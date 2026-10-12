@@ -754,6 +754,55 @@ body.nav-open .navsheet__panel{overscroll-behavior:contain}
   .hero__media img{animation:none}
 }
 
+/* ───────────── INTESTAZIONE DELLE SOTTOPAGINE ─────────────
+   Stessa barra della home (logo, voci, lingue, burger + foglio),
+   versione su fondo chiaro: niente vetro, ombra piu' discreta.
+   Le 15 sottopagine non avevano navigazione: l'unica via d'uscita
+   era un link testuale nel contenuto, e non si poteva cambiare lingua. */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  background:var(--paper);
+  border-bottom:1px solid rgba(28,36,32,.1);
+}
+.topbar__in{
+  max-width:var(--maxw);margin:0 auto;
+  padding:10px var(--gut);
+  display:flex;align-items:center;gap:clamp(10px,1.6vw,26px);
+}
+.topbar .brand{text-decoration:none;flex:0 0 auto}
+.topbar .brand__logo img{height:clamp(24px,2.2vw,30px)}
+.topbar__nav{flex:1 1 auto;min-width:0}
+.topbar__nav ul{
+  display:flex;gap:clamp(10px,1.4vw,24px);
+  margin:0;padding:0;list-style:none;
+}
+.topbar__nav a{
+  text-decoration:none;color:var(--ink);
+  font-size:clamp(13px,.95vw,15px);font-weight:500;
+  padding:6px 2px;border-bottom:2px solid transparent;
+  transition:color .2s ease,border-color .2s ease;
+}
+.topbar__nav a:hover{color:var(--terracotta-testo)}
+.topbar__nav a[aria-current="page"]{border-bottom-color:var(--terracotta-testo)}
+.topbar__nav a:focus-visible{outline:2px solid var(--terracotta-testo);outline-offset:3px;border-radius:4px}
+.topbar__langs{
+  display:flex;gap:2px;flex:0 0 auto;
+  border-left:1px solid rgba(28,36,32,.16);padding-left:12px;
+}
+.topbar__langs a{
+  font-family:var(--fm);font-size:.72rem;font-weight:500;letter-spacing:.09em;
+  text-decoration:none;color:var(--ink);opacity:.6;
+  padding:6px 7px;border-radius:6px;
+}
+.topbar__langs a:hover{opacity:1;background:rgba(28,36,32,.07)}
+.topbar__langs a[aria-current="true"]{opacity:1;background:rgba(28,36,32,.1)}
+.topbar .burger{margin-left:auto;color:var(--ink)}
+
+@media(max-width:860px){
+  .topbar__nav,.topbar__langs{display:none}
+  .topbar .burger{display:flex}
+}
+
 /* ═══════════════════════════════════════════════════════════════════
    MOTION — GSAP 3.13 + ScrollTrigger + Lenis 1.3, vendorizzati in
    assets/vendor/. Nessun bundler: tre file .js e basta (ADR-001).

@@ -83,10 +83,56 @@
 
 <a href="#main" class="skip">Skip to content</a>
 
+<header class="topbar">
+  <div class="topbar__in">
+    <a class="brand" href="./">
+      <picture class="brand__logo"><source srcset="../assets/logo-mark.webp" type="image/webp"><img src="../assets/logo-mark.png" alt="GoCilento" width="522" height="96" decoding="async"></picture>
+    </a>
+    <nav class="topbar__nav" aria-label="Main">
+      <ul>
+        <li><a href="./">Destinations</a></li>
+        <li><a href="esperienze.html">Experiences</a></li>
+        <li class="is-current"><a href="itinerari.html" aria-current="page">Itineraries</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+    </nav>
+    <div class="topbar__langs">
+          <a href="../it/" hreflang="it">IT</a>
+          <a href="../en/" aria-current="true" hreflang="en">EN</a>
+          <a href="../de/" hreflang="de">DE</a>
+    </div>
+    <button class="burger" id="navToggle" type="button"
+            aria-label="Open menu" aria-expanded="false" aria-controls="navSheet"
+            data-label-open="Open menu" data-label-close="Close menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="navsheet" id="navSheet" inert>
+  <div class="navsheet__scrim" data-nav-close></div>
+  <nav class="navsheet__panel" aria-label="Menu">
+    <ul class="navsheet__list">
+      <li style="--i:0"><a class="navsheet__link" href="./">Destinations <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      <li style="--i:1"><a class="navsheet__link" href="esperienze.html">Experiences <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      <li style="--i:2"><a class="navsheet__link" href="itinerari.html" aria-current="page">Itineraries <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      <li style="--i:3"><a class="navsheet__link" href="info.html">Info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      <li style="--i:4"><a class="navsheet__link" href="trade.html">Trade <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    </ul>
+    <div class="navsheet__foot">
+      <a class="navsheet__cta" href="itinerari.html">3 honest itineraries <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="navsheet__langs">
+        <a href="../it/" hreflang="it">IT</a>
+        <a href="../en/" aria-current="true" hreflang="en">EN</a>
+        <a href="../de/" hreflang="de">DE</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
 <main id="main" tabindex="-1">
 <section>
   <div class="wrap">
-    <p class="kicker"><a href="./" style="text-decoration:none;color:inherit">← GoCilento</a></p>
     <h1 class="sr-only">Three honest Cilento itineraries</h1>
   </div>
 </section>
