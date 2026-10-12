@@ -762,11 +762,18 @@ html.lenis,html.lenis body{height:auto}
 .motion-line-mask,.motion-word-mask{display:inline-block;overflow:hidden;vertical-align:top}
 .motion-line,.motion-word{display:inline-block;will-change:transform,opacity}
 
-/* rivelazione a clip + parallasse delle immagini */
+/* rivelazione a clip + parallasse delle immagini.
+   L'immagine deve essere PIU' alta del contenitore di quanto la
+   parallasse la sposta, altrimenti la spinta verso l'alto scopre
+   una fascia vuota sotto la foto. --parallax-extra viene calcolato da
+   motion.js sul percorso reale; il valore qui sotto e' il margine. */
 [data-image-reveal]{overflow:hidden}
-[data-parallax-section] [data-parallax-image],
 [data-parallax-image]{display:block;width:100%;height:100%;object-fit:cover}
-[data-parallax-section] [data-parallax-image]{height:116%;will-change:transform}
+[data-parallax-section]{--parallax-extra:22vh}
+[data-parallax-section] [data-parallax-image]{
+  height:calc(100% + var(--parallax-extra));
+  will-change:transform;
+}
 
 /* cursore */
 [data-cursor]{

@@ -242,10 +242,26 @@
   function initParallax() {
     gsap.utils.toArray('[data-parallax-image]').forEach(function (img) {
       var velocita = Number(img.dataset.parallaxSpeed || 0.14);
-      var sezione = img.closest('[data-parallax-section]') || img;
+      var sezione = img.closest('[data-parallax-section]');
+      if (!sezione) return;                       // senza contenitore non serve
+      var percorso = function () { return window.innerHeight * velocita; };
+
+      // La foto e' alta quanto il contenitore, quindi basta spostarla
+      // verso l'alto per scoprire una fascia vuota sotto. Le do'
+      // esattamente il margine che il percorso richiede, ricalcolato
+      // a ogni refresh: se la finestra cambia, cambia anche la foto.
+      function adatta() {
+        // +15% di margine: a fine corsa la foto arriva a filo del bordo,
+        // e un arrotondamento o un resize potrebbe lasciare una riga vuota.
+        sezione.style.setProperty('--parallax-extra',
+          Math.ceil(percorso() * 1.15) + 10 + 'px');
+      }
+      adatta();
+
       gsap.to(img, {
-        y: function () { return window.innerHeight * velocita * -1; },
+        y: function () { return -percorso(); },
         ease: 'none',
+        onRefresh: adatta,
         scrollTrigger: {
           trigger: sezione,
           start: 'top bottom',
