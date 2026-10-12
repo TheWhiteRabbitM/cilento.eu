@@ -28,6 +28,22 @@ Restyle visuale completo: **non eseguito** — vedi "Cosa non e' stato fatto".
 | D-04 | Cache CSS/JS = sempre riverificata | Con "access plus 1 month" su file non versionati un restyle restava invisibile 30 giorni |
 | D-05 | Parallasse tolta su `trade.html` | Il contenitore e' un `<figure>` con `figcaption`: altezza indefinita, la percentuale non risolve |
 
+| D-06 | Sezione "percorso" 3D in home, dopo le cifre | Scelta del cliente. Tre.js in `assets/vendor/`, caricato a richiesta |
+| D-07 | Le 8 localita' senza foto hanno un segnaposto, non un'immagine | Nessuna immagine inventata per riempire un vuoto |
+
+## Verificato sul percorso 3D
+
+- WebGL 2.0 presente: scena costruita, 20 fermate, **12 texture caricate**
+- Animazione: 2612 frame in 6 s di prova, barca spostata 5,12 unita, la fermata
+  corrente nella lista passa da "02 Velia" a "03 Agropoli"
+- Senza scroll: **0 richieste** di Three.js
+- Sottopagine: **0 richieste** di Three.js
+- Senza WebGL (simulato): il palco resta nascosto, restano i 12 fermate con link
+- IT, EN, DE: sintassi inline verificata, 0 errori console
+
+**Non verificato:** la resa visiva della scena. Qui non escono screenshot: il
+funzionamento e' provato via DOM e geometria, l'aspetto va visto a schermo.
+
 ## Priorita' per impatto e rischio
 
 1. **Cache deploy** — bloccava ogni restyle (risolto)

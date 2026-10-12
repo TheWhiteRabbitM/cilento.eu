@@ -205,3 +205,29 @@ import(`./i18n/${currentLang}.json`).then(data => {
 4. Aggiungere hreflang e meta dinamici
 5. Creare `sitemap.xml` multilingua
 6. Testare le 3 lingue end-to-end
+
+### ADR-010: scena 3D del percorso, caricata solo se serve
+Contesto: la home doveva mostrare le 20 localita' come un viaggio, non come
+una lista. Un canvas e' la strada naturale, ma costa.
+Scelta: Three.js r171 vendorizzato in `assets/vendor/`, modulo `assets/journey.js`,
+caricato con `import()` dinamico **solo** quando la sezione arriva a 400px dal
+bordo. Conseguenze misurate:
+- al caricamento della home: **0 byte** di Three.js, script totale 151 KB gzip
+- quando la sezione entra in vista: **689 KB** di script (Three.js 占 78,7 KB gzip
+  ma i due file insieme sono ~700 KB lordi), piu' le texture
+- non e' un build step: i file sono ESM serviti cosi' come sono
+
+Alternative scartate:
+- **Linea 2D in SVG** (~8 KB): molto piu' leggera, ma non dava la profondita' richiesta.
+- **CSS 3D**: nessuna liberta' su camere e luci.
+
+Regole che il modulo deve rispettare, e che non sono negoziabili:
+1. **I dati non sono duplicati.** Le fermate sono lette dalle card `.dest` che sono
+   gia' in pagina: nessun elenco scritto due volte che possa andare fuori sincrono.
+2. **Le 8 localita' senza foto restano senza foto.** Hanno un segnaposto diverso,
+   dichiarato anche nel testo della sezione. Nessuna immagine stock di riempimento.
+3. **Fallback reale.** Senza WebGL o con `prefers-reduced-motion` non si carica
+   niente e resta la lista dei 12 fermate con link veri.
+4. **Si ferma quando non serve.** `IntersectionObserver` + pausa su tab nascosto.
+5. **Rete di sicurezza sul trigger**: se l'osservatore resta sospeso, basta uno
+   scroll. Senza, la sezione potrebbe non apparire mai.

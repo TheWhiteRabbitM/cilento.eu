@@ -754,6 +754,76 @@ body.nav-open .navsheet__panel{overscroll-behavior:contain}
   .hero__media img{animation:none}
 }
 
+/* ───────────── PERCORSO: la rotta lungo la costa ─────────────
+   Scena 3D come miglioramento progressivo: senza WebGL o con movimento
+   ridotto resta la lista dei fermate, che e' contenuto reale con link
+   veri. Le 8 tappe senza fotografia non hanno un'immagine: hanno un
+   segnaposto. Niente immagini di terzi per riempirle. */
+.journey{background:var(--mare-950);color:#EAE2D2}
+.journey .kicker{color:var(--oro-chiaro)}
+.journey .h-sec{color:#FAF6ED}
+.journey__intro{
+  max-width:56ch;color:#C3CFCC;
+  font-size:clamp(.95rem,1.05vw,1.05rem);line-height:1.9;
+  margin:0 0 clamp(24px,3vw,40px);
+}
+.journey__stage{
+  position:relative;height:clamp(260px,42vh,460px);
+  border-radius:20px;overflow:hidden;
+  background:#0C3249;
+  box-shadow:0 1px 2px rgba(0,0,0,.3),0 18px 46px rgba(0,0,0,.28);
+}
+.journey__stage[hidden]{display:none}
+.journey__stage canvas{display:block;width:100%;height:100%}
+.journey__stato{
+  font-family:var(--fm);font-size:.78rem;
+  color:#A9BDB8;margin:0 0 20px;
+  border-left:2px solid var(--oro);padding-left:12px;
+}
+.journey__stato[hidden]{display:none}
+.journey__stops{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px;list-style:none;margin:0;padding:0;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;
+}
+.journey__stops a{
+  display:flex;align-items:baseline;gap:10px;
+  padding:14px 16px;text-decoration:none;
+  background:#0C3249;color:#EAE2D2;
+  font-size:.92rem;line-height:1.35;
+  transition:background .25s ease,color .25s ease;
+}
+.journey__stops a:hover{background:#12455F;color:#fff}
+.journey__stops a:focus-visible{outline:2px solid var(--oro-chiaro);outline-offset:-2px}
+.journey__num{
+  font-family:var(--fm);font-size:.7rem;letter-spacing:.1em;
+  color:var(--oro-chiaro);flex:0 0 auto;
+}
+.journey__stops .is-current{background:#12455F}
+.journey__stops .is-current .journey__nome{color:#fff;font-weight:500}
+.journey__nota{margin:22px 0 0}
+.journey__cta{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.92rem;color:var(--oro-chiaro);
+  text-decoration:none;border-bottom:1px solid rgba(233,196,106,.4);
+  padding-bottom:2px;transition:border-color .25s ease,color .25s ease;
+}
+.journey__cta:hover{border-bottom-color:var(--oro-chiaro);color:#fff}
+.journey__cta svg{width:15px;height:15px}
+
+@media(max-width:1000px){
+  .journey__stops{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:640px){
+  .journey__stage{height:clamp(220px,36vh,320px);border-radius:16px}
+  .journey__stops{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .journey__stops a{padding:12px 13px;font-size:.88rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .journey__stops a{transition:none}
+}
+
 /* ───────────── INTESTAZIONE DELLE SOTTOPAGINE ─────────────
    Stessa barra della home (logo, voci, lingue, burger + foglio),
    versione su fondo chiaro: niente vetro, ombra piu' discreta.

@@ -370,6 +370,98 @@
   </div>
 </section>
 
+
+
+<!-- PERCORSO: le fermate arrivano dalle card .dest piu' in basso, non sono
+     un elenco scritto a parte. La lista mostra solo le 12 tappe
+     con fotografia; le altre 8 restano senza
+     immagine e sono dichiarate nel testo. -->
+<section id="percorso" class="journey" data-journey data-journey-stato="caricamento">
+  <div class="wrap">
+    <p class="kicker">Not a list: a route</p>
+    <h2 data-reveal="fade-up" class="h-sec">Twenty stops along the coast</h2>
+    <p class="journey__intro">From Paestum to the mouth of the Sele, and then inland: the route follows the coast and then climbs back. Twelve stops have a photograph, eight do not, and we left them without an image rather than filling them with stock.</p>
+
+    <div class="journey__stage" data-journey-stage hidden>
+      <canvas data-journey-canvas aria-hidden="true"></canvas>
+    </div>
+    <p class="journey__stato" data-journey-stato-msg hidden></p>
+
+    <ol class="journey__stops" data-journey-stops>
+        <li data-indice="0"><a href="#paestum"><span class="journey__num">01</span><span class="journey__nome">Paestum, Poseidonia</span></a></li>
+        <li data-indice="1"><a href="#velia"><span class="journey__num">02</span><span class="journey__nome">Velia, Elea</span></a></li>
+        <li data-indice="2"><a href="#agropoli"><span class="journey__num">03</span><span class="journey__nome">Agropoli</span></a></li>
+        <li data-indice="3"><a href="#palinuro"><span class="journey__num">04</span><span class="journey__nome">Palinuro, Aeneas's helmsman</span></a></li>
+        <li data-indice="4"><a href="#camerota"><span class="journey__num">05</span><span class="journey__nome">Marina di Camerota</span></a></li>
+        <li data-indice="5"><a href="#castellabate"><span class="journey__num">06</span><span class="journey__nome">Castellabate</span></a></li>
+        <li data-indice="6"><a href="#santamaria"><span class="journey__num">07</span><span class="journey__nome">Santa Maria di Castellabate</span></a></li>
+        <li data-indice="7"><a href="#acciaroli"><span class="journey__num">08</span><span class="journey__nome">Acciaroli + Pioppi</span></a></li>
+        <li data-indice="8"><a href="#pioppi"><span class="journey__num">09</span><span class="journey__nome">Pioppi and the Mediterranean Diet Museum</span></a></li>
+        <li data-indice="9"><a href="#scario"><span class="journey__num">10</span><span class="journey__nome">Scario</span></a></li>
+        <li data-indice="11"><a href="#pisciotta"><span class="journey__num">11</span><span class="journey__nome">Pisciotta and the Bussentino valley</span></a></li>
+        <li data-indice="12"><a href="#teggiano"><span class="journey__num">12</span><span class="journey__nome">Teggiano + Certosa di Padula</span></a></li>
+    </ol>
+
+    <p class="journey__nota">
+      <a class="journey__cta" href="#destinazioni">See all twenty places <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </p>
+  </div>
+</section>
+
+<script>
+  // Carica la scena 3D solo se serve davvero: WebGL presente, movimento
+  // consentito e sezione vicina allo schermo. Sono 79 KB gzip, non li
+  // facciamo scaricare a chi non li vedra'.
+  (function () {
+    var sez = document.querySelector('[data-journey]');
+    if (!sez) return;
+    var ridotto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var palco = sez.querySelector('[data-journey-stage]');
+    var msg = sez.querySelector('[data-journey-stato-msg]');
+    function testo(s) { if (msg) { msg.textContent = s; msg.hidden = false; } }
+    if (ridotto) {
+      sez.setAttribute('data-journey-stato', 'ridotto');
+      testo("You asked for reduced motion: the route stays a list of stops.");
+      return;
+    }
+    var prova = document.createElement('canvas');
+    var webgl = !!(prova.getContext('webgl2') || prova.getContext('webgl'));
+    if (!webgl) {
+      sez.setAttribute('data-journey-stato', 'no-webgl');
+      testo("Your browser has no WebGL: the route stays a list of stops.");
+      return;
+    }
+    var partito = false;
+    function carica() {
+      if (partito) return;
+      partito = true;
+      import('../assets/journey.js').then(function (mod) {
+        if (mod && mod.mostraScena) mod.mostraScena(sez);
+      }).catch(function () {
+        sez.setAttribute('data-journey-stato', 'errore');
+        testo("The animated route is not available on this device: the twelve stops with a photograph are below.");
+      });
+    }
+    // quando la sezione e' vicina, non al caricamento della pagina
+    if ('IntersectionObserver' in window) {
+      var oss = new IntersectionObserver(function (v) {
+        if (v[0].isIntersecting) { oss.disconnect(); carica(); }
+      }, { rootMargin: '400px' });
+      oss.observe(sez);
+    }
+    // rete di sicurezza: se l'osservatore resta sospeso, basta che
+    // l'utente scorra. Costa un ascoltatore che si stacca subito.
+    function suScorrimento() {
+      if (window.scrollY > 200) { carica(); rimuovi(); }
+    }
+    function rimuovi() {
+      window.removeEventListener('scroll', suScorrimento);
+      window.removeEventListener('touchmove', rimuovi);
+    }
+    window.addEventListener('scroll', suScorrimento, { passive: true });
+    window.addEventListener('touchmove', rimuovi, { passive: true, once: true });
+  })();
+</script>
 <!-- ══════════ DESTINAZIONI ══════════ -->
 <section id="destinazioni" class="paper-2">
   <div class="wrap">

@@ -104,6 +104,19 @@ qualita' 78, progressive, senza metadati EXIF.
 
 `pioppi-torre.jpg` e' stata rimossa: nessuna pagina la usava.
 
+### Three.js
+
+| File | Libreria | Versione | Licenza |
+|---|---|---|---|
+| `assets/vendor/three.module.min.js` | Three.js | r171 | **MIT** |
+| `assets/vendor/three.core.min.js` | Three.js (core) | r171 | **MIT** |
+
+Tre file servono perche' il build di Three.js e' spezzato: `three.module.min.js`
+importa `three.core.min.js`. Presenti entrambi, altrimenti la scena non parte.
+
+La riga della tabella generale su GSAP resta valida: GSAP non e' open source,
+**Three.js invece lo e'** (MIT), quindi non ha le condizioni commerciali di GSAP.
+
 ## Strumenti
 
 `tools/build-api.js` rigenera `api/{it,en,de}.json` dall'HTML. Non fa parte della
